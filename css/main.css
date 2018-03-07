@@ -5,3 +5,22 @@
 
     filename: main.css
 */
+
+
+/* Importing fonts
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
+/* Header Styles */
+
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    color: #1381C7;
+    font-size: 5em;
+    text-align: center;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #DF9D00;
+    margin-top: .5%;
+    /* border-bottom-color:  */
+}
