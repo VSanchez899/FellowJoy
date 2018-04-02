@@ -5,3 +5,66 @@
 
     filename: home.css
 */
+
+
+/* Mission and Vision Styles */
+
+.headStatements {
+    font-size: 3em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+image {
+    width: 100%;
+}
+
+.statements {
+    text-align: center;
+    font-size: 2em;
+}
+
+
+/* picture styles */
+
+section {
+    position: relative;
+    /* margin-top: 2%; */
+    background: hotpink;
+}
+
+figure {
+    position: absolute;
+    /* width: 100%; */
+    /* display: table;
+    content: "";
+    clear: both; */
+}
+
+#fig1 {
+    z-index: 10;
+    left: 13%;
+    /* top: 34px; */
+}
+
+#fig2 {
+    z-index: 20;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+}
+
+#fig3 {
+    z-index: 10;
+    right: 13%;
+    /* top: 34px; */
+}
+
+
+/* footer styles */
+
+footer {
+    text-align: center;
+    border-top: 1px solid black;
+}

@@ -5,3 +5,74 @@
 
     filename: accountForm.css
 */
+
+
+/* form styles */
+
+form {
+    margin-top: 2%;
+    border: 2px solid black;
+}
+
+div#divForm {
+    margin-left: 25%;
+}
+
+#account {
+    text-decoration: underline;
+}
+
+#signUp {
+    text-align: center;
+}
+
+label {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+label#showpassLabel,
+#receive {
+    font-size: 1em;
+    text-align: left;
+    float: right;
+}
+
+input#showpass,
+#receiveEmail {
+    width: 5%;
+    margin-left: 0;
+}
+
+input {
+    text-align: center;
+    width: 50%;
+    font-size: 1.5em;
+}
+
+button {
+    width: 30%;
+    font-size: 1.4em;
+    margin-bottom: 2%;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+button:hover {
+    background: orange;
+    color: blue;
+    font-weight: bolder;
+    box-shadow: 2px 4px black;
+}
+
+div.col18 {
+    margin-left: 25%;
+    min-width: 122px;
+    max-width: 122px;
+}
