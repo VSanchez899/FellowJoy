@@ -16,7 +16,7 @@
 
 h1 {
     font-family: 'Berkshire Swash', cursive;
-    color: #1381C7;
+    color: #0e3756ff;
     font-size: 5em;
     margin-left: 5%;
     margin-top: .5%;
@@ -28,7 +28,7 @@ h1 {
 
 h2 {
     font-size: 3em;
-    color: #DF9D00;
+    color: #ff5300ff;
     margin-top: 3%;
     /* text-align: center; */
     /* border: 2px double black; */
@@ -68,7 +68,7 @@ nav:hover {
 }
 
 nav:hover a {
-    color: hotpink;
+    color: #FF4D4D;
     width: 100%;
 }
 
