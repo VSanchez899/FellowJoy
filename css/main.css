@@ -11,11 +11,13 @@
  */
 
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+@import url('https://fonts.googleapis.com/css?family=Cute+Font');
 
 /* Header Styles */
 
 h1 {
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Gugi', cursive;
     color: #0e3756ff;
     font-size: 5em;
     margin-left: 5%;
@@ -30,6 +32,7 @@ h2 {
     font-size: 3em;
     color: #ff5300ff;
     margin-top: 3%;
+    font-family: 'Berkshire Swash', cursive;
     /* text-align: center; */
     /* border: 2px double black; */
     /* width: 50%; */
