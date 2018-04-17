@@ -20,7 +20,7 @@ div#divForm {
 
 #account {
     text-align: center;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 label {

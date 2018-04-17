@@ -10,8 +10,10 @@
 /* Mission and Vision Styles */
 
 .headStatements {
+    color: #0e3756ff;
+    font-family: 'Gugi', cursive;
     font-size: 3em;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-align: center;
 }
 
@@ -20,6 +22,7 @@ image {
 }
 
 .statements {
+    font-family: 'Berkshire Swash', cursive;
     text-align: center;
     font-size: 2em;
 }
