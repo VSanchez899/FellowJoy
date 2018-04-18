@@ -113,6 +113,10 @@ div[class^="col"] {
     float: left;
 }
 
+div.col70 {
+    width: 70%;
+}
+
 div.col50 {
     width: 50%;
 }
