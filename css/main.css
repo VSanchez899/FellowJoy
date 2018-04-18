@@ -96,6 +96,17 @@ section {
 }
 
 
+/* Form Styles */
+
+form {
+    /* background: #F47A55 */
+}
+
+label {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+
 /* Div style */
 
 div.container {
