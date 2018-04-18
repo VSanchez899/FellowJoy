@@ -14,9 +14,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/accountForm.css">
 </head>
 
 <body>
+
+    <div class="col50" id="divForm">
+        <form id="signUp">
+            <div class="container">
+                <h1 id="account">Sign In</h1>
+            </div><br>
+
+            <!-- Name input -->
+            <div class="conatainer">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="John Appleseed">
+            </div><br>
+
+            <!-- Username input -->
+            <div class="conatainer">
+                <label for="newUsername">Username:</label>
+                <input type="text" name="newUsername" id="newUsername" placeholder="5-15 Characters">
+            </div><br>
+
+            <!-- Email input -->
+            <div class="conatainer">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="john.appleseed@gmail.com">
+            </div>
+
+            <!-- receive emails checkbox -->
+            <div class="col18">
+                <input type="checkbox" name="receiveEmail" id="receiveEmail">
+                <label for="receiveEmail" id="receive">*receive emails</label>
+            </div><br><br>
+
+            <!-- Password input -->
+            <div class="conatainer">
+                <label for="newPassword">Password:</label>
+                <input type="password" name="newPassword" id="newPassword" placeholder="8-20 Characters">
+            </div>
+
+            <!-- show password checkbox -->
+            <div class="container">
+                <div class="col18">
+                    <input type="checkbox" name="showpass" id="showpass">
+                    <label for="showpass" id="showpassLabel">*show password</label>
+                </div>
+            </div><br>
+
+            <!-- Retype password -->
+            <div class="conatainer">
+                <label for="passCheck">Retype Password:</label>
+                <input type="password" name="passCheck" id="passCheck" placeholder="Retype Password">
+            </div>
+
+            <!-- Show retyped password checkbox -->
+            <div class="container">
+                <div class="col18">
+                    <input type="checkbox" name="showpass" id="showpass">
+                    <label for="showpass" id="showpassLabel">*show password</label>
+                </div>
+            </div><br>
+
+            <!-- Button to sign up -->
+            <div class="container">
+                <button id="signUpButton" type="button" onclick="window.location.href=''">Sign Up</button>
+            </div>
+
+            <div>
+                <p>-or-</p>
+            </div><br>
+
+            <!-- button to go to the sign in page -->
+            <div class="container">
+                <button id="signInButton" type="button" onclick="window.location.href='../html/myAccount.html'">Sign In</button>
+            </div>
+
+        </form>
+    </div>
 
 </body>
 

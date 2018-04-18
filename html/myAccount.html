@@ -13,18 +13,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>My Account - Sign In</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/myAccount.css">
 </head>
 
 <body>
-    <h1>FellowJoy</h1>
-    <nav><a href="index.html">Home</a></nav>
-    <nav>
-        <a href="aboutUs.html">About Us</a>
-    </nav>
-    <nav><a href="contactUs.html">Contact Us</a></nav>
-    <nav><a href="makeDonation.html">Make Donations</a></nav>
-    <nav><a href="myAccount.html">My Account</a></nav>
+    <header>
+        <div class="container">
+            <div class="col30">
+                <a href="index.html">
+                    <h1>Fellow Joy</h1>
+                </a>
+            </div>
+
+            <div class="col50">
+                <h2>Bringing JOY to those who need it.</h2>
+            </div>
+
+        </div>
+
+        <section id="nav">
+            <nav><a href="index.html">Home</a></nav>
+            <nav><a href="aboutUs.html">About Us</a></nav>
+            <nav><a href="contactUs.html">Contact Us</a></nav>
+            <nav><a href="" id="donationLink">Make Donations</a></nav>
+            <nav><a href="myAccount.html">My Account</a></nav>
+        </section>
+    </header>
+    <div class="container">
+        <div class="col50" id="divForm">
+            <form id="signIn">
+                <div class="container">
+                    <h1 id="account">Sign In</h1>
+                </div><br>
+
+                <!-- username input -->
+                <div class="container" class="inputs">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" value="" placeholder="Username">
+                </div><br>
+
+                <!-- password input -->
+                <div class="container" class="inputs">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" value="" placeholder="Password">
+
+                    <!-- show password checkbox -->
+                    <div class="container">
+                        <div class="col18">
+                            <input type="checkbox" name="showpass" id="showpass" id="check1">
+                            <label for="showpass" id="showpassLabel">*show password</label>
+                        </div>
+                    </div>
+                </div><br>
+
+                <!-- sign in button -->
+                <div class="container">
+                    <button id="signInButton" type="button">Sign In</button>
+                </div>
+
+                <div class="container">
+                    <p>-or-</p>
+                </div><br>
+
+                <!-- go to sign in page -->
+                <div class="container">
+                    <button id="signUpButton" type="button" onclick="window.location.href='../html/accountForm.html'">Sign Up</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/Jamin_account.js"></script>
 </body>
 
 </html>
