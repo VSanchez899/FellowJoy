@@ -7,18 +7,25 @@
 */
 
 
-/* Importing fonts
- */
+/* Importing fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 @import url('https://fonts.googleapis.com/css?family=Gugi');
 @import url('https://fonts.googleapis.com/css?family=Cute+Font');
 
+/* Background Styles */
+
+html {
+    background: #E2E2E2
+}
+
+
 /* Header Styles */
 
 h1 {
     font-family: 'Gugi', cursive;
-    color: #0e3756ff;
+    /* color: #0e3756ff; */
+    color: #005F9B;
     font-size: 5em;
     margin-left: 5%;
     margin-top: .5%;
@@ -30,7 +37,8 @@ h1 {
 
 h2 {
     font-size: 3em;
-    color: #ff5300ff;
+    /* color: #ff5300; */
+    color: #F26B00;
     margin-top: 3%;
     font-family: 'Berkshire Swash', cursive;
     /* text-align: center; */
@@ -53,32 +61,31 @@ nav {
     padding-right: 1%;
     float: left;
     /* background: rgba(29, 28, 28, 0.712); */
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
-    padding-bottom: 0.25%;
-    /* border: 2px solid black;
-    border-collapse: collapse; */
+    /* padding-bottom: 0.25%; */
+    font-family: 'Cute Font', cursive;
 }
 
 section#nav {
     width: 100%;
-    margin-top: 1%;
-    background: rgba(29, 28, 28, 0.712);
+    /* margin-top: 1%; */
+    background: #3A3A3A;
 }
 
 nav:hover {
-    background: black;
+    background: #0D2100;
 }
 
 nav:hover a {
-    color: #FF4D4D;
+    color: #EC5C5C;
     width: 100%;
 }
 
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    vertical-align: middle;
+    /* vertical-align: middle; */
     width: 100%;
 }
 
