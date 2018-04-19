@@ -106,6 +106,17 @@ section {
 }
 
 
+/* Form Styles */
+
+form {
+    /* background: #F47A55 */
+}
+
+label {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+
 /* Div style */
 
 div.container {
@@ -121,6 +132,10 @@ div.container {
 
 div[class^="col"] {
     float: left;
+}
+
+div.col70 {
+    width: 70%;
 }
 
 div.col50 {
