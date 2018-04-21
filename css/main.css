@@ -173,12 +173,12 @@ div.col10 {
 
 @media only screen and (min-width: 300px) {
     div.col30 {
-        width: 100%;
+        width: 40%;
+        margin-left: 30%;
     }
     h1#mainHeader {
         font-size: 2em;
         text-align: center;
-        /* margin-top: 4%; */
     }
     h1#navHeader {
         font-size: 1.25em;
@@ -198,8 +198,6 @@ div.col10 {
         padding-left: 7%;
         margin-top: 1%;
         margin-bottom: 1%;
-        /* border-bottom: 2px solid #F47A55;
-        border-left: 2px solid #F47A55; */
     }
     ul.nav {
         display: none;
@@ -214,10 +212,6 @@ div.col10 {
         width: 10%;
         display: table;
         content: "";
-        /* margin-top: 3.5%;
-        margin-bottom: -1%; */
-        /* margin-left: 90%; */
-        /* padding-bottom: 2%; */
         border: none;
         background: none;
     }
@@ -226,7 +220,6 @@ div.col10 {
         display: table;
         width: 55%;
         height: 100%;
-        /* margin-left: 46%; */
         position: absolute;
         margin-top: -5%;
     }
@@ -236,6 +229,7 @@ div.col10 {
     p.statements {
         font-size: 0.75em;
     }
+    /* phone form styles */
 }
 
 

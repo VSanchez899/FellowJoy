@@ -47,14 +47,16 @@ p {
 }
 
 label#showpassLabel,
-#receive {
+#receive,
+#showRetypePassLabel {
     font-size: 1em;
     text-align: left;
     float: right;
 }
 
 input#showpass,
-#receiveEmail {
+#receiveEmail,
+#showRetypepass {
     width: 5%;
     margin-left: 0;
 }
@@ -82,6 +84,73 @@ button:hover {
 
 div.col18 {
     margin-left: 25%;
-    min-width: 122px;
-    max-width: 122px;
+    /* min-width: 122px;
+    max-width: 122px; */
+}
+
+
+/* SMARTPHONES PORTRAIT */
+
+@media only screen and (min-width: 300px) {
+    h1#mainHeader {
+        padding-bottom: 3%;
+    }
+    div.col50 {
+        width: 80%;
+    }
+    div#divForm {
+        margin-left: 10%;
+    }
+    h1#account {
+        font-size: 1.5em;
+        margin-top: 2%;
+    }
+    label {
+        font-size: 2em;
+    }
+    label#retypePass {
+        font-size: 1.65em;
+    }
+    label#showpassLabel,
+    #receive,
+    #showRetypePassLabel {
+        font-size: .75em;
+        text-align: left;
+        float: right;
+    }
+    /* label#showpassLabel {
+        font-size: .75em;
+        margin-left: -10%;
+    }
+    input#showpass {
+        width: 12%;
+        margin-left: 0;
+        margin: 0;
+    }*/
+    input {
+        font-size: 1em;
+        min-width: 15px;
+    }
+    input#name,
+    input#newUsername,
+    input#email,
+    input#newPassword,
+    input#passCheck {
+        width: 62%;
+    }
+    div.col18 {
+        width: 28.9%;
+        text-align: left;
+        margin-left: 17.5%;
+        margin-top: 1%;
+        /* min-width: 95px;
+        max-width: 95px; */
+    }
+    div.showPassBoxes {
+        width: 30.5%;
+    }
+    button {
+        width: 50%;
+        font-size: 1.25em;
+    }
 }
