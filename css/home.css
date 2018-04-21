@@ -48,7 +48,8 @@ section {
 .carousel-inner>.item>a>img {
     display: block;
     width: 100%;
-    height: 25em;
+    height: 35em;
+    border: 2.5px solid black;
 }
 .carousel {
     position: relative;
