@@ -32,6 +32,15 @@ label {
     font-size: 3em;
 }
 
+#retypePass {
+    padding-bottom: 1%;
+}
+
+input {
+    min-width: 365px;
+    /* max-width: 270px; */
+}
+
 p {
     text-align: center;
     font-size: 1.3em;
