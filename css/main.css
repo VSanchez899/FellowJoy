@@ -36,7 +36,7 @@ h2 {
     font-size: 3em;
     /* color: #ff5300; */
     color: #F26B00;
-    margin-top: 3%;
+    /* margin-top: 3%; */
     font-family: 'Berkshire Swash', cursive;
     /* text-align: center; */
     /* border: 2px double black; */
@@ -103,10 +103,6 @@ ul {
 
 /* Form Styles */
 
-form {
-    /* background: #F47A55 */
-}
-
 label {
     font-family: 'Berkshire Swash', cursive;
 }
@@ -161,6 +157,10 @@ div.col15 {
     width: 15%;
 }
 
+div.col12 {
+    width: 12%;
+}
+
 div.col10 {
     width: 10%;
 }
@@ -171,14 +171,18 @@ div.col10 {
 
 /* SMARTPHONES PORTRAIT */
 
-@media only screen and (min-width: 300px) {
+@media only screen and (max-width: 767px) {
     div.col30 {
         width: 40%;
         margin-left: 30%;
     }
     h1#mainHeader {
-        font-size: 2em;
+        font-size: 1.6em;
         text-align: center;
+        margin-top: -3%;
+        content: "";
+        width: 100%;
+        display: table;
     }
     h1#navHeader {
         font-size: 1.25em;
@@ -229,6 +233,22 @@ div.col10 {
     p.statements {
         font-size: 0.75em;
     }
+    div.signInButton {
+        float: right;
+        margin-top: -5%;
+    }
+    button#mainSignIn {
+        font-size: 1em;
+        margin-left: 45%;
+        border: 1.5px solid black;
+        font-family: 'Cute Font', cursive;
+    }
+    button#mainSignIn:hover {
+        background: #0D2100;
+        color: #EC5C5C;
+        font-weight: bolder;
+        /* box-shadow: 2px 4px #3A3A3A; */
+    }
     /* phone form styles */
 }
 
@@ -237,17 +257,19 @@ div.col10 {
 
 @media only screen and (min-width: 480px) {
     div.col30 {
-        width: 30%;
+        width: 35%;
+        margin-left: 35%;
     }
     h1#mainHeader {
         font-size: 2em;
         text-align: center;
-        margin-top: 4%;
     }
-    h2#slogan {
+    /* h2#slogan {
         display: block;
-        font-size: 2em
-    }
+        font-size: 1em;
+        margin-top: -4%;
+        margin-left: -3%;
+    } */
 }
 
 
