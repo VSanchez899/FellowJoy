@@ -68,18 +68,20 @@ input {
 }
 
 button {
+    font-family: 'Cute Font', cursive;
     width: 30%;
-    font-size: 1.4em;
+    font-size: 2em;
+    margin-left: 35%;
     margin-bottom: 2%;
     border-radius: 50px;
     border: 2px solid black;
 }
 
 button:hover {
-    background: orange;
-    color: blue;
+    background: #0D2100;
+    color: #EC5C5C;
     font-weight: bolder;
-    box-shadow: 2px 4px black;
+    /* box-shadow: 2px 4px #3A3A3A; */
 }
 
 div.col18 {
@@ -152,5 +154,6 @@ div.col18 {
     button {
         width: 50%;
         font-size: 1.25em;
+        margin-left: 0%;
     }
 }
