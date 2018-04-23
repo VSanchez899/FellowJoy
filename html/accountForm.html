@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- 
+<!--
     Capstone Project
     Authors: Jamin, Vinny, Jacson
     Date: 3.2.18
 
-    filename: accountForm.html 
+    filename: accountForm.html
 -->
 
 <head>
@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/accountForm.css">
+    <!-- <script src="jquery-3.0.0.js" type="text/javascript"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../javascript/passwords.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -54,13 +57,13 @@
             <!-- Password input -->
             <div class="conatainer">
                 <label for="newPassword">Password:</label>
-                <input type="password" name="newPassword" id="newPassword" placeholder="8-20 Characters">
+                <input type="password" name="newPassword" id="newPassword" placeholder="8-20 Characters" class="pass">
             </div>
 
             <!-- show password checkbox -->
             <div class="container">
                 <div class="col18">
-                    <input type="checkbox" name="showpass" id="showpass">
+                    <input type="checkbox" name="showpass" id="showpass" class="passshow" show="newPassword">
                     <label for="showpass" id="showpassLabel">*show password</label>
                 </div>
             </div><br>
@@ -68,13 +71,13 @@
             <!-- Retype password -->
             <div class="conatainer">
                 <label for="passCheck">Retype Password:</label>
-                <input type="password" name="passCheck" id="passCheck" placeholder="Retype Password">
+                <input type="password" name="passCheck" id="passCheck" placeholder="Retype Password" class="pass">
             </div>
 
             <!-- Show retyped password checkbox -->
             <div class="container">
                 <div class="col18">
-                    <input type="checkbox" name="showpass" id="showpass">
+                    <input type="checkbox" name="showpass" id="showpass" class="passshow" show="passCheck">
                     <label for="showpass" id="showpassLabel">*show password</label>
                 </div>
             </div><br>
