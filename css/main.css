@@ -146,6 +146,7 @@
     div.col15 {
         width: 15%;
     }
+<<<<<<< HEAD
     
     div.col12 {
         width: 12%;
@@ -225,6 +226,10 @@
         }
         /* button#mainSignIn {
         font-size: 1em;
+=======
+    button#mainSignIn {
+        font-size: .7em;
+>>>>>>> main_CSS-mediaqueries
         margin-left: 45%;
         border: 1.5px solid black;
         font-family: 'Cute Font', cursive;
