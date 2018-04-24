@@ -15,10 +15,9 @@
     html {
         background: #E2E2E2;
     }
-    
-    div.container {
+    /* div.container {
         background: #E2E2E2;
-    }
+    } */
     
     header {
         background: #E2E2E2;
@@ -59,6 +58,7 @@
     padding-right: 1%; */
         /* padding-bottom: 0.25%; */
         font-family: 'Cute Font', cursive;
+        z-index: 10;
     }
     
     img#iconImg {
@@ -70,6 +70,7 @@
         width: 100%;
         margin-top: 1%;
         background: #3A3A3A;
+        z-index: 10
     }
     
     div.navList {
