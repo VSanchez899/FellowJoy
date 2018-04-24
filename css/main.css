@@ -1,243 +1,229 @@
-/* 
+    /* 
     Capstone Project
     Authors: Jamin, Vinny, Jacson
     Date: 3.2.18
 
     filename: main.css
 */
-
-
-/* Importing fonts */
-
-@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
-@import url('https://fonts.googleapis.com/css?family=Gugi');
-@import url('https://fonts.googleapis.com/css?family=Cute+Font');
-
-/* Background Styles */
-
-html {
-    background: #E2E2E2;
-}
-
-
-/* Header Styles */
-
-h1#mainHeader,
-h1#navHeader {
-    font-family: 'Gugi', cursive;
-    /* color: #0e3756ff; */
-    color: #005F9B;
-    font-size: 5em;
-    /* margin-left: 5%; */
-    /* margin-top: 10%; */
-}
-
-h2 {
-    font-size: 3em;
-    /* color: #ff5300; */
-    color: #F26B00;
-    /* margin-top: 3%; */
-    font-family: 'Berkshire Swash', cursive;
-    /* text-align: center; */
-    /* border: 2px double black; */
-    /* width: 50%; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-}
-
-section#header {
-    float: left;
-}
-
-
-/* Nav Bar Styles */
-
-nav {
-    /* width: 15%; */
-    /* padding-left: 1%;
-    padding-right: 1%; */
-    /* padding-bottom: 0.25%; */
-    font-family: 'Cute Font', cursive;
-}
-
-img#iconImg {
-    display: none;
-}
-
-ul.nav,
-a#navIcon {
-    width: 100%;
-    margin-top: 1%;
-    background: #3A3A3A;
-}
-
-
-/* nav:hover {
-    background: #0D2100;
-} */
-
-div.navList {
-    height: 30px;
-}
-
-a:hover li:active {
-    color: #EC5C5C;
-    /* width: 100%; */
-}
-
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    /* vertical-align: middle; */
-    line-height: 50%;
-    width: 100%;
-}
-
-section,
-ul {
-    width: 100%;
-    display: table;
-    content: "";
-}
-
-
-/* Form Styles */
-
-label {
-    font-family: 'Berkshire Swash', cursive;
-}
-
-
-/* Div style */
-
-div.container {
-    width: 100%;
-    clear: both;
-}
-
-.container::after {
-    width: 100%;
-    display: table;
-    content: "";
-}
-
-div[class^="col"] {
-    float: left;
-}
-
-div.col70 {
-    width: 70%;
-}
-
-div.col50 {
-    width: 50%;
-}
-
-div.col40 {
-    width: 40%;
-}
-
-div.col30 {
-    width: 30%;
-}
-
-div.col25 {
-    width: 25%;
-}
-
-div.col20 {
-    width: 20%;
-}
-
-div.col18 {
-    width: 18%;
-}
-
-div.col15 {
-    width: 15%;
-}
-
-div.col12 {
-    width: 12%;
-}
-
-div.col10 {
-    width: 10%;
-}
-
-
-/* ========================================== Media Queries =========================================== */
-
-
-/* SMARTPHONES PORTRAIT */
-
-@media only screen and (max-width: 767px) {
-    div.col30 {
-        width: 40%;
-        margin-left: 30%;
+    /* Importing fonts */
+    
+    @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+    @import url('https://fonts.googleapis.com/css?family=Gugi');
+    @import url('https://fonts.googleapis.com/css?family=Cute+Font');
+    /* Background Styles */
+    
+    html {
+        background: #E2E2E2;
     }
-    h1#mainHeader {
-        font-size: 1.6em;
-        text-align: center;
-        margin-top: -3%;
-        content: "";
-        width: 100%;
-        display: table;
+    
+    div.container {
+        background: #E2E2E2;
     }
+    
+    header {
+        background: #E2E2E2;
+    }
+    /* Header Styles */
+    
+    h1#mainHeader,
     h1#navHeader {
-        font-size: 1.25em;
-        text-align: left;
-        margin-top: 2%;
+        font-family: 'Gugi', cursive;
+        /* color: #0e3756ff; */
+        color: #005F9B;
+        font-size: 5em;
+        /* margin-left: 5%; */
+        /* margin-top: 10%; */
     }
-    h2#slogan {
-        display: none;
+    
+    h2 {
+        font-size: 3em;
+        /* color: #ff5300; */
+        color: #F26B00;
+        /* margin-top: 3%; */
+        font-family: 'Berkshire Swash', cursive;
+        /* text-align: center; */
+        /* border: 2px double black; */
+        /* width: 50%; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
     }
-    h3.headStatements {
-        font-size: 1em;
+    
+    section#header {
+        float: left;
     }
-    li {
-        text-align: left;
-        padding-top: 2%;
-        padding-bottom: 4%;
-        padding-left: 7%;
-        margin-top: 1%;
-        margin-bottom: 1%;
+    /* Nav Bar Styles */
+    
+    nav {
+        /* width: 15%; */
+        /* padding-left: 1%;
+    padding-right: 1%; */
+        /* padding-bottom: 0.25%; */
+        font-family: 'Cute Font', cursive;
     }
-    ul.nav {
-        display: none;
-        box-shadow: 2px 2px 10px grey;
-    }
+    
     img#iconImg {
-        display: block;
-        width: 39%;
-        padding-left: 9%;
+        display: none;
     }
+    
+    ul.nav,
     a#navIcon {
-        width: 10%;
-        display: table;
-        content: "";
-        border: none;
-        background: none;
+        width: 100%;
+        margin-top: 1%;
+        background: #3A3A3A;
     }
-    a#navIcon:hover+ul.nav,
-    nav.menu ul:hover {
-        display: table;
-        width: 55%;
-        height: 100%;
-        position: absolute;
-        margin-top: -5%;
+    
+    div.navList {
+        height: 30px;
     }
+    
     a:hover {
         color: #F47A55;
     }
-    p.statements {
-        font-size: 0.75em;
+    
+    a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        line-height: 50%;
+        width: 100%;
     }
-    div.signInButton {
-        float: right;
-        margin-top: -5%;
+    
+    section,
+    ul {
+        width: 100%;
+        display: table;
+        content: "";
     }
-    button#mainSignIn {
+    /* Form Styles */
+    
+    label {
+        font-family: 'Berkshire Swash', cursive;
+    }
+    /* Div style */
+    
+    div.mainDiv {
+        width: 100%;
+        clear: both;
+    }
+    
+    .mainDiv::after {
+        width: 100%;
+        display: table;
+        content: "";
+    }
+    
+    div[class^="col"] {
+        float: left;
+    }
+    
+    div.col70 {
+        width: 70%;
+    }
+    
+    div.col50 {
+        width: 50%;
+    }
+    
+    div.col40 {
+        width: 40%;
+    }
+    
+    div.col30 {
+        width: 30%;
+    }
+    
+    div.col25 {
+        width: 25%;
+    }
+    
+    div.col20 {
+        width: 20%;
+    }
+    
+    div.col18 {
+        width: 18%;
+    }
+    
+    div.col15 {
+        width: 15%;
+    }
+    
+    div.col12 {
+        width: 12%;
+    }
+    
+    div.col10 {
+        width: 10%;
+    }
+    /* ========================================== Media Queries =========================================== */
+    /* SMARTPHONES PORTRAIT */
+    
+    @media only screen and (max-width: 767px) {
+        div.col35 {
+            width: 40%;
+            margin-left: 30%;
+        }
+        h1#mainHeader {
+            font-size: 1.6em;
+            text-align: center;
+            margin-top: -3%;
+            content: "";
+            width: 100%;
+            display: table;
+        }
+        h1#navHeader {
+            font-size: 1.25em;
+            text-align: left;
+            margin-top: 2%;
+        }
+        h2#slogan {
+            display: none;
+        }
+        h3.headStatements {
+            font-size: 1em;
+        }
+        nav.menu2 {
+            display: none;
+        }
+        li {
+            text-align: left;
+            padding-top: 2%;
+            padding-bottom: 4%;
+            padding-left: 7%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        ul.nav {
+            display: none;
+            box-shadow: 2px 2px 10px grey;
+        }
+        img#iconImg {
+            display: block;
+            width: 39%;
+            padding-left: 9%;
+        }
+        a#navIcon {
+            width: 10%;
+            display: table;
+            content: "";
+            border: none;
+            background: none;
+        }
+        a#navIcon:hover+ul.nav,
+        nav.menu ul:hover {
+            display: table;
+            width: 55%;
+            height: 100%;
+            position: absolute;
+            margin-top: -5%;
+        }
+        p.statements {
+            font-size: 0.75em;
+        }
+        div.signInButton {
+            float: right;
+            margin-top: -5%;
+        }
+        /* button#mainSignIn {
         font-size: 1em;
         margin-left: 45%;
         border: 1.5px solid black;
@@ -247,64 +233,139 @@ div.col10 {
         background: #0D2100;
         color: #EC5C5C;
         font-weight: bolder;
-        /* box-shadow: 2px 4px #3A3A3A; */
+    } */
+        /* phone form styles */
     }
-    /* phone form styles */
-}
-
-
-/* SMARTPHONES LANDSCAPE */
-
-@media only screen and (min-width: 480px) {
-    div.col30 {
-        width: 35%;
-        margin-left: 35%;
-    }
-    h1#mainHeader {
-        font-size: 2em;
-        text-align: center;
-    }
-    /* h2#slogan {
+    /* SMARTPHONES LANDSCAPE */
+    
+    @media only screen and (min-width: 480px) {
+        div.col30 {
+            width: 35%;
+            margin-left: 35%;
+        }
+        h1#mainHeader {
+            font-size: 2em;
+            text-align: center;
+        }
+        /* h2#slogan {
         display: block;
         font-size: 1em;
         margin-top: -4%;
         margin-left: -3%;
     } */
-}
-
-
-/* TABLETS PORTRAIT */
-
-@media only screen and (min-width: 768px) {
-    div.col30 {
-        width: 30%;
     }
-    h1#mainHeader {
-        font-size: 5em;
-        text-align: center;
-        margin-top: 4%;
+    /* TABLETS PORTRAIT */
+    
+    @media only screen and (min-width: 768px) {
+        div.col35 {
+            width: 30%;
+            margin-left: 0%;
+        }
+        h1#mainHeader {
+            font-size: 2.75em;
+            text-align: center;
+            margin-top: 4%;
+            padding-top: 6%;
+        }
+        h1#navHeader {
+            display: none;
+        }
+        h2#slogan {
+            display: block;
+            font-size: 1.75em;
+            padding-top: 4%;
+        }
+        nav {
+            font-size: 2em;
+            text-align: center;
+            float: left;
+            width: 100%;
+            /* margin-top: 20%; */
+        }
+        nav.menu {
+            display: none;
+        }
+        nav.menu2 {
+            display: block;
+        }
+        li {
+            float: left;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        img#iconImg {
+            display: none;
+        }
     }
-    h2#slogan {
-        display: block;
+    /* TABLET LANDSCAPE / DESKTOP */
+    
+    @media only screen and (min-width: 1046px) {
+        h1#mainHeader {
+            font-size: 4em;
+            text-align: center;
+            margin-top: 4%;
+            padding-top: 6%;
+        }
+        h2#slogan {
+            display: block;
+            font-size: 2.75em;
+            padding-top: 2.75%;
+            padding-left: 2%;
+        }
+        div.col60 {
+            width: 62%;
+        }
+        nav {
+            font-size: 3em;
+        }
+        img#iconImg {
+            display: none;
+        }
     }
-    nav {
-        font-size: 2em;
-        text-align: center;
-        float: left;
+    
+    @media only screen and (min-width: 1220px) {
+        h1#mainHeader {
+            font-size: 4.5em;
+            text-align: center;
+            margin-top: 4%;
+            padding-top: 6%;
+        }
+        h2#slogan {
+            display: block;
+            font-size: 3.2em;
+            padding-top: 2.75%;
+            padding-left: 2%;
+        }
     }
-    img#iconImg {
-        display: none;
+    
+    @media only screen and (min-width: 1400px) {
+        h1#mainHeader {
+            font-size: 5em;
+            text-align: center;
+            margin-top: 4%;
+            padding-top: 6%;
+        }
+        h2#slogan {
+            display: block;
+            font-size: 3.5em;
+            padding-top: 2.75%;
+            padding-left: 2%;
+        }
     }
-}
-
-
-/* TABLET LANDSCAPE / DESKTOP */
-
-@media only screen and (min-width: 1024px) {
-    nav {
-        font-size: 3em;
+    
+    @media only screen and (min-width: 1600px) {
+        h1#mainHeader {
+            font-size: 6em;
+            text-align: center;
+            margin-top: 4%;
+            padding-top: 6%;
+        }
+        h2#slogan {
+            display: block;
+            font-size: 4em;
+            padding-top: 2.75%;
+            padding-left: 2%;
+        }
     }
-    img#iconImg {
-        display: none;
-    }
-}
