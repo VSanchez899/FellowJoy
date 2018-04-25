@@ -78,11 +78,11 @@ div.col18 {
 
 /* SMARTPHONES PORTRAIT */
 
-@media only screen and (min-width: 300px) {
+@media only screen and (max-width: 767px) {
     h1#mainHeader {
         padding-bottom: 3%;
     }
-    div.col50 {
+    div#divForm {
         width: 80%;
     }
     div#divForm {

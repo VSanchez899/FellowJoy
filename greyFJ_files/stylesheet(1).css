@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "designstudio-set02";
+  src:url("designstudio-set02.eot");
+  src:url("designstudio-set02.eot?#iefix") format("embedded-opentype"),
+    url("designstudio-set02.woff") format("woff"),
+    url("designstudio-set02.ttf") format("truetype"),
+    url("designstudio-set02.svg#designstudio-set02") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[class^="designstudio-set02"] ,
+[class*=" designstudio-set02-"] {
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  height: 1em;
+}
+
+[class^="designstudio-set02-"]:before,
+[class*=" designstudio-set02-"]:before {
+  font-family: "designstudio-set02" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.designstudio-set02-1:before {
+  content: "a";
+}
+.designstudio-set02-shirt:before {
+  content: "b";
+}
+.designstudio-set02-disk:before {
+  content: "c";
+}
+.designstudio-set02-resize-diagonal:before {
+  content: "d";
+}
+.designstudio-set02-image:before {
+  content: "e";
+}
+.designstudio-set02-resize-parallel:before {
+  content: "f";
+}
+.designstudio-set02-7:before {
+  content: "g";
+}
+.designstudio-set02-8:before {
+  content: "h";
+}
+.designstudio-set02-rotate:before {
+  content: "i";
+}
+.designstudio-set02-cross:before {
+  content: "j";
+}
+.designstudio-set02-13:before {
+  content: "k";
+}
+.designstudio-set02-layers:before {
+  content: "l";
+}
+.designstudio-set02-10:before {
+  content: "m";
+}
+.designstudio-set02-18:before {
+  content: "n";
+}
+.designstudio-set02-16:before {
+  content: "o";
+}
+.designstudio-set02-15:before {
+  content: "p";
+}
+.designstudio-set02-note:before {
+  content: "q";
+}

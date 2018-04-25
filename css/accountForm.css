@@ -18,10 +18,6 @@ div#divForm {
     margin-left: 25%;
 }
 
-#account {
-    /* text-decoration: underline; */
-}
-
 #signUp {
     text-align: center;
 }
@@ -143,17 +139,20 @@ div.col18 {
     div.col18 {
         width: 28.9%;
         text-align: left;
-        margin-left: 17.5%;
+        margin-left: 19%;
         margin-top: 1%;
+        max-width: 88px;
         /* min-width: 95px;
         max-width: 95px; */
     }
     div.showPassBoxes {
         width: 30.5%;
+        max-width: 94px;
     }
     button {
         width: 50%;
         font-size: 1.25em;
         margin-left: 0%;
+        max-width: 207px;
     }
 }
