@@ -20,7 +20,7 @@ function makeDonationLinkTest(donation) {
     } else if (signedIn == true) {
         makeDonation.href = "../html/makeDonation_User.html";
     }
-    console.log(signIn);
+    // console.log(signIn);
 }
 
 

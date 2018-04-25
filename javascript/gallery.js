@@ -6,4 +6,4 @@
     filename: gallery.js
 */
 
-document.getElementById("fig1").src = "../images/pic01.jpg";
+// document.getElementById("fig1").src = "../images/pic01.jpg";
