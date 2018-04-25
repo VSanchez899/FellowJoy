@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "designstudio-set03";
+  src:url("designstudio-set03.eot");
+  src:url("designstudio-set03.eot?#iefix") format("embedded-opentype"),
+    url("designstudio-set03.woff") format("woff"),
+    url("designstudio-set03.ttf") format("truetype"),
+    url("designstudio-set03.svg#designstudio-set03") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="designstudio-set03"] ,
+[class*=" designstudio-set03-"] {
+  position: relative;
+  display: inline-block;
+  top: 3px;
+  height: 1em;
+}
+
+[class^="designstudio-set03-"]:before,
+[class*=" designstudio-set03-"]:before {
+  font-family: "designstudio-set03" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.designstudio-set03-nn:before {
+  content: "a";
+}
+.designstudio-set03-add-notes:before {
+  content: "b";
+}
+.designstudio-set03-align:before {
+  content: "c";
+}
+.designstudio-set03-edit:before {
+  content: "d";
+}
+.designstudio-set03-flip-h:before {
+  content: "e";
+}
+.designstudio-set03-save:before {
+  content: "f";
+}
+.designstudio-set03-rotate:before {
+  content: "g";
+}
+.designstudio-set03-zoom-in:before {
+  content: "h";
+}
+.designstudio-set03-zoom-out:before {
+  content: "i";
+}
+.designstudio-set03-share:before {
+  content: "j";
+}
+.designstudio-set03-flip-v:before {
+  content: "k";
+}
+.designstudio-set03-align-c:before {
+  content: "l";
+}
+.designstudio-set03-align-l:before {
+  content: "m";
+}
+.designstudio-set03-font:before {
+  content: "n";
+}
+.designstudio-set03-size:before {
+  content: "o";
+}
+.designstudio-set03-size-nn:before {
+  content: "p";
+}
+.designstudio-set03-list:before {
+  content: "q";
+}
+.designstudio-set03-align-r:before {
+  content: "r";
+}
+.designstudio-set03-arc:before {
+  content: "s";
+}
+.designstudio-set03-minus:before {
+  content: "t";
+}
+.designstudio-set03-spacing:before {
+  content: "v";
+}
+.designstudio-set03-new:before {
+  content: "w";
+}
+.designstudio-set03-art:before {
+  content: "x";
+}
+.designstudio-set03-cart-empty:before {
+  content: "y";
+}
+.designstudio-set03-templates:before {
+  content: "z";
+}
+.designstudio-set03-text:before {
+  content: "A";
+}
+.designstudio-set03-outline:before {
+  content: "B";
+}
+.designstudio-set03-cart-full:before {
+  content: "C";
+}
+.designstudio-set03-center:before {
+  content: "D";
+}
+.designstudio-set03-plus:before {
+  content: "E";
+}
+.designstudio-set03-trash:before {
+  content: "F";
+}
+.designstudio-set03-tutorial:before {
+  content: "G";
+}
+.designstudio-set03-product:before {
+  content: "H";
+}
+.designstudio-set03-color:before {
+  content: "I";
+}
+.designstudio-set03-distress:before {
+  content: "J";
+}
+.designstudio-set03-quote:before {
+  content: "K";
+}
+.designstudio-set03-unlock:before {
+  content: "L";
+}
+.designstudio-set03-unlock-1:before {
+  content: "M";
+}
+.designstudio-set03-duplicate:before {
+  content: "O";
+}
+.designstudio-set03-uncheck:before {
+  content: "P";
+}
+.designstudio-set03-check:before {
+  content: "Q";
+}
+.designstudio-set03-google:before {
+  content: "R";
+}
+.designstudio-set03-youtube:before {
+  content: "S";
+}
+.designstudio-set03-instagram:before {
+  content: "T";
+}
+.designstudio-set03-twitter:before {
+  content: "U";
+}
+.designstudio-set03-pinterest:before {
+  content: "V";
+}
+.designstudio-set03-facebook:before {
+  content: "W";
+}
+.designstudio-set03-reverse-shirt-1:before {
+  content: "X";
+}
+.designstudio-set03-bank:before {
+  content: "N";
+}
+.designstudio-set03-templates-2:before {
+  content: "Z";
+}
+.designstudio-set03-rotate-1:before {
+  content: "0";
+}
+.designstudio-set03-notes:before {
+  content: "1";
+}
+.designstudio-set03-distress-1:before {
+  content: "2";
+}
+.designstudio-set03-sleeve-1:before {
+  content: "Y";
+}
+
+.designstudio-set03-scale:before {
+  content: "u";
+}
+
+.designstudio-set03-scale {
+  top: 5px;
+  font-size: 1.5em;
+}
