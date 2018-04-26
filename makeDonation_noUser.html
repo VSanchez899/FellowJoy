@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    Capstone Project
+    Authors: Jamin, Vinny, Jacson
+    Date: 3.2.18
+
+    filename: makeDonation.html 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Make Donation</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/makeDonation.css">
+</head>
+
+<body>
+    <header>
+        <div class="mainDiv">
+            <nav class="menu">
+                <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
+                <ul class="nav">
+                    <li>
+                        <h1 id="navHeader">Fellow Joy</h1>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <div class="mainDiv" class="navList">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">
+                            <div class="mainDiv" class="navList">About Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">
+                            <div class="mainDiv" class="navList">Contact Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="makeDonation_noUser.html" id="donationLink">
+                            <div class="mainDiv" class="navList">Make Donations</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gear.html">
+                            <div class="mainDiv" class="navList">Gear</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="myAccount.html">
+                            <div class="mainDiv" class="navList">My Account</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col35">
+                <a href="index.html">
+                    <h1 id="mainHeader">Fellow Joy</h1>
+                </a>
+            </div>
+
+
+            <div class="col60">
+                <h2 id="slogan">bringing <mark>JOY</mark> to those who need it.</h2>
+            </div>
+            <nav class="menu2">
+                <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
+                <ul class="nav">
+                    <li>
+                        <h1 id="navHeader">Fellow Joy</h1>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <div class="mainDiv" class="navList">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">
+                            <div class="mainDiv" class="navList">About Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">
+                            <div class="mainDiv" class="navList">Contact Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="makeDonation_noUser.html" id="donationLink">
+                            <div class="mainDiv" class="navList">Make Donations</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gear.html">
+                            <div class="mainDiv" class="navList">Gear</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="myAccount.html">
+                            <div class="mainDiv" class="navList">My Account</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Make a Donation</h1>
+        <form>
+            <div class="row">
+                <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
+                    <label for="formFirstN">First Name*</label>
+                    <input type="text" class="form-control" id="formFirstN" placeholder="Johnny">
+                </div>
+                <div class="form-group col-sm-2 col-md-2 col-lg-2 float-left">
+                    <label for="formMiddleI">M. Initial</label>
+                    <input type="text" class="form-control" id="formMiddleI" placeholder="T">
+                </div>
+                <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
+                    <label for="formLastN">Last Name*</label>
+                    <input type="text" class="form-control" id="formLastN" placeholder="Appleseed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6 col-md-6 col-lg-6 float-left">
+                    <label for="formEmail">Email*</label>
+                    <input type="text" class="form-control" id="formEmail" placeholder="johnny.appleseed@gmail.com">
+                </div>
+                <div class="form-group col-sm-6  col-md-6 col-lg-3 float-left">
+                    <label for="formCard">Card Number*</label>
+                    <input type="text" class="form-control" id="formCard" placeholder="nnnn-nnnn-nnnn-nnnn">
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
+                    <label for="formCVC">CVC*</label>
+                    <input type="text" class="form-control" id="formCVC" placeholder="nnn">
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
+                    <label for="formExp">Month*</label>
+                    <select class="form-control" name="formExp" id="formExp">
+                        <option value="">mm</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
+                    <label for="formExpD">Year*</label>
+                    <select class="form-control" name="formExpD" id="formExpD">
+                                <option value="">yy</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-centered">
+                    <button type="submit" class="form-control btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="bootstrap/jquery.slim.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>

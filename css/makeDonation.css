@@ -5,3 +5,26 @@
 
     filename: makeDonation.css
 */
+
+h1#mainHeader {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+ul.nav {
+    margin-top: 0;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+button {
+    background: #005F9B !important;
+}
+
+button:hover {
+    background: #F26B00 !important;
+}

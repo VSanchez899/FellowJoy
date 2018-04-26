@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    Capstone Project
+    Authors: Jamin, Vinny, Jacson
+    Date: 3.2.18
+
+    filename: index.html 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fellow Joy</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="mainDiv">
+            <nav class="menu">
+                <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
+                <ul class="nav">
+                    <li>
+                        <h1 id="navHeader">Fellow Joy</h1>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <div class="mainDiv" class="navList">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">
+                            <div class="mainDiv" class="navList">About Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">
+                            <div class="mainDiv" class="navList">Contact Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="makeDonation_noUser.html" id="donationLink">
+                            <div class="mainDiv" class="navList">Make Donations</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gear.html">
+                            <div class="mainDiv" class="navList">Gear</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="myAccount.html">
+                            <div class="mainDiv" class="navList">My Account</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col35">
+                <a href="index.html">
+                    <h1 id="mainHeader">Fellow Joy</h1>
+                </a>
+            </div>
+
+            <div class="col60">
+                <h2 id="slogan">bringing <mark>JOY</mark> to those who need it.</h2>
+            </div>
+            <nav class="menu2">
+                <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
+                <ul class="nav">
+                    <li>
+                        <h1 id="navHeader">Fellow Joy</h1>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <div class="mainDiv" class="navList">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">
+                            <div class="mainDiv" class="navList">About Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">
+                            <div class="mainDiv" class="navList">Contact Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="makeDonation_noUser.html" id="donationLink">
+                            <div class="mainDiv" class="navList">Make Donations</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gear.html">
+                            <div class="mainDiv" class="navList">Gear</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="myAccount.html">
+                            <div class="mainDiv" class="navList">My Account</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- figure for photo gallery -->
+    <section>
+        <!-- figure 1 -->
+        <!-- <figure id="fig1">
+            <img width="360" height="270">
+        </figure> -->
+        <!-- figure 2 -->
+
+        <!-- <figure id="fig2">
+            <img width="480" height="330">
+        </figure> -->
+        <!-- figure 3 -->
+
+        <!-- <figure id="fig3">
+            <img width="360" height="270">
+
+        </figure> -->
+        <!-- this is a carosell -->
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+
+            <!-- Wrapper for slides -->
+
+            <div class="carousel-inner">
+                <!-- this is photo one -->
+                <div class="item active">
+                    <img src="images/sad-man_1920.jpg" alt="photo1">
+                </div>
+                <!-- this is photo two -->
+                <div class="item">
+                    <img src="images/slums_1920.jpg" alt="photo2">
+                </div>
+                <!-- this is photo three -->
+                <div class="item">
+                    <img src="images/homeless_1920.jpg" alt="photo3">
+                </div>
+                <!-- this is photo four -->
+                <div class="item">
+                    <img src="images/t-shirt_1920.jpg" alt="photo4">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <!--this is a broken piece of code were some new css is needed to be written to use it-->
+            <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a> -->
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- THIS ONE IS FOR THE HOME PAGE -->
+
+    <div class="container" id="services">
+        <h3 id="help">Find A Way You Can Help</h3>
+        <div class="row">
+            <section class="col-sm-6 col-md-6 col-lg-4">
+                <a href="">
+                    <img class="img-fluid" src="images/street.jpg" alt="">
+                    <h5>Help Near You</h5>
+                </a>
+                <hr>
+            </section>
+            <section class="col-sm-6 col-md-6 col-lg-4">
+                <a href="">
+                    <img class="img-fluid" src="images/hungry.jpg" alt="">
+                    <h5>Help Feed The Hungry</h5>
+                </a>
+                <hr>
+            </section>
+            <section class="col-sm-6 col-md-6 col-lg-4">
+                <a href="">
+                    <img class="img-fluid" src="images/help.jpg" alt="">
+                    <h5>Help Clean Up Near You</h5>
+                </a>
+                <hr>
+            </section>
+            <section class="col-sm-6 col-md-6 col-lg-4">
+                <a href="">
+                    <img class="img-fluid" src="images/shoes.jpg" alt="">
+                    <h5>Donate Clothing</h5>
+                </a>
+                <hr>
+            </section>
+            <section class="col-sm-6 col-md-6 col-lg-4">
+                <a href="">
+                    <img class="img-fluid" src="images/rebuild.png" alt="">
+                    <h5>Help Rebuild</h5>
+                </a>
+                <hr>
+            </section>
+            <section class="col-sm-6 col-md-6 col-lg-4">
+                <a href="">
+                    <img class="img-fluid" src="images/worldwide.jpg" alt="">
+                    <h5>Help Around The World</h5>
+                </a>
+                <hr>
+            </section>
+        </div>
+    </div>
+    <!-- container -->
+
+
+    <!-- our mission -->
+    <p class="statements"><mark class="headStatements">Our Mission:</mark>Giving people a chance to volunteer and bring items from first world countries to those that need it.</p><br>
+    <!-- ourvision -->
+    <p class="statements"><mark class="headStatements">Our Vision:</mark>Bring Joy to those people in third world countries who need it, by the donation of time and objects from people in first world countries that want to help make a difference in the world, and change the
+        course of history.</p><br>
+
+    <footer>
+        Copyright &copy; 2018
+    </footer>
+
+    <!-- this is for calling in the Js files -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/gallery.js"></script>
+    <!-- jQuery -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- snippet in your web page. -->
+
+</body>
+
+</html>
