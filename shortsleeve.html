@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <title>Fellow Joy - Gear</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gear.css">
+    <link rel="stylesheet" href="css/shortsleeve.css">
+</head>
+
+<body>
+    <header>
+        <div class="mainDiv">
+            <nav class="menu">
+                <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
+                <ul class="nav">
+                    <li>
+                        <h1 id="navHeader">Fellow Joy</h1>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <div class="mainDiv" class="navList">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">
+                            <div class="mainDiv" class="navList">About Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">
+                            <div class="mainDiv" class="navList">Contact Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="makeDonation_noUser.html" id="donationLink">
+                            <div class="mainDiv" class="navList">Make Donations</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gear.html">
+                            <div class="mainDiv" class="navList">Gear</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="myAccount.html">
+                            <div class="mainDiv" class="navList">My Account</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col35">
+                <a href="index.html">
+                    <h1 id="mainHeader">Fellow Joy</h1>
+                </a>
+            </div>
+
+            <!-- nav bar -->
+            <div class="col60">
+                <h2 id="slogan">bringing <mark>JOY</mark> to those who need it.</h2>
+            </div>
+            <nav class="menu2">
+                <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
+                <ul class="nav">
+                    <li>
+                        <h1 id="navHeader">Fellow Joy</h1>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <div class="mainDiv" class="navList">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">
+                            <div class="mainDiv" class="navList">About Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">
+                            <div class="mainDiv" class="navList">Contact Us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="makeDonation_noUser.html" id="donationLink">
+                            <div class="mainDiv" class="navList">Make Donations</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gear.html">
+                            <div class="mainDiv" class="navList">Gear</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="myAccount.html">
+                            <div class="mainDiv" class="navList">My Account</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <img src="images/shirt1.jpg" alt=""></img>
+        <!-- 
+            use for colors if possible.
+            <div class="row"></div> -->
+        <label for="shirtSize"> Size</label>
+        <select name="shirtSize" id="shirtSize">
+            <!-- <option value="size" selected disabled>Size</option> -->
+            <option value="xxxl">XXXL ($20)</option>
+            <option value="xxl">XXL ($18)</option>
+            <option value="xl">XL ($18)</option>
+            <option value="l" selected>L ($18)</option>
+            <option value="m">M ($18)</option>
+            <option value="s">S ($18)</option>
+            <option value="xs">XS ($20)</option>
+        </select>
+
+
+
+        <!-- quantity selector. -->
+        <label for="qty">Qty</label>
+        <select name="qty" id="qty">
+            <option value="1" selected>1</option>
+            <option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <label for="price">Price: </label>
+        <input type="text" name="price" id="price" size="10" readonly />
+        <label for="shipping">Shipping:</label>
+        <input type="text" name="shipping" id="shipping" size="10" readonly />
+
+        <button type="submit">Add to cart</button>
+
+        <div class="row no-gutters">
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt1.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt2.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt3.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt4.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt5.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt6.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt7.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt8.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt9.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt10.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt11.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt12.jpg" alt="sample"></div>
+            <div class="col-1 col-sm-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt13.jpg" alt="sample"></div>
+        </div>
+    </div>
+    <script src="bootstrap/jquery.slim.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
