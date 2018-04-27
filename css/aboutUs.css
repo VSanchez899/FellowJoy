@@ -5,3 +5,23 @@
 
     filename: aboutUs.html  
 */
+/* title tag styles */
+h1#tag1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+
+}
+/* img styles */
+img#tilpic{
+ height: 40em;
+ width: 100%;
+ border: 1.5px solid black;
+}
+/* paragraph styles */
+p{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+    font-size: 1.5em;
+}
