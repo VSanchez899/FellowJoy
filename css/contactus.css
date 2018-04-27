@@ -5,3 +5,9 @@
 
     filename: contactUs.css 
 */
+
+/* this is the map styles */
+#map {
+    height: 400px;
+    width: 100%;
+}
