@@ -1,10 +1,13 @@
         /* Thumbnail size */
         
-        div.col-1:hover,
-        img#shirtThumb:hover {
+        div.color:hover {
             /* width: 2em; */
-            color: #F47A55;
+            border: 2px solid #F47A55;
             cursor: pointer;
+        }
+        
+        div.color {
+            margin: 2.5px;
         }
         
         img#shirtThumb:hover {
