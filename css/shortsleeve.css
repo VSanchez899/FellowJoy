@@ -75,7 +75,7 @@
             text-decoration: underline;
         }
         
-        #donate:active {
+        #donate:hover {
             color: #F47A55;
         }
         
