@@ -15,6 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Account - Sign In</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/myAccount.css">
 </head>
@@ -110,25 +111,22 @@
             </nav>
         </div>
     </header>
-    <div class="container">
+    <!-- <div class="container">
         <div class="col50" id="divForm">
             <form id="signIn">
                 <div class="container">
                     <h1 id="account">Sign In</h1>
                 </div><br>
 
-                <!-- username input -->
                 <div class="container" class="inputs">
                     <label for="username">Username:</label>
                     <input type="text" name="username" id="username" value="" placeholder="Username">
                 </div><br>
 
-                <!-- password input -->
                 <div class="container" class="inputs">
                     <label for="password">Password:</label>
                     <input type="password" name="password" id="password" value="" placeholder="Password">
 
-                    <!-- show password checkbox -->
                     <div class="container">
                         <div class="col18">
                             <input type="checkbox" name="showpass" id="showpass" id="check1">
@@ -137,7 +135,6 @@
                     </div>
                 </div><br>
 
-                <!-- sign in button -->
                 <div class="container">
                     <button id="signInButton" type="button">Sign In</button>
                 </div>
@@ -146,7 +143,6 @@
                     <p>-or-</p>
                 </div><br>
 
-                <!-- go to sign in page -->
                 <div class="container">
                     <a href="accountForm.html"><button id="signUpButton" type="button">Sign Up</button></a>
                 </div>
@@ -154,9 +150,28 @@
             </form>
         </div>
 
+    </div> -->
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control" id="password">
+                </div>
+            </div>
+        </form>
     </div>
     <script src="javascript/main.js"></script>
     <script src="javascript/Jamin_account.js"></script>
+    <script src="bootstrap/jquery.slim.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
 </body>
 
 </html>
