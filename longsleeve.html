@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/shortsleeve.css">
+    <link rel="stylesheet" href="css/longsleeve.css">
+    <script src="javascript/jquery-3.0.0.js"></script>
 </head>
 
 <body>
@@ -111,8 +112,22 @@
 ======================================================================================================================
 ====================================================================================================================== -->
 
+    <div class="img-container">
+        <img id="shirt" class="float-left bigPic notMobile col-md-4 col-lg-3" src="images/longShirt0.jpg" alt=""></img>
+    </div>
 
-    <img class="float-left bigPic notMobile col-md-4 col-lg-3" src="images/shirtLong0.jpg" alt=""></img>
+    <img class="newImage" id="hidden2" src="images/shirtLong1.jpg" alt=""></img>
+    <img class="newImage" id="hidden3" src="images/shirtLong2.jpg" alt=""></img>
+    <img class="newImage" id="hidden4" src="images/shirtLong3.jpg" alt=""></img>
+    <img class="newImage" id="hidden5" src="images/shirtLong4.jpg" alt=""></img>
+    <img class="newImage" id="hidden6" src="images/shirtLong5.jpg" alt=""></img>
+    <img class="newImage" id="hidden7" src="images/shirtLong6.jpg" alt=""></img>
+    <img class="newImage" id="hidden8" src="images/shirtLong7.jpg" alt=""></img>
+    <img class="newImage" id="hidden9" src="images/shirtLong8.jpg" alt=""></img>
+    <img class="newImage" id="hidden10" src="images/shirtLong9.jpg" alt=""></img>
+    <img class="newImage" id="hidden11" src="images/shirtLong10.jpg" alt=""></img>
+
+
 
     <div class="container notMobile">
         <!-- 
@@ -121,12 +136,12 @@
         <form>
             <div class="row">
                 <div class="form-group col-sm-12 col-md-10 col-lg-12 shirtName">
-                    <h3 class="notMobile">Fellow Joy Jacket</h3>
-                    <p>Buy a Fellow Joy Jacket to help support people in need around the world. If you would like to send the money to a specific area of need you can buy a Jacket through the make a <a href="makeDonation_noUser.html" id="donate">donation</a>                        and select where you would like the proceeds to go.
+                    <h3 class="notMobile">Fellow Joy T-Shirt</h3>
+                    <p>Buy a Fellow Joy T-Shirt to help support people in need around the world. If you would like to send the money to a specific area of need you can buy a shirt through the make a <a href="makeDonation_noUser.html" id="donate">donation</a>                        and select where you would like the proceeds to go.
                     </p>
                     <h5 class="text-success">In Stock</h5>
                     <div class="row prices">
-                        <h5>$20.00</h5>
+                        <h5>$18.00</h5>
                         <h6 class="align-self-center">(+$5.00 shipping)</h6>
                     </div>
                 </div>
@@ -136,13 +151,13 @@
                     <label for="shirtSize">Size</label>
                     <select name="shirtSize" class="form-control" id="shirtSize">
             <!-- <option value="size" selected disabled>Size</option> -->
-                    <option value="xxxl">XXXL ($22)</option>
-                    <option value="xxl">XXL ($20)</option>
-                    <option value="xl">XL ($20)</option>
-                    <option value="l" selected>L ($20)</option>
-                    <option value="m">M ($20)</option>
-                    <option value="s">S ($20)</option>
-                    <option value="xs">XS ($22)</option>
+                    <option value="xxxl">XXXL ($20)</option>
+                    <option value="xxl">XXL ($18)</option>
+                    <option value="xl">XL ($18)</option>
+                    <option value="l" selected>L ($18)</option>
+                    <option value="m">M ($18)</option>
+                    <option value="s">S ($18)</option>
+                    <option value="xs">XS ($20)</option>
                 </select>
                 </div>
                 <div class="form-group col-sm-5 col-md-4 col-lg-3 float-left">
@@ -162,21 +177,22 @@
             <!-- quantity selector. -->
             <div class="row">
 
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(0, 0, 0);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(255, 255, 255);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(177, 179, 182);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(255, 0, 0);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(65, 71, 40);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(70, 88, 102);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(71, 76, 83);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(51, 89, 148);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(32, 65, 154);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(9, 34, 99);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(145, 17, 21);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(146, 155, 150);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(0, 0, 0);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(145, 17, 21);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(60, 37, 22);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(39, 59, 50);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(145, 17, 21);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(207, 198, 189);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(255, 0, 0);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(9, 34, 99);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(255, 255, 255);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(67, 54, 118);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(71, 76, 83);"></div>
+                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(178, 179, 173);"></div>
             </div>
         </form>
     </div>
-
 
     <!-- ==================================================================================================================
 ======================================================================================================================
@@ -185,55 +201,59 @@
 ====================================================================================================================== -->
 
     <div class="container mobile">
+        <img class="float-left bigPic mobile col-12" src="images/shirt1.jpg" alt=""></img>
         <!-- 
                 use for colors if possible.
                 <div class="row"></div> -->
         <form>
-            <img class="float-left bigPic mobile col-12" src="images/shirtLong0.jpg" alt=""></img>
-            <h3 class="mobile">Fellow Joy Long Sleeve</h3>
+
+            <h3 class="mobile">Fellow Joy T-Shirt</h3>
             <div class="row">
                 <div class="form-group col-sm-12 col-md-10 col-lg-8 shirtName">
                     <h5 class="text-success">In Stock</h5>
                     <div class="row prices">
-                        <h5>$20.00</h5>
+                        <h5>$18.00</h5>
                         <h6 class="align-self-center">(+$5.00 shipping)</h6>
                     </div>
 
 
-                    <p>Buy a Fellow Joy Long Sleeve to help support people in need around the world. If you would like to send the money to a specific area of need you can buy a long sleeve through the make a <a href="makeDonation_noUser.html" id="donate">donation</a>                        and select where you would like the proceeds to go.
+                    <p>Buy a Fellow Joy T-Shirt to help support people in need around the world. If you would like to send the money to a specific area of need you can buy a shirt through the make a donation and select where you would like the proceeds to
+                        go.
                     </p>
 
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
-                    <label for="shirtColor">Size</label>
+                    <label for="shirtColor">Color</label>
                     <select name="shirtColor" class="form-control" id="shirtColor">
-                                <option value="" disabled selected>11 Colors</option>
-                                <option value="black">black</option>
-                                <option value="white">white</option>
-                                <option value="heatherGray">heather gray</option>
-                                <option value="red">red</option>
-                                <option value="militaryGreen">military green</option>
-                                <option value="indigo">indigo</option>
-                                <option value="heavyMetal">heavy metal</option>
-                                <option value="coolBlue">cool blue</option>
-                                <option value="royal">royal</option>
-                                <option value="midnightNavy">midnight navy</option>
-                                <option value="cardinal">cardinal</option>
+                                <option value="" disabled selected>13 Colors</option>
+                                <option id="colorOption1" value="grey">grey</option>
+                                <option id="colorOption2" value="black">black</option>
+                                <option id="colorOption3" value="cardinal red">cardinal red</option>
+                                <option id="colorOption4" value="chocolate">chocolate</option>
+                                <option id="colorOption5" value="green">green</option>
+                                <option id="colorOption6" value="maroon">maroon</option>
+                                <option id="colorOption7" value="sand">sand</option>
+                                <option id="colorOption8" value="red">red</option>
+                                <option id="colorOption9" value="navy">navy</option>
+                                <option id="colorOption10" value="white">white</option>
+                                <option id="colorOption11" value="purple">purple</option>
+                                <option id="colorOption12" value="gun metal">gun metal</option>
+                                <option id="colorOption13" value="light grey">light grey</option>
                             </select>
                 </div>
                 <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
                     <label for="shirtSize">Size</label>
                     <select name="shirtSize" class="form-control" id="shirtSize">
                 <!-- <option value="size" selected disabled>Size</option> -->
-                        <option value="xxxl">XXXL ($22)</option>
-                        <option value="xxl">XXL ($20)</option>
-                        <option value="xl">XL ($20)</option>
-                        <option value="l" selected>L ($20)</option>
-                        <option value="m">M ($20)</option>
-                        <option value="s">S ($20)</option>
-                        <option value="xs">XS ($22)</option>
+                        <option value="xxxl">XXXL ($20)</option>
+                        <option value="xxl">XXL ($18)</option>
+                        <option value="xl">XL ($18)</option>
+                        <option value="l" selected>L ($18)</option>
+                        <option value="m">M ($18)</option>
+                        <option value="s">S ($18)</option>
+                        <option value="xs">XS ($20)</option>
                     </select>
                 </div>
                 <!-- quantity selector. -->
@@ -254,11 +274,11 @@
         </form>
     </div>
 
-    </div>
-
+    <script src="javascript/longsleeve.js"></script>
     <script src="bootstrap/jquery.slim.min.js"></script>
     <script src="bootstrap/popper.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
+
 </body>
 
 </html>
