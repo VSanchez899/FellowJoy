@@ -135,6 +135,34 @@
                 </div>
             </div>
             <div class="row">
+                <div class="form-group col-sm-3 col-md-4 col-lg-3 float-left">
+                    <label for="donationType">Donation Type*</label>
+                    <select class="form-control" name="donationType" id="donationType">
+                        <option value=""disabled selected>Select Type of Donation</option>
+                        <option value="">General</option>
+                        <option value="">Help the Homeless</option>
+                        <option value="">Help the Hungry</option>
+                        <option value="">Catastrophe</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-4 col-lg-2 float-left">
+                    <label for="donationAmount">Donation Amount*</label>
+                    <select class="form-control" name="donationAmount" id="donationAmount">
+                        <option value="test" selected disabled>Donation Amount</option>
+                        <option value="5">$5</option>
+                        <option value="10">$10</option>
+                        <option value="15">$15</option>
+                        <option value="20">$20</option>
+                        <option value="25">$25</option>
+                        <option value="custom" id="custom">custom</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-4 col-lg-2 float-left">
+                    <label for="customDonation">Custom Donation</label>
+                    <input type="text" class="form-control" id="customDonation" placeholder="0.00">
+                </div>
+            </div>
+            <div class="row">
                 <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
                     <label for="formEmail">Email*</label>
                     <input type="text" class="form-control" id="formEmail" placeholder="johnny.appleseed@gmail.com">
@@ -168,25 +196,29 @@
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
                     <label for="formExpD">Year*</label>
                     <select class="form-control" name="formExpD" id="formExpD">
-                                <option value="">yy</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
+                        <option value="">yy</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
                     </select>
                 </div>
-                <div class="form-group col-sm-3 col-md-4 col-lg-3 float-left">
-                    <label for="donationType">Donation Type*</label>
-                    <select class="form-control" name="donationType" id="donationType">
-                            <option value=""disabled selected>Select Type of Donation</option>
-                            <option value="">General</option>
-                            <option value="">Help the Homeless</option>
-                            <option value="">Help the Hungry</option>
-                            <option value="">Catastrophe</option>
-                        </select>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-lg-2 col-centered">
+                    <button type="submit" class="form-control btn btn-primary">Donate</button>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-3 float-left">
+            </div>
+
+
+            <hr>
+            <div class="row">
+                <h1>Buy Gear</h1>
+                <h6 class="align-self-center col-10">You can pick a place you would like the money to go to</h6>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
                     <label for="buyShirt">Buy Shirt</label>
                     <select name="buyShirt" class="form-control" id="buyShirt">
                         <option value="" disabled selected>13 Colors</option>
@@ -205,28 +237,131 @@
                         <option value="light grey">light grey</option>
                     </select>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-3 float-left">
-                    <label for="buyShirt">Buy Long Sleeve</label>
-                    <select name="buyShirt" class="form-control" id="buyShirt">
-                            <option value="" disabled selected>13 Colors</option>
-                            <option value="grey">grey</option>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="shirtSize">Size</label>
+                    <select name="shirtSize" class="form-control" id="shirtSize">
+                        <option value="XXXL">XXXL ($20)</option>
+                        <option value="XXL">XXL ($18)</option>
+                        <option value="XL">XL ($18)</option>
+                        <option value="L">L ($18)</option>
+                        <option value="M">M ($18)</option>
+                        <option value="S">S ($18)</option>
+                        <option value="XS">XS ($20)</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="numShirt">Qty</label>
+                    <select name="numShirt" class="form-control" id="numShirt">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="buyLongSleeve">Buy Long Sleeve</label>
+                    <select name="buyLongSleeve" class="form-control" id="buyLongSleeve">
+                            <option value="" disabled selected>11 Colors</option>
                             <option value="black">black</option>
-                            <option value="cardinalRed">cardinal red</option>
-                            <option value="chocolate">chocolate</option>
-                            <option value="green">green</option>
-                            <option value="maroon">maroon</option>
-                            <option value="sand">sand</option>
-                            <option value="red">red</option>
-                            <option value="navy">navy</option>
                             <option value="white">white</option>
-                            <option value="purple">purple</option>
-                            <option value="gunMetal">gun metal</option>
-                            <option value="light grey">light grey</option>
+                            <option value="heather grey">heather grey</option>
+                            <option value="red">red</option>
+                            <option value="military green">military green</option>
+                            <option value="indigo">indigo</option>
+                            <option value="heavy metal">heavy metal</option>
+                            <option value="cool blue">cool blue</option>
+                            <option value="royal">royal</option>
+                            <option value="midnight navy">midnight navy</option>
+                            <option value="cardinal">cardinal</option>
                         </select>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-3 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="longSleeveSize">Size</label>
+                    <select name="longSleeveSize" class="form-control" id="longSleeveSize">
+                        <option value="XXXL">XXXL ($20)</option>
+                        <option value="XXL">XXL ($18)</option>
+                        <option value="XL">XL ($18)</option>
+                        <option value="L">L ($18)</option>
+                        <option value="M">M ($18)</option>
+                        <option value="S">S ($18)</option>
+                        <option value="XS">XS ($20)</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="numLongSleeve">Qty</label>
+                    <select name="numLongSleeve" class="form-control" id="numLongSleeve">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
                     <label for="buyHoodie">Buy Hoodie</label>
                     <select name="buyHoodie" class="form-control" id="buyHoodie">
+                        <option value="" disabled selected>16 Colors</option>
+                        <option value="black">black</option>
+                        <option value="white">white</option>
+                        <option value="pewter">pewter</option>
+                        <option value="brown">brown</option>
+                        <option value="barrack green">barrack green</option>
+                        <option value="forest">forest</option>
+                        <option value="mermaid green">mermaid green</option>
+                        <option value="ultra blue">ultra blue</option>
+                        <option value="Dark Hthr Grey">Dark Hthr Grey</option>
+                        <option value="Dk Hth Gry/Trffl">Dk Hth Gry/Trffl</option>
+                        <option value="navy">navy</option>
+                        <option value="Dk Hth Gry/Blk">Dk Hth Gry/Blk</option>
+                        <option value="Dk Hth Gry/Navy">Dk Hth Gry/Navy</option>
+                        <option value="slate">slate</option>
+                        <option value="cranberry">cranberry</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="hoodieSize">Size</label>
+                    <select name="hoodieSize" class="form-control" id="hoodieSize">
+                        <option value="XXXL">XXXL ($20)</option>
+                        <option value="XXL">XXL ($18)</option>
+                        <option value="XL">XL ($18)</option>
+                        <option value="L">L ($18)</option>
+                        <option value="M">M ($18)</option>
+                        <option value="S">S ($18)</option>
+                        <option value="XS">XS ($20)</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="numHoodie">Qty</label>
+                    <select name="numHoodie" class="form-control" id="numHoodie">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="buyHat">Buy Hat</label>
+                    <select name="buyHat" class="form-control" id="buyHat">
                         <option value="" disabled selected>13 Colors</option>
                         <option value="grey">grey</option>
                         <option value="black">black</option>
@@ -243,23 +378,32 @@
                         <option value="light grey">light grey</option>
                     </select>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-3 float-left">
-                    <label for="buyHoodie">Buy Hat</label>
-                    <select name="buyHoodie" class="form-control" id="buyHoodie">
-                        <option value="" disabled selected>13 Colors</option>
-                        <option value="grey">grey</option>
-                        <option value="black">black</option>
-                        <option value="cardinalRed">cardinal red</option>
-                        <option value="chocolate">chocolate</option>
-                        <option value="green">green</option>
-                        <option value="maroon">maroon</option>
-                        <option value="sand">sand</option>
-                        <option value="red">red</option>
-                        <option value="navy">navy</option>
-                        <option value="white">white</option>
-                        <option value="purple">purple</option>
-                        <option value="gunMetal">gun metal</option>
-                        <option value="light grey">light grey</option>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="hatSize">Size</label>
+                    <select name="hatSize" class="form-control" id="hatSize">
+                        <option value="XXXL">XXXL ($20)</option>
+                        <option value="XXL">XXL ($18)</option>
+                        <option value="XL">XL ($18)</option>
+                        <option value="L">L ($18)</option>
+                        <option value="M">M ($18)</option>
+                        <option value="S">S ($18)</option>
+                        <option value="XS">XS ($20)</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="numHat">Qty</label>
+                    <select name="numHat" class="form-control" id="numHat">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </select>
                 </div>
             </div>
@@ -269,13 +413,14 @@
             <!-- Submit Button -->
             <div class="row">
                 <div class="col-sm-4 col-md-3 col-lg-2 col-centered">
-                    <button type="submit" class="form-control btn btn-primary">Submit</button>
+                    <button type="submit" class="form-control btn btn-primary">Buy and Donate</button>
                 </div>
             </div>
         </form>
     </div>
 
 
+    <script src="javascript/donation.js"></script>
     <script src="bootstrap/jquery.slim.min.js"></script>
     <script src="bootstrap/popper.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
