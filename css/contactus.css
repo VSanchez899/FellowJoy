@@ -8,6 +8,27 @@
 
 /* this is the map styles */
 #map {
-    height: 400px;
+    height: 25em;
     width: 100%;
+    border: 2px solid black;
+}
+
+/* This is the style for the contact information */
+p#call-number, p#email-info, p#address-info{
+    text-align: center;
+    font-size: 2em;
+}
+/* h2 styles */
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    
+}
+/* div information styles */
+div.container{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-right: auto;
+    margin-left: auto;
 }
