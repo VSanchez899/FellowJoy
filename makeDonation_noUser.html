@@ -138,7 +138,7 @@
                 <div class="form-group col-sm-3 col-md-4 col-lg-3 float-left">
                     <label for="donationType">Donation Type*</label>
                     <select class="form-control" name="donationType" id="donationType">
-                        <option value=""disabled selected>Select Type of Donation</option>
+                        <option value="">Select Type of Donation</option>
                         <option value="">General</option>
                         <option value="">Help the Homeless</option>
                         <option value="">Help the Hungry</option>
@@ -148,25 +148,32 @@
                 <div class="form-group col-sm-3 col-md-4 col-lg-2 float-left">
                     <label for="donationAmount">Donation Amount*</label>
                     <select class="form-control" name="donationAmount" id="donationAmount">
-                        <option value="test" selected disabled>Donation Amount</option>
+                        <option value="0" id="select">Donation Amount</option>
                         <option value="5">$5</option>
                         <option value="10">$10</option>
                         <option value="15">$15</option>
                         <option value="20">$20</option>
                         <option value="25">$25</option>
-                        <option value="custom" id="custom">custom</option>
+                        <option value="custom">custom</option>
                     </select>
                 </div>
                 <div class="form-group col-sm-3 col-md-4 col-lg-2 float-left">
-                    <label for="customDonation">Custom Donation</label>
+                    <label for="customDonation" id="donationLabel">Custom Donation</label>
                     <input type="text" class="form-control" id="customDonation" placeholder="0.00">
                 </div>
-            </div>
-            <div class="row">
                 <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
                     <label for="formEmail">Email*</label>
                     <input type="text" class="form-control" id="formEmail" placeholder="johnny.appleseed@gmail.com">
                 </div>
+                <div class="form-group col-sm-1 col-md-1 col-lg-1 float-left  align-self-end">
+                    <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Emails
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+
                 <div class="form-group col-sm-6  col-md-6 col-lg-3 float-left">
                     <label for="formCard">Card Number*</label>
                     <input type="text" class="form-control" id="formCard" placeholder="nnnn-nnnn-nnnn-nnnn">
@@ -203,6 +210,11 @@
                         <option value="21">21</option>
                         <option value="22">22</option>
                     </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <h5 id="totalDonation">Total Donation:</h5>
                 </div>
             </div>
             <div class="row">
@@ -243,7 +255,7 @@
                         <option value="XXXL">XXXL ($20)</option>
                         <option value="XXL">XXL ($18)</option>
                         <option value="XL">XL ($18)</option>
-                        <option value="L">L ($18)</option>
+                        <option value="L" selected>L ($18)</option>
                         <option value="M">M ($18)</option>
                         <option value="S">S ($18)</option>
                         <option value="XS">XS ($20)</option>
@@ -288,7 +300,7 @@
                         <option value="XXXL">XXXL ($20)</option>
                         <option value="XXL">XXL ($18)</option>
                         <option value="XL">XL ($18)</option>
-                        <option value="L">L ($18)</option>
+                        <option value="L" selected>L ($18)</option>
                         <option value="M">M ($18)</option>
                         <option value="S">S ($18)</option>
                         <option value="XS">XS ($20)</option>
@@ -337,7 +349,7 @@
                         <option value="XXXL">XXXL ($20)</option>
                         <option value="XXL">XXL ($18)</option>
                         <option value="XL">XL ($18)</option>
-                        <option value="L">L ($18)</option>
+                        <option value="L" selected>L ($18)</option>
                         <option value="M">M ($18)</option>
                         <option value="S">S ($18)</option>
                         <option value="XS">XS ($20)</option>
@@ -384,7 +396,7 @@
                         <option value="XXXL">XXXL ($20)</option>
                         <option value="XXL">XXL ($18)</option>
                         <option value="XL">XL ($18)</option>
-                        <option value="L">L ($18)</option>
+                        <option value="L" selected>L ($18)</option>
                         <option value="M">M ($18)</option>
                         <option value="S">S ($18)</option>
                         <option value="XS">XS ($20)</option>
@@ -418,6 +430,8 @@
             </div>
         </form>
     </div>
+
+    <footer></footer>
 
 
     <script src="javascript/donation.js"></script>
