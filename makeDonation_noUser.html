@@ -108,6 +108,11 @@
                             <div class="mainDiv" class="navList">My Account</div>
                         </a>
                     </li>
+                    <li>
+                        <a href="">
+                            <div class="mainDiv" class="navList"><img src="images/big-cart.png" alt="" id="shoppingCart"></div>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -123,7 +128,7 @@
             <div class="row">
                 <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left">
                     <label for="formFirstN">First Name*</label>
-                    <input type="text" class="form-control" id="formFirstN" placeholder="Johnny">
+                    <input type="text" class="form-control" id="formFirstN" placeholder="Johnny" autofocus>
                 </div>
                 <div class="form-group col-sm-2 col-md-2 col-lg-2 float-left">
                     <label for="formMiddleI">M. Initial</label>
@@ -150,9 +155,6 @@
                     <label class="form-check-label" for="emailRecipt">Email Me Receipt</label><br>
                     <input class="form-check-input" name="textRecipt" id="textRecipt" type="checkbox" value="">
                     <label class="form-check-label" for="textRecipt">Text Receipt</label>
-
-                </div>
-                <div class="form-group col-sm-1 col-md-1 col-lg-2  float-left  align-self-end">
 
                 </div>
             </div>
@@ -399,17 +401,25 @@
                     <label for="zip">Zip Code*</label>
                     <input type="text" name="zip" class="form-control" placeholder="nnnnn">
                 </div>
+            </div>
+            <div class="row">
                 <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
                     <label for="formEmail">Email*</label>
                     <input type="text" class="form-control" id="formEmail" placeholder="johnny.appleseed@gmail.com">
                 </div>
+                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
+                    <label for="formPhone">Phone Number*</label>
+                    <input type="text" class="form-control" id="formPhone" placeholder="nnn-nnn-nnnn">
+                </div>
                 <div class="form-group col-sm-1 col-md-1 col-lg-2 float-left  align-self-end">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" value="">
-                        Email Receipt
-                        </label>
+                    <input class="form-check-input" name="emailRecipt" id="emailRecipt" type="checkbox" value="">
+                    <label class="form-check-label" for="emailRecipt">Email Me Receipt</label><br>
+                    <input class="form-check-input" name="textRecipt" id="textRecipt" type="checkbox" value="">
+                    <label class="form-check-label" for="textRecipt">Text Receipt</label>
+
                 </div>
             </div>
+
             <div class="row">
 
                 <div class="form-group col-sm-6  col-md-6 col-lg-3 float-left">
