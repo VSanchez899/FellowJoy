@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <!-- 
     Capstone Project
     Authors: Jamin, Vinny, Jacson
     Date: 3.2.18
 
-    filename: myAccount.html 
+    filename: shoppingcart.html 
 -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Account - Sign In</title>
+    <title>Make Donation</title>
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/myAccount.css">
+    <!-- <link rel="stylesheet" href="css/makeDonation.css"> -->
 </head>
 
 <body>
@@ -93,7 +93,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="makeDonation_noUser.html">
+                        <a href="makeDonation_noUser.html" id="donationLink">
                             <div class="mainDiv" class="navList">Make Donations</div>
                         </a>
                     </li>
@@ -107,32 +107,28 @@
                             <div class="mainDiv" class="navList">My Account</div>
                         </a>
                     </li>
+                    <li>
+                        <a href="shoppingcart.html">
+                            <div class="mainDiv" class="navList"><img src="images/big-cart.png" alt="" id="shoppingCartIcon"></div>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="container">
-        <form>
-            <div class="row">
-                <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" autofocus>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
-                    <label for="password">Password</label>
-                    <input type="text" class="form-control" id="password">
-                </div>
-            </div>
+    <body>
+        <form action="makeDonation_noUser.html" method="post">
+            <section id="shoppingCart">
+                <h4>Shopping Cart</h4>
+            </section>
         </form>
-    </div>
-    <script src="javascript/main.js"></script>
-    <script src="javascript/Jamin_account.js"></script>
-    <script src="bootstrap/jquery.slim.min.js"></script>
-    <script src="bootstrap/popper.min.js"></script>
-    <script src="bootstrap/bootstrap.min.js"></script>
+
+        <script src="javascript/donation.js"></script>
+        <script src="bootstrap/jquery.slim.min.js"></script>
+        <script src="bootstrap/popper.min.js"></script>
+        <script src="bootstrap/bootstrap.min.js"></script>
+    </body>
 </body>
 
 </html>

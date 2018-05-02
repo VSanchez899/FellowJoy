@@ -46,7 +46,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="makeDonation_noUser.html" id="donationLink">
+                        <a href="makeDonation_noUser.html">
                             <div class="mainDiv" class="navList">Make Donations</div>
                         </a>
                     </li>
@@ -108,45 +108,170 @@
                             <div class="mainDiv" class="navList">My Account</div>
                         </a>
                     </li>
+                    <li>
+                        <a href="shoppingcart.html">
+                            <div class="mainDiv" class="navList"><img src="images/big-cart.png" alt="" id="shoppingCartIcon"></div>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <div class="container">
-        <h1>Make a Donation</h1>
-        <form>
+
+        <form id="donationForm">
             <div class="row">
-                <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
+                <h1>Make a Donation</h1>
+                <label class="align-self-center col-1">(*)Required</label>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left">
                     <label for="formFirstN">First Name*</label>
-                    <input type="text" class="form-control" id="formFirstN" placeholder="Johnny">
+                    <input type="text" class="form-control" id="formFirstN" placeholder="Johnny" autofocus>
                 </div>
                 <div class="form-group col-sm-2 col-md-2 col-lg-2 float-left">
                     <label for="formMiddleI">M. Initial</label>
                     <input type="text" class="form-control" id="formMiddleI" placeholder="T">
                 </div>
-                <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
+                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left">
                     <label for="formLastN">Last Name*</label>
                     <input type="text" class="form-control" id="formLastN" placeholder="Appleseed">
                 </div>
             </div>
+
             <div class="row">
-                <div class="form-group col-sm-6 col-md-6 col-lg-6 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left">
+                    <label for="address">Address*</label>
+                    <input type="text" id="address" class="form-control">
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="city">City*</label>
+                    <input type="text" id="city" name="city" class="form-control" placeholder="Peoria">
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="state">State*</label>
+                    <select class="form-control" id="state" name="state">
+                                <option value="" selected disabled>State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="zip">Zip Code*</label>
+                    <input type="text" id="zip" name="zip" class="form-control" placeholder="nnnnn">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
                     <label for="formEmail">Email*</label>
                     <input type="text" class="form-control" id="formEmail" placeholder="johnny.appleseed@gmail.com">
                 </div>
+
+
+                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
+                    <label for="formPhone">Phone Number*</label>
+                    <input type="text" class="form-control" id="formPhone" placeholder="nnn-nnn-nnnn">
+                </div>
+                <div class="form-group col-sm-1 col-md-1 col-lg-2 float-left  align-self-end">
+                    <input class="form-check-input" name="emailRecipt" id="emailRecipt" type="checkbox" value="">
+                    <label class="form-check-label" for="emailRecipt">Email Me Receipt</label><br>
+                    <input class="form-check-input" name="textRecipt" id="textRecipt" type="checkbox" value="">
+                    <label class="form-check-label" for="textRecipt">Text Receipt</label>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 col-md-4 col-lg-3 float-left">
+                    <label for="donationType">Donation Type*</label>
+                    <select class="form-control" name="donationType" id="donationType">
+                                <option value="" selected disabled>Select Type of Donation</option>
+                                <option value="">General</option>
+                                <option value="">Help the Homeless</option>
+                                <option value="">Help the Hungry</option>
+                                <option value="">Catastrophe</option>
+                            </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-4 col-lg-2 float-left">
+                    <label for="donationAmount">Donation Amount*</label>
+                    <select class="form-control" name="donationAmount" id="donationAmount">
+                                <option value="0" id="select" selected disabled>Donation Amount</option>
+                                <option value="0">$0</option>
+                                <option value="5">$5</option>
+                                <option value="10">$10</option>
+                                <option value="15">$15</option>
+                                <option value="20">$20</option>
+                                <option value="25">$25</option>
+                                <option value="custom">custom</option>
+                            </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-4 col-lg-2 float-left">
+                    <label for="customDonation" id="donationLabel">Custom Donation</label>
+                    <input type="text" class="form-control " id="customDonation" placeholder="0.00">
+                </div>
+            </div>
+            <div class="row">
                 <div class="form-group col-sm-6  col-md-6 col-lg-3 float-left">
                     <label for="formCard">Card Number*</label>
                     <input type="text" class="form-control" id="formCard" placeholder="nnnn-nnnn-nnnn-nnnn">
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
+                <div class="form-group col-sm-3 col-md-2 col-lg-1 float-left">
                     <label for="formCVC">CVC*</label>
                     <input type="text" class="form-control" id="formCVC" placeholder="nnn">
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
                     <label for="formExp">Month*</label>
                     <select class="form-control" name="formExp" id="formExp">
-                        <option value="">mm</option>
+                        <option value="" selected disabled>mm</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -161,27 +286,420 @@
                         <option value="12">12</option>
                     </select>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
                     <label for="formExpD">Year*</label>
                     <select class="form-control" name="formExpD" id="formExpD">
-                                <option value="">yy</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
+                        <option value="" selected disabled>yy</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
                     </select>
                 </div>
             </div>
+
+
+
             <div class="row">
-                <div class="col-lg-2 col-centered">
-                    <button type="submit" class="form-control btn btn-primary">Submit</button>
+                <div class="form-group col-sm-3 col-md-3 col-lg-3 float-left">
+                    <h5 id="totalDonation">Total Donation:</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-lg-2 col-centered">
+                    <button type="button" class="form-control btn btn-primary">Donate</button>
                 </div>
             </div>
         </form>
+        <!-- ============================================================================================================ -->
+        <hr>
+        <form id="gearForm" action="shoppingcart.html" method="post">
+            <div class="row">
+                <h1>Buy Gear</h1>
+                <h6 class="align-self-center col-5">You can pick a place you would like the money to go to</h6>
+                <div class="form-group col-sm-5 col-md-5 col-lg-2 float-left align-self-end">
+                    <button type="button" class="form-control btn btn-primary" id="useInfoAbove">Use Info Above</button>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left">
+                    <label for="formFirstNGear">First Name*</label>
+                    <input type="text" class="form-control" id="formFirstNGear" placeholder="Johnny">
+                </div>
+                <div class="form-group col-sm-2 col-md-2 col-lg-2 float-left">
+                    <label for="formMiddleIGear">M. Initial</label>
+                    <input type="text" class="form-control" id="formMiddleIGear" placeholder="T">
+                </div>
+                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left">
+                    <label for="formLastNGear">Last Name*</label>
+                    <input type="text" class="form-control" id="formLastNGear" placeholder="Appleseed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left">
+                    <label for="addressGear">Address*</label>
+                    <input type="text" id="addressGear" class="form-control">
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="cityGear">City*</label>
+                    <input type="text" name="cityGear" id="cityGear" class="form-control" placeholder="Peoria">
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="stateGear">State*</label>
+                    <select class="form-control" name="stateGear" id="stateGear">
+                            <option value="" selected disabled>State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="zipGear">Zip Code*</label>
+                    <input type="text" name="zipGear" id="zipGear" class="form-control" placeholder="nnnnn">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
+                    <label for="formEmailGear">Email*</label>
+                    <input type="text" class="form-control" id="formEmailGear" placeholder="johnny.appleseed@gmail.com">
+                </div>
+                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
+                    <label for="formPhoneGear">Phone Number*</label>
+                    <input type="tel" class="form-control" id="formPhoneGear" placeholder="nnn-nnn-nnnn">
+                </div>
+                <div class="form-group col-sm-1 col-md-1 col-lg-2 float-left  align-self-end">
+                    <input class="form-check-input" name="emailReciptGear" id="emailReciptGear" type="checkbox" value="">
+                    <label class="form-check-label" for="emailReciptGear">Email Me Receipt</label><br>
+                    <input class="form-check-input" name="textReciptGear" id="textReciptGear" type="checkbox" value="">
+                    <label class="form-check-label" for="textReciptGear">Text Receipt</label>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-sm-6  col-md-6 col-lg-3 float-left">
+                    <label for="formCardGear">Card Number*</label>
+                    <input type="text" class="form-control" id="formCardGear" placeholder="nnnn-nnnn-nnnn-nnnn">
+                </div>
+                <div class="form-group col-sm-3 col-md-2 col-lg-1 float-left">
+                    <label for="formCVCGear">CVC*</label>
+                    <input type="text" class="form-control" id="formCVCGear" placeholder="nnn">
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="formExpGear">Month*</label>
+                    <select class="form-control" name="formExpGear" id="formExpGear">
+                            <option value="" selected disabled>mm</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="formExpDGear">Year*</label>
+                    <select class="form-control" name="formExpDGear" id="formExpDGear">
+                            <option value="" selected disabled>yy</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                        </select>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="buyShirtGear">Buy Shirt</label>
+                    <select name="buyShirtGear" class="form-control" id="buyShirtGear">
+                        <option value="" disabled selected>13 Colors</option>
+                        <option value="grey">grey</option>
+                        <option value="black">black</option>
+                        <option value="cardinal red">cardinal red</option>
+                        <option value="chocolate">chocolate</option>
+                        <option value="green">green</option>
+                        <option value="maroon">maroon</option>
+                        <option value="sand">sand</option>
+                        <option value="red">red</option>
+                        <option value="navy">navy</option>
+                        <option value="white">white</option>
+                        <option value="purple">purple</option>
+                        <option value="heavy metal">heavy metal</option>
+                        <option value="light grey">light grey</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="shirtSizeGear">Size</label>
+                    <select name="shirtSizeGear" class="form-control" id="shirtSizeGear">
+                        <option value="XXXL">XXXL ($20)</option>
+                        <option value="XXL">XXL ($18)</option>
+                        <option value="XL">XL ($18)</option>
+                        <option value="L" selected>L ($18)</option>
+                        <option value="M">M ($18)</option>
+                        <option value="S">S ($18)</option>
+                        <option value="XS">XS ($20)</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
+                    <label for="numShirtGear">Qty</label>
+                    <select name="numShirtGear" class="form-control" id="numShirtGear">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-4 col-md-3 col-lg-2 align-self-end">
+                    <!-- <button type="button" name="addShirt" class="form-control btn btn-primary" id="shirtToCart">Add to Cart</button> -->
+                    <input type="submit" id="shirtToCart">
+                </div>
+                <div class="form-group col-sm-4 col-md-3 col-lg-5 align-self-center">
+                    <section id="shoppingCart">
+                        <h4>Shopping Cart</h4>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="buyLongSleeveGear">Buy Long Sleeve</label>
+                    <select name="buyLongSleeveGear" class="form-control" id="buyLongSleeveGear">
+                            <option value="" disabled selected>11 Colors</option>
+                            <option value="black">black</option>
+                            <option value="white">white</option>
+                            <option value="heather grey">heather grey</option>
+                            <option value="red">red</option>
+                            <option value="military green">military green</option>
+                            <option value="indigo">indigo</option>
+                            <option value="heavy metal">heavy metal</option>
+                            <option value="cool blue">cool blue</option>
+                            <option value="royal">royal</option>
+                            <option value="midnight navy">midnight navy</option>
+                            <option value="cardinal">cardinal</option>
+                        </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="longSleeveSizeGear">Size</label>
+                    <select name="longSleeveSizeGear" class="form-control" id="longSleeveSizeGear">
+                        <option value="XXXL">XXXL ($20)</option>
+                        <option value="XXL">XXL ($18)</option>
+                        <option value="XL">XL ($18)</option>
+                        <option value="L" selected>L ($18)</option>
+                        <option value="M">M ($18)</option>
+                        <option value="S">S ($18)</option>
+                        <option value="XS">XS ($20)</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
+                    <label for="numLongSleeveGear">Qty</label>
+                    <select name="numLongSleeveGear" class="form-control" id="numLongSleeveGear">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-sm-4 col-md-3 col-lg-2 align-self-end">
+                    <button type="button" class="form-control btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="buyHoodieGear">Buy Hoodie</label>
+                    <select name="buyHoodieGear" class="form-control" id="buyHoodieGear">
+                        <option value="" disabled selected>16 Colors</option>
+                        <option value="black">black</option>
+                        <option value="white">white</option>
+                        <option value="pewter">pewter</option>
+                        <option value="brown">brown</option>
+                        <option value="barrack green">barrack green</option>
+                        <option value="forest">forest</option>
+                        <option value="mermaid green">mermaid green</option>
+                        <option value="ultra blue">ultra blue</option>
+                        <option value="Dark Hthr Grey">Dark Hthr Grey</option>
+                        <option value="Dk Hth Gry/Trffl">Dk Hth Gry/Trffl</option>
+                        <option value="navy">navy</option>
+                        <option value="Dk Hth Gry/Blk">Dk Hth Gry/Blk</option>
+                        <option value="Dk Hth Gry/Navy">Dk Hth Gry/Navy</option>
+                        <option value="slate">slate</option>
+                        <option value="cranberry">cranberry</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="hoodieSizeGear">Size</label>
+                    <select name="hoodieSizeGear" class="form-control" id="hoodieSizeGear">
+                        <option value="XXXL">XXXL ($20)</option>
+                        <option value="XXL">XXL ($18)</option>
+                        <option value="XL">XL ($18)</option>
+                        <option value="L" selected>L ($18)</option>
+                        <option value="M">M ($18)</option>
+                        <option value="S">S ($18)</option>
+                        <option value="XS">XS ($20)</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
+                    <label for="numHoodieGear">Qty</label>
+                    <select name="numHoodieGear" class="form-control" id="numHoodieGear">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-4 col-md-3 col-lg-2 align-self-end">
+                    <button type="button" class="form-control btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="buyHatGear">Buy Hat</label>
+                    <select name="buyHatGear" class="form-control" id="buyHatGear">
+                        <option value="" disabled selected>13 Colors</option>
+                        <option value="grey">grey</option>
+                        <option value="black">black</option>
+                        <option value="cardinalRed">cardinal red</option>
+                        <option value="chocolate">chocolate</option>
+                        <option value="green">green</option>
+                        <option value="maroon">maroon</option>
+                        <option value="sand">sand</option>
+                        <option value="red">red</option>
+                        <option value="navy">navy</option>
+                        <option value="white">white</option>
+                        <option value="purple">purple</option>
+                        <option value="gunMetal">gun metal</option>
+                        <option value="light grey">light grey</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                    <label for="hatSizeGear">Size</label>
+                    <select name="hatSizeGear" class="form-control" id="hatSizeGear">
+                        <option value="XXXL">XXXL ($20)</option>
+                        <option value="XXL">XXL ($18)</option>
+                        <option value="XL">XL ($18)</option>
+                        <option value="L" selected>L ($18)</option>
+                        <option value="M">M ($18)</option>
+                        <option value="S">S ($18)</option>
+                        <option value="XS">XS ($20)</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
+                    <label for="numHatGear">Qty</label>
+                    <select name="numHatGear" class="form-control" id="numHatGear">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-4 col-md-3 col-lg-2 align-self-end">
+                    <button type="submit" class="form-control btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <!-- Submit Button -->
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-lg-2 col-centered">
+                    <button type="button" class="form-control btn btn-primary">Cart</button>
+                </div>
+            </div>
+        </form>
+
+
     </div>
 
+    <footer></footer>
 
+    <script src="javascript/donation.js"></script>
     <script src="bootstrap/jquery.slim.min.js"></script>
     <script src="bootstrap/popper.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
