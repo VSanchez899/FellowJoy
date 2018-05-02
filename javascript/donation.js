@@ -38,7 +38,7 @@ payCustom.onchange = function() {
         console.log(moneyTotal.value);
         // moneyTotal.textContent = "Total Donation: $0.00";
         if (!isNaN(customAmount)) {
-            moneyTotal.textContent = "Total Donation: $" + customAmount;
+            moneyTotal.textContent = "Total Donation: $" + Math.round(customAmount);
             console.log(customAmount, "AHHHH");
         } else if (isNaN(customAmount)) {
             moneyTotal.textContent = "Total Donation: $0.00";
@@ -54,10 +54,109 @@ payCustom.onchange = function() {
 function dontationTotal() {
 
     var setDonation = document.getElementById("donationAmount").value;
-
-
     if (setDonation != "custom") {
-        moneyTotal.textContent = "Total Donation: $" + setDonation;
+        moneyTotal.textContent = "Total Donation: $" + setDonation + ".00";
+    }
+    if (setDonation === "custom") {
+        moneyTotal.textContent = "Total Donation: $0.00";
     }
 }
 document.addEventListener("load", setReadOnly());
+
+
+
+/* For Coping Info From Money Donation
+ ================================================================================================================== 
+  ================================================================================================================== 
+   ================================================================================================================== 
+    ================================================================================================================== 
+   ================================================================================================================== 
+  ================================================================================================================== 
+ ================================================================================================================== 
+*/
+
+var donationForm = document.getElementById("donationForm");
+var useInfo = document.getElementById("useInfoAbove");
+
+
+
+
+donationForm.onchange = function getFormInfo() {
+    // Donation Form Info
+    var fNameDonation = document.getElementById("formFirstN").value;
+    var MiddleIDonation = document.getElementById("formMiddleI").value;
+    var lNameDonation = document.getElementById("formLastN").value;
+    var addressDonation = document.getElementById("address").value;
+    var cityDonation = document.getElementById("city").value;
+    var stateDonation = document.getElementById("state").value;
+    var zipDonation = document.getElementById("zip").value;
+    var emailDonation = document.getElementById("formEmail").value;
+    var phoneDonation = document.getElementById("formPhone").value;
+    var cardDonation = document.getElementById("formCard").value;
+    var CVCDonation = document.getElementById("formCVC").value;
+    var monthDonation = document.getElementById("formExp").value;
+    var yearDonation = document.getElementById("formExpD").value;
+
+    // Gear Form Info
+    var fNameGear = document.getElementById("formFirstNGear");
+    var MiddleIGear = document.getElementById("formMiddleIGear");
+    var lNameGear = document.getElementById("formLastNGear");
+    var addressGear = document.getElementById("addressGear");
+    var cityGear = document.getElementById("cityGear");
+    var stateGear = document.getElementById("stateGear");
+    var zipGear = document.getElementById("zipGear");
+    var emailGear = document.getElementById("formEmailGear");
+    var phoneGear = document.getElementById("formPhoneGear");
+    var cardGear = document.getElementById("formCardGear");
+    var CVCGear = document.getElementById("formCVCGear");
+    var monthGear = document.getElementById("formExpGear");
+    var yearGear = document.getElementById("formExpDGear");
+
+    /* Sets Both Form's Info to the same incase customer wants to use it for gear */
+    useInfo.onclick = function() {
+        fNameGear.value = fNameDonation;
+        MiddleIGear.value = MiddleIDonation;
+        lNameGear.value = lNameDonation;
+        addressGear.value = addressDonation;
+        cityGear.value = cityDonation;
+        stateGear.value = stateDonation;
+        zipGear.value = zipDonation;
+        emailGear.value = emailDonation;
+        phoneGear.value = phoneDonation;
+        cardGear.value = cardDonation;
+        CVCGear.value = CVCDonation;
+        monthGear.value = monthDonation;
+        yearGear.value = yearDonation;
+    }
+}
+
+/* For Adding Gear to the shopping cart
+ ================================================================================================================== 
+  ================================================================================================================== 
+   ================================================================================================================== 
+    ================================================================================================================== 
+   ================================================================================================================== 
+  ================================================================================================================== 
+ ================================================================================================================== 
+*/
+
+var shoppingCart = document.getElementById("shoppingCart");
+var shirtToCart = document.getElementById("shirtToCart");
+
+
+
+
+function addShirt() {
+    var shirt = [];
+    var shirtColor = document.getElementById("buyShirtGear").value
+    var shirtSize = document.getElementById("shirtSizeGear").value
+    var numShirts = document.getElementById("numShirtGear").value
+    shirt.push("color: " + shirtColor);
+    shirt.push("size: " + shirtSize);
+    shirt.push("qty:" + numShirts);
+    console.log(shirt);
+    shoppingCart.innerHTML += "<ul>" + "<li>" + shirt[0] + "</li>" + "<li>" + shirt[1] + "</li>" + "<li>" + shirt[2] + "</li>" + "</ul>";
+    console.log(shirt[0])
+}
+
+shirtToCart.addEventListener("click", addShirt);

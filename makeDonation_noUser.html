@@ -109,8 +109,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <div class="mainDiv" class="navList"><img src="images/big-cart.png" alt="" id="shoppingCart"></div>
+                        <a href="shoppingcart.html">
+                            <div class="mainDiv" class="navList"><img src="images/big-cart.png" alt="" id="shoppingCartIcon"></div>
                         </a>
                     </li>
                 </ul>
@@ -120,7 +120,7 @@
 
     <div class="container">
 
-        <form>
+        <form id="donationForm">
             <div class="row">
                 <h1>Make a Donation</h1>
                 <label class="align-self-center col-1">(*)Required</label>
@@ -139,37 +139,19 @@
                     <input type="text" class="form-control" id="formLastN" placeholder="Appleseed">
                 </div>
             </div>
-            <div class="row">
-                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
-                    <label for="formEmail">Email*</label>
-                    <input type="text" class="form-control" id="formEmail" placeholder="johnny.appleseed@gmail.com">
-                </div>
 
-
-                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
-                    <label for="formPhone">Phone Number*</label>
-                    <input type="text" class="form-control" id="formPhone" placeholder="nnn-nnn-nnnn">
-                </div>
-                <div class="form-group col-sm-1 col-md-1 col-lg-2 float-left  align-self-end">
-                    <input class="form-check-input" name="emailRecipt" id="emailRecipt" type="checkbox" value="">
-                    <label class="form-check-label" for="emailRecipt">Email Me Receipt</label><br>
-                    <input class="form-check-input" name="textRecipt" id="textRecipt" type="checkbox" value="">
-                    <label class="form-check-label" for="textRecipt">Text Receipt</label>
-
-                </div>
-            </div>
             <div class="row">
                 <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left">
                     <label for="address">Address*</label>
-                    <input type="text" class="form-control">
+                    <input type="text" id="address" class="form-control">
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
                     <label for="city">City*</label>
-                    <input type="text" name="city" class="form-control" placeholder="Peoria">
+                    <input type="text" id="city" name="city" class="form-control" placeholder="Peoria">
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
                     <label for="state">State*</label>
-                    <select class="form-control" name="state">
+                    <select class="form-control" id="state" name="state">
                                 <option value="" selected disabled>State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -226,7 +208,26 @@
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
                     <label for="zip">Zip Code*</label>
-                    <input type="text" name="zip" class="form-control" placeholder="nnnnn">
+                    <input type="text" id="zip" name="zip" class="form-control" placeholder="nnnnn">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
+                    <label for="formEmail">Email*</label>
+                    <input type="text" class="form-control" id="formEmail" placeholder="johnny.appleseed@gmail.com">
+                </div>
+
+
+                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
+                    <label for="formPhone">Phone Number*</label>
+                    <input type="text" class="form-control" id="formPhone" placeholder="nnn-nnn-nnnn">
+                </div>
+                <div class="form-group col-sm-1 col-md-1 col-lg-2 float-left  align-self-end">
+                    <input class="form-check-input" name="emailRecipt" id="emailRecipt" type="checkbox" value="">
+                    <label class="form-check-label" for="emailRecipt">Email Me Receipt</label><br>
+                    <input class="form-check-input" name="textRecipt" id="textRecipt" type="checkbox" value="">
+                    <label class="form-check-label" for="textRecipt">Text Receipt</label>
+
                 </div>
             </div>
             <div class="row">
@@ -244,6 +245,7 @@
                     <label for="donationAmount">Donation Amount*</label>
                     <select class="form-control" name="donationAmount" id="donationAmount">
                                 <option value="0" id="select" selected disabled>Donation Amount</option>
+                                <option value="0">$0</option>
                                 <option value="5">$5</option>
                                 <option value="10">$10</option>
                                 <option value="15">$15</option>
@@ -302,47 +304,53 @@
             <div class="row">
                 <div class="form-group col-sm-3 col-md-3 col-lg-3 float-left">
                     <h5 id="totalDonation">Total Donation:</h5>
-                    <!-- <h5 id="totalDonation">$0.00</h5> -->
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 col-md-3 col-lg-2 col-centered">
-                    <button type="submit" class="form-control btn btn-primary">Donate</button>
+                    <button type="button" class="form-control btn btn-primary">Donate</button>
                 </div>
             </div>
-
-            <!-- ============================================================================================================ -->
-            <hr>
+        </form>
+        <!-- ============================================================================================================ -->
+        <hr>
+        <form id="gearForm">
             <div class="row">
                 <h1>Buy Gear</h1>
-                <h6 class="align-self-center col-10">You can pick a place you would like the money to go to</h6>
+                <h6 class="align-self-center col-5">You can pick a place you would like the money to go to</h6>
+                <div class="form-group col-sm-5 col-md-5 col-lg-3 float-left align-self-end">
+                    <!-- <input class="form-check-input" name="useInfoAbove" id="useInfoAbove" type="checkbox" value="">
+                    <label class="form-check-label" for="useInfoAbove">Use Information Above</label> -->
+                    <button type="button" class="form-control btn btn-primary" id="useInfoAbove">Use Info Above</button>
+
+                </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left">
-                    <label for="formFirstN">First Name*</label>
-                    <input type="text" class="form-control" id="formFirstN" placeholder="Johnny">
+                    <label for="formFirstNGear">First Name*</label>
+                    <input type="text" class="form-control" id="formFirstNGear" placeholder="Johnny">
                 </div>
                 <div class="form-group col-sm-2 col-md-2 col-lg-2 float-left">
-                    <label for="formMiddleI">M. Initial</label>
-                    <input type="text" class="form-control" id="formMiddleI" placeholder="T">
+                    <label for="formMiddleIGear">M. Initial</label>
+                    <input type="text" class="form-control" id="formMiddleIGear" placeholder="T">
                 </div>
                 <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left">
-                    <label for="formLastN">Last Name*</label>
-                    <input type="text" class="form-control" id="formLastN" placeholder="Appleseed">
+                    <label for="formLastNGear">Last Name*</label>
+                    <input type="text" class="form-control" id="formLastNGear" placeholder="Appleseed">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left">
-                    <label for="address">Address*</label>
-                    <input type="text" class="form-control">
+                    <label for="addressGear">Address*</label>
+                    <input type="text" id="addressGear" class="form-control">
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="city">City*</label>
-                    <input type="text" name="city" class="form-control" placeholder="Peoria">
+                    <label for="cityGear">City*</label>
+                    <input type="text" name="cityGear" id="cityGear" class="form-control" placeholder="Peoria">
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="state">State*</label>
-                    <select class="form-control" name="state">
+                    <label for="stateGear">State*</label>
+                    <select class="form-control" name="stateGear" id="stateGear">
                             <option value="" selected disabled>State</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -398,24 +406,24 @@
                             </select>
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="zip">Zip Code*</label>
-                    <input type="text" name="zip" class="form-control" placeholder="nnnnn">
+                    <label for="zipGear">Zip Code*</label>
+                    <input type="text" name="zipGear" id="zipGear" class="form-control" placeholder="nnnnn">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
-                    <label for="formEmail">Email*</label>
-                    <input type="text" class="form-control" id="formEmail" placeholder="johnny.appleseed@gmail.com">
+                    <label for="formEmailGear">Email*</label>
+                    <input type="text" class="form-control" id="formEmailGear" placeholder="johnny.appleseed@gmail.com">
                 </div>
                 <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
-                    <label for="formPhone">Phone Number*</label>
-                    <input type="text" class="form-control" id="formPhone" placeholder="nnn-nnn-nnnn">
+                    <label for="formPhoneGear">Phone Number*</label>
+                    <input type="tel" class="form-control" id="formPhoneGear" placeholder="nnn-nnn-nnnn">
                 </div>
                 <div class="form-group col-sm-1 col-md-1 col-lg-2 float-left  align-self-end">
-                    <input class="form-check-input" name="emailRecipt" id="emailRecipt" type="checkbox" value="">
-                    <label class="form-check-label" for="emailRecipt">Email Me Receipt</label><br>
-                    <input class="form-check-input" name="textRecipt" id="textRecipt" type="checkbox" value="">
-                    <label class="form-check-label" for="textRecipt">Text Receipt</label>
+                    <input class="form-check-input" name="emailReciptGear" id="emailReciptGear" type="checkbox" value="">
+                    <label class="form-check-label" for="emailReciptGear">Email Me Receipt</label><br>
+                    <input class="form-check-input" name="textReciptGear" id="textReciptGear" type="checkbox" value="">
+                    <label class="form-check-label" for="textReciptGear">Text Receipt</label>
 
                 </div>
             </div>
@@ -423,16 +431,16 @@
             <div class="row">
 
                 <div class="form-group col-sm-6  col-md-6 col-lg-3 float-left">
-                    <label for="formCard">Card Number*</label>
-                    <input type="text" class="form-control" id="formCard" placeholder="nnnn-nnnn-nnnn-nnnn">
+                    <label for="formCardGear">Card Number*</label>
+                    <input type="text" class="form-control" id="formCardGear" placeholder="nnnn-nnnn-nnnn-nnnn">
                 </div>
                 <div class="form-group col-sm-3 col-md-2 col-lg-1 float-left">
-                    <label for="formCVC">CVC*</label>
-                    <input type="text" class="form-control" id="formCVC" placeholder="nnn">
+                    <label for="formCVCGear">CVC*</label>
+                    <input type="text" class="form-control" id="formCVCGear" placeholder="nnn">
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="formExp">Month*</label>
-                    <select class="form-control" name="formExp" id="formExp">
+                    <label for="formExpGear">Month*</label>
+                    <select class="form-control" name="formExpGear" id="formExpGear">
                             <option value="" selected disabled>mm</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -449,8 +457,8 @@
                         </select>
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="formExpD">Year*</label>
-                    <select class="form-control" name="formExpD" id="formExpD">
+                    <label for="formExpDGear">Year*</label>
+                    <select class="form-control" name="formExpDGear" id="formExpDGear">
                             <option value="" selected disabled>yy</option>
                             <option value="18">18</option>
                             <option value="19">19</option>
@@ -461,21 +469,14 @@
                 </div>
 
             </div>
-
-
-            <!-- <div class="row">
-                <div class="form-group col-sm-3 col-md-3 col-lg-3 float-left">
-                    <h5 id="totalDonation">Total Donation:</h5>
-                </div>
-            </div> -->
             <div class="row">
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="buyShirt">Buy Shirt</label>
-                    <select name="buyShirt" class="form-control" id="buyShirt">
+                    <label for="buyShirtGear">Buy Shirt</label>
+                    <select name="buyShirtGear" class="form-control" id="buyShirtGear">
                         <option value="" disabled selected>13 Colors</option>
                         <option value="grey">grey</option>
                         <option value="black">black</option>
-                        <option value="cardinalRed">cardinal red</option>
+                        <option value="cardinal red">cardinal red</option>
                         <option value="chocolate">chocolate</option>
                         <option value="green">green</option>
                         <option value="maroon">maroon</option>
@@ -484,13 +485,13 @@
                         <option value="navy">navy</option>
                         <option value="white">white</option>
                         <option value="purple">purple</option>
-                        <option value="gunMetal">gun metal</option>
+                        <option value="heavy metal">heavy metal</option>
                         <option value="light grey">light grey</option>
                     </select>
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="shirtSize">Size</label>
-                    <select name="shirtSize" class="form-control" id="shirtSize">
+                    <label for="shirtSizeGear">Size</label>
+                    <select name="shirtSizeGear" class="form-control" id="shirtSizeGear">
                         <option value="XXXL">XXXL ($20)</option>
                         <option value="XXL">XXL ($18)</option>
                         <option value="XL">XL ($18)</option>
@@ -501,8 +502,8 @@
                     </select>
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
-                    <label for="numShirt">Qty</label>
-                    <select name="numShirt" class="form-control" id="numShirt">
+                    <label for="numShirtGear">Qty</label>
+                    <select name="numShirtGear" class="form-control" id="numShirtGear">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -517,13 +518,18 @@
                     </select>
                 </div>
                 <div class="form-group col-sm-4 col-md-3 col-lg-2 align-self-end">
-                    <button type="button" name="addShirt" class="form-control btn btn-primary">Add to Cart</button>
+                    <button type="button" name="addShirt" class="form-control btn btn-primary" id="shirtToCart">Add to Cart</button>
+                </div>
+                <div class="form-group col-sm-4 col-md-3 col-lg-5 align-self-center">
+                    <section id="shoppingCart">
+                        <h4>Shopping Cart</h4>
+                    </section>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="buyLongSleeve">Buy Long Sleeve</label>
-                    <select name="buyLongSleeve" class="form-control" id="buyLongSleeve">
+                    <label for="buyLongSleeveGear">Buy Long Sleeve</label>
+                    <select name="buyLongSleeveGear" class="form-control" id="buyLongSleeveGear">
                             <option value="" disabled selected>11 Colors</option>
                             <option value="black">black</option>
                             <option value="white">white</option>
@@ -539,8 +545,8 @@
                         </select>
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="longSleeveSize">Size</label>
-                    <select name="longSleeveSize" class="form-control" id="longSleeveSize">
+                    <label for="longSleeveSizeGear">Size</label>
+                    <select name="longSleeveSizeGear" class="form-control" id="longSleeveSizeGear">
                         <option value="XXXL">XXXL ($20)</option>
                         <option value="XXL">XXL ($18)</option>
                         <option value="XL">XL ($18)</option>
@@ -551,8 +557,8 @@
                     </select>
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
-                    <label for="numLongSleeve">Qty</label>
-                    <select name="numLongSleeve" class="form-control" id="numLongSleeve">
+                    <label for="numLongSleeveGear">Qty</label>
+                    <select name="numLongSleeveGear" class="form-control" id="numLongSleeveGear">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -573,8 +579,8 @@
             </div>
             <div class="row">
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="buyHoodie">Buy Hoodie</label>
-                    <select name="buyHoodie" class="form-control" id="buyHoodie">
+                    <label for="buyHoodieGear">Buy Hoodie</label>
+                    <select name="buyHoodieGear" class="form-control" id="buyHoodieGear">
                         <option value="" disabled selected>16 Colors</option>
                         <option value="black">black</option>
                         <option value="white">white</option>
@@ -594,8 +600,8 @@
                     </select>
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="hoodieSize">Size</label>
-                    <select name="hoodieSize" class="form-control" id="hoodieSize">
+                    <label for="hoodieSizeGear">Size</label>
+                    <select name="hoodieSizeGear" class="form-control" id="hoodieSizeGear">
                         <option value="XXXL">XXXL ($20)</option>
                         <option value="XXL">XXL ($18)</option>
                         <option value="XL">XL ($18)</option>
@@ -606,8 +612,8 @@
                     </select>
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
-                    <label for="numHoodie">Qty</label>
-                    <select name="numHoodie" class="form-control" id="numHoodie">
+                    <label for="numHoodieGear">Qty</label>
+                    <select name="numHoodieGear" class="form-control" id="numHoodieGear">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -627,8 +633,8 @@
             </div>
             <div class="row">
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="buyHat">Buy Hat</label>
-                    <select name="buyHat" class="form-control" id="buyHat">
+                    <label for="buyHatGear">Buy Hat</label>
+                    <select name="buyHatGear" class="form-control" id="buyHatGear">
                         <option value="" disabled selected>13 Colors</option>
                         <option value="grey">grey</option>
                         <option value="black">black</option>
@@ -646,8 +652,8 @@
                     </select>
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
-                    <label for="hatSize">Size</label>
-                    <select name="hatSize" class="form-control" id="hatSize">
+                    <label for="hatSizeGear">Size</label>
+                    <select name="hatSizeGear" class="form-control" id="hatSizeGear">
                         <option value="XXXL">XXXL ($20)</option>
                         <option value="XXL">XXL ($18)</option>
                         <option value="XL">XL ($18)</option>
@@ -658,8 +664,8 @@
                     </select>
                 </div>
                 <div class="form-group col-sm-3 col-md-3 col-lg-1 float-left">
-                    <label for="numHat">Qty</label>
-                    <select name="numHat" class="form-control" id="numHat">
+                    <label for="numHatGear">Qty</label>
+                    <select name="numHatGear" class="form-control" id="numHatGear">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -684,10 +690,12 @@
             <!-- Submit Button -->
             <div class="row">
                 <div class="col-sm-4 col-md-3 col-lg-2 col-centered">
-                    <button type="submit" class="form-control btn btn-primary">Buy and Donate</button>
+                    <button type="button" class="form-control btn btn-primary">Cart</button>
                 </div>
             </div>
         </form>
+
+
     </div>
 
     <footer></footer>
