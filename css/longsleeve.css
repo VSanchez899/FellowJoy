@@ -1,0 +1,116 @@
+        /* Thumbnail size */
+        
+        div.color:hover {
+            /* width: 2em; */
+            border: 2px solid #F47A55;
+            cursor: pointer;
+        }
+        
+        div.shirtColor:hover {
+            /* width: 2em; */
+            border: 2px solid #F47A55;
+            cursor: pointer;
+        }
+        
+        div.color {
+            margin: 2.5px;
+        }
+        
+        img#shirtThumb:hover {
+            border: 2px solid #F47A55;
+        }
+        
+        div.col-1 {
+            text-align: center;
+        }
+        
+        div.col-lg-12>p {
+            max-width: 500px;
+            margin-right: 0;
+        }
+        
+        div.prices {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+        img#shirtThumb {
+            border: 2px solid black;
+        }
+        
+        img.bigPic {
+            border: 2px solid black;
+            /* box-shadow: 2px 2px 10px grey; */
+            padding: 0;
+            min-width: 290px;
+            margin-left: 15px;
+        }
+        
+        img.newImage {
+            display: none;
+        }
+        
+        h1#mainHeader {
+            margin-top: 0;
+            padding-top: 0;
+            margin-bottom: 0;
+        }
+        
+        ul.nav {
+            margin-top: 0;
+        }
+        
+        .col-centered {
+            float: none;
+            margin: 0 auto;
+        }
+        
+        select {
+            /* box-shadow: 2px 2px 10px grey; */
+            /* max-width: 250px; */
+            margin: 0;
+        }
+        
+        button {
+            background: #005F9B !important;
+            /* max-width: 250px; */
+        }
+        
+        button:hover {
+            background: #F26B00 !important;
+        }
+        
+        #donate {
+            color: black;
+            text-decoration: underline;
+        }
+        
+        #donate:hover {
+            color: #F47A55;
+        }
+        
+        .notMobile {
+            display: block;
+        }
+        
+        .mobile {
+            display: none;
+        }
+        
+        @media only screen and (max-width: 735px) {
+            .notMobile {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            img.bigPic {
+                border: 2px solid black;
+                /* box-shadow: 2px 2px 10px grey; */
+                padding: 0;
+                min-width: 290px;
+                margin-left: 0;
+            }
+        }
+        
+        @media only screen and (min-width: 767px) {}
