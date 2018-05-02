@@ -38,6 +38,7 @@ h1#tag1{
         height: 30em;
         padding-bottom: 3.2em;
         padding-top: 1em;
+        transform: rotate(90deg);
     }
 }
 /* this is the styles for the the image width for mobile style */
@@ -64,6 +65,7 @@ h1#tag1{
         height: 15em;
         padding-bottom: 3.2em;
         padding-top: 1em;
+        transform: rotate(90deg);
     }
 }
 
