@@ -153,10 +153,33 @@ function addShirt() {
     var numShirts = document.getElementById("numShirtGear").value
     shirt.push("color: " + shirtColor);
     shirt.push("size: " + shirtSize);
-    shirt.push("qty:" + numShirts);
+    shirt.push("qty: " + numShirts);
     console.log(shirt);
     shoppingCart.innerHTML += "<ul>" + "<li>" + shirt[0] + "</li>" + "<li>" + shirt[1] + "</li>" + "<li>" + shirt[2] + "</li>" + "</ul>";
     console.log(shirt[0])
 }
 
 shirtToCart.addEventListener("click", addShirt);
+
+
+// shirtToCart.addEventListener("click", testJS);
+
+
+// function testJS() {
+//     // var b = document.getElementById("shoppingCart").value;
+//     url = 'shoppingcart.html' + encodeURIComponent(shoppingCart.innerHTML);
+
+//     document.location.href = url;
+// }
+
+// window.onload = function() {
+//     var url = document.location.href;
+//     params = url.split('?')[0].split('&');
+//     data = {};
+//     var tmp;
+//     for (var i = 0, l = params.length; i < l; i++) {
+//         tmp = params[i].split('=');
+//         data[tmp[0]] = tmp[1];
+//     }
+//     document.getElementById('shoppingCart').innerHTML = data.name;
+// }
