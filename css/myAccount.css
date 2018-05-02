@@ -9,20 +9,18 @@
 
 /* form styles */
 
-form {
-    margin-top: 2%;
-    border: 2px solid black;
+h1#mainHeader {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
 }
 
-div#divForm {
-    margin-left: 25%;
+ul.nav {
+    margin-top: 0;
 }
 
-#account {
-    text-align: center;
-    /* text-decoration: underline; */
-}
 
+/* 
 label {
     display: block;
     text-align: center;
@@ -66,7 +64,6 @@ button:hover {
     background: #0D2100;
     color: #EC5C5C;
     font-weight: bolder;
-    /* box-shadow: 2px 4px #3A3A3A; */
 }
 
 div.col18 {
@@ -76,7 +73,6 @@ div.col18 {
 }
 
 
-/* SMARTPHONES PORTRAIT */
 
 @media only screen and (max-width: 767px) {
     h1#mainHeader {
@@ -118,4 +114,4 @@ div.col18 {
         font-size: 1.25em;
         margin-left: 25%;
     }
-}
+} */
