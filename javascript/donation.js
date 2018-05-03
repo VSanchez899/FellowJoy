@@ -139,29 +139,3 @@ donationForm.onchange = function getFormInfo() {
   ================================================================================================================== 
  ================================================================================================================== 
 */
-
-var shoppingCart = document.getElementById("shoppingCart");
-var shirtToCart = document.getElementById("shirtToCart");
-var shirt = [];
-var shirtNum = 0;
-
-
-function addShirt() {
-    shirtNum++;
-    var shirtColor = document.getElementById("buyShirtGear").value
-    var shirtSize = document.getElementById("shirtSizeGear").value
-    var numShirts = document.getElementById("numShirtGear").value
-    shirt.push("color: " + shirtColor);
-    shirt.push("size: " + shirtSize);
-    shirt.push("qty: " + numShirts);
-    localStorage.setItem("shirtColor" + shirtNum, shirt);
-
-    // document.getElementById("shoppingCart").innerHTML = storage.getItem(shirtColor1);
-    // console.log(shirt);
-    shoppingCart.innerHTML += "<ul>" + "<li>" + shirt[0] + "</li>" + "<li>" + shirt[1] + "</li>" + "<li>" + shirt[2] + "</li>" + "</ul>";
-    // console.log(shirt[0]);
-}
-
-
-
-shirtToCart.addEventListener("click", addShirt);
