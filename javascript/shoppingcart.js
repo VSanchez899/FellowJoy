@@ -7,6 +7,16 @@ var shoppingCartArray = {};
 
 var itemNum = 0;
 
+// var shirtValSplit = document.getElementById("shirtSizeGear");
+
+// shirtValSplit.onchange = function splitValues() {
+//     var shirtValSplit = document.getElementById("shirtSizeGear");
+//     console.log(shirtValSplit.value);
+//     shirtValSplit = shirtValSplit.value;
+//     console.log(shirtValSplit.split(" "))
+// }
+
+
 /* For adding shirt to the shopping cart */
 function addShirt() {
     itemNum++;
@@ -14,6 +24,7 @@ function addShirt() {
     var shirtColor = document.getElementById("buyShirtGear").value
     var shirtSize = document.getElementById("shirtSizeGear").value
     var numShirts = document.getElementById("numShirtGear").value
+    console.log(shirtSize)
     shirt.push("shirt", shirtColor, shirtSize, numShirts);
     // shirt.push("size: " + shirtSize);
     // shirt.push("qty: " + numShirts);
