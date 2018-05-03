@@ -96,6 +96,7 @@ donationForm.onchange = function getFormInfo() {
     var CVCDonation = document.getElementById("formCVC").value;
     var monthDonation = document.getElementById("formExp").value;
     var yearDonation = document.getElementById("formExpD").value;
+    var typeOfDonation = document.getElementById("donationType").value;
 
     // Gear Form Info
     var fNameGear = document.getElementById("formFirstNGear");
@@ -111,6 +112,7 @@ donationForm.onchange = function getFormInfo() {
     var CVCGear = document.getElementById("formCVCGear");
     var monthGear = document.getElementById("formExpGear");
     var yearGear = document.getElementById("formExpDGear");
+    var typeGear = document.getElementById("donationTypeGear");
 
     /* Sets Both Form's Info to the same incase customer wants to use it for gear */
     useInfo.onclick = function() {
@@ -127,15 +129,6 @@ donationForm.onchange = function getFormInfo() {
         CVCGear.value = CVCDonation;
         monthGear.value = monthDonation;
         yearGear.value = yearDonation;
+        typeGear.value = typeOfDonation;
     }
 }
-
-/* For Adding Gear to the shopping cart
- ================================================================================================================== 
-  ================================================================================================================== 
-   ================================================================================================================== 
-    ================================================================================================================== 
-   ================================================================================================================== 
-  ================================================================================================================== 
- ================================================================================================================== 
-*/

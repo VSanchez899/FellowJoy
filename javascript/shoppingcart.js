@@ -2,6 +2,7 @@ var shoppingCart = document.getElementById("shoppingCart");
 var shirtToCart = document.getElementById("shirtToCart");
 var longSleeveToCart = document.getElementById("longSleeveToCart");
 var jacketsToCart = document.getElementById("jacketsToCart");
+var waterBottleToCart = document.getElementById("waterBToCart")
 var clearShoppingCart = document.getElementById("clearCart");
 var shoppingCartArray = {};
 
@@ -90,6 +91,28 @@ function addJacket() {
     console.log(shoppingCartArray)
 }
 
+/* For adding jackets/hoodies to shopping cart */
+function addWaterBottle() {
+    itemNum++;
+    var waterBottle = [];
+    var waterBottleColor = document.getElementById("buyWaterBGear").value
+    var waterBottleSizePrice = document.getElementById("WaterBSizeGear").value
+    var numWaterBottles = document.getElementById("numWaterBGear").value
+    var waterBottleSize = waterBottleSizePrice.split(" ")[0];
+    var pricePerWaterBottle = waterBottleSizePrice.split(" ")[1];
+    var waterBottleItemTotal = 0;
+
+    waterBottleItemTotal = parseInt(pricePerWaterBottle) * parseInt(numWaterBottles);
+
+
+    waterBottle.push("water bottle", waterBottleColor, waterBottleSize + "oz", "$" + pricePerWaterBottle, numWaterBottles, waterBottleItemTotal);
+    localStorage.setItem("item" + itemNum, waterBottle);
+    shoppingCartArray["item" + itemNum] = waterBottle;
+    shoppingCart.innerHTML += shoppingCartArray["item" + itemNum];
+
+    console.log(shoppingCartArray)
+}
+
 var num = 1;
 var itemTotal = 1;
 var priceTotal = 1;
@@ -148,3 +171,4 @@ function setUpCart() {
 shirtToCart.addEventListener("click", addShirt);
 longSleeveToCart.addEventListener("click", addLongSleeve);
 jacketsToCart.addEventListener("click", addJacket);
+waterBottleToCart.addEventListener("click", addWaterBottle);
