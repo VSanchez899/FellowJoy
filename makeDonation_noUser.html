@@ -125,32 +125,32 @@
                 <label class="align-self-center col-1">(*)Required</label>
             </div>
             <div class="row">
-                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left">
+                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left was-validated">
                     <label for="formFirstN">First Name*</label>
-                    <input type="text" class="form-control" id="formFirstN" placeholder="Johnny" autofocus>
+                    <input type="text" class="form-control" id="formFirstN" placeholder="Johnny" autofocus required>
                 </div>
                 <div class="form-group col-sm-2 col-md-2 col-lg-2 float-left">
                     <label for="formMiddleI">M. Initial</label>
                     <input type="text" class="form-control" id="formMiddleI" placeholder="T">
                 </div>
-                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left">
+                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left was-validated">
                     <label for="formLastN">Last Name*</label>
-                    <input type="text" class="form-control" id="formLastN" placeholder="Appleseed">
+                    <input type="text" class="form-control" id="formLastN" placeholder="Appleseed" required>
                 </div>
             </div>
 
             <div class="row">
-                <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left was-validated">
                     <label for="address">Address*</label>
-                    <input type="text" id="address" class="form-control">
+                    <input type="text" id="address" class="form-control" pattern="[A-Za-z0-9'\.\-\s\,]" required>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left was-validated">
                     <label for="city">City*</label>
-                    <input type="text" id="city" name="city" class="form-control" placeholder="Peoria">
+                    <input type="text" id="city" name="city" class="form-control" placeholder="Peoria" required>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left was-validated">
                     <label for="state">State*</label>
-                    <select class="form-control" id="state" name="state">
+                    <select class="form-control" id="state" name="state" required>
                                 <option value="" selected disabled>State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -205,21 +205,21 @@
                                     <option value="WY">Wyoming</option>
                                 </select>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left was-validated">
                     <label for="zip">Zip Code*</label>
-                    <input type="text" id="zip" name="zip" class="form-control" placeholder="nnnnn">
+                    <input type="text" id="zip" name="zip" class="form-control" placeholder="nnnnn" required>
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
+                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left was-validated">
                     <label for="formEmail">Email*</label>
-                    <input type="text" class="form-control" id="formEmail" placeholder="johnny.appleseed@gmail.com">
+                    <input type="text" class="form-control" id="formEmail" placeholder="johnny.appleseed@gmail.com" required>
                 </div>
 
 
-                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
+                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left was-validated">
                     <label for="formPhone">Phone Number*</label>
-                    <input type="text" class="form-control" id="formPhone" placeholder="nnn-nnn-nnnn">
+                    <input type="text" class="form-control" id="formPhone" placeholder="nnn-nnn-nnnn" pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$" required>
                 </div>
                 <div class="form-group col-sm-1 col-md-1 col-lg-2 float-left  align-self-end">
                     <input class="form-check-input" name="emailRecipt" id="emailRecipt" type="checkbox" value="">
@@ -230,9 +230,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col-sm-3 col-md-4 col-lg-3 float-left">
+                <div class="form-group col-sm-3 col-md-4 col-lg-3 float-left was-validated">
                     <label for="donationType">Donation Type*</label>
-                    <select class="form-control" name="donationType" id="donationType">
+                    <select class="form-control" name="donationType" id="donationType" required>
                                 <option value="" selected disabled>Select Type of Donation</option>
                                 <option value="General">General</option>
                                 <option value="Help the Homeless">Help the Homeless</option>
@@ -240,11 +240,10 @@
                                 <option value="Catastrophe">Catastrophe</option>
                             </select>
                 </div>
-                <div class="form-group col-sm-3 col-md-4 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-4 col-lg-2 float-left was-validated">
                     <label for="donationAmount">Donation Amount*</label>
-                    <select class="form-control" name="donationAmount" id="donationAmount">
-                                <option value="0" id="select" selected disabled>Donation Amount</option>
-                                <option value="0">$0</option>
+                    <select class="form-control" name="donationAmount" id="donationAmount" required>
+                                <option value="" id="select" selected disabled>Donation Amount</option>
                                 <option value="5">$5</option>
                                 <option value="10">$10</option>
                                 <option value="15">$15</option>
@@ -253,23 +252,23 @@
                                 <option value="custom">custom</option>
                             </select>
                 </div>
-                <div class="form-group col-sm-3 col-md-4 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-4 col-lg-2 float-left was-validated">
                     <label for="customDonation" id="donationLabel">Custom Donation</label>
                     <input type="text" class="form-control " id="customDonation" placeholder="0.00">
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col-sm-6  col-md-6 col-lg-3 float-left">
+                <div class="form-group col-sm-6  col-md-6 col-lg-3 float-left was-validated">
                     <label for="formCard">Card Number*</label>
-                    <input type="text" class="form-control" id="formCard" placeholder="nnnn-nnnn-nnnn-nnnn">
+                    <input type="text" class="form-control" id="formCard" placeholder="nnnn-nnnn-nnnn-nnnn" required>
                 </div>
-                <div class="form-group col-sm-3 col-md-2 col-lg-1 float-left">
+                <div class="form-group col-sm-3 col-md-2 col-lg-1 float-left was-validated">
                     <label for="formCVC">CVC*</label>
-                    <input type="text" class="form-control" id="formCVC" placeholder="nnn">
+                    <input type="text" class="form-control" id="formCVC" placeholder="nnn" required>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left was-validated">
                     <label for="formExp">Month*</label>
-                    <select class="form-control" name="formExp" id="formExp">
+                    <select class="form-control" name="formExp" id="formExp" required>
                         <option value="" selected disabled>mm</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -285,9 +284,9 @@
                         <option value="12">12</option>
                     </select>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left was-validated">
                     <label for="formExpD">Year*</label>
-                    <select class="form-control" name="formExpD" id="formExpD">
+                    <select class="form-control" name="formExpD" id="formExpD" required>
                         <option value="" selected disabled>yy</option>
                         <option value="18">18</option>
                         <option value="19">19</option>
@@ -307,7 +306,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 col-md-3 col-lg-2 col-centered">
-                    <button type="submit" class="form-control btn btn-primary">Donate</button>
+                    <button type="submit" id="submitDonation" class="form-control btn btn-primary">Donate</button>
                 </div>
             </div>
         </form>
@@ -684,6 +683,7 @@
 
     <footer></footer>
 
+    <script src="javascript/formvalidation.js"></script>
     <script src="javascript/shoppingcart.js"></script>
     <script src="javascript/donation.js"></script>
     <script src="bootstrap/jquery.slim.min.js"></script>

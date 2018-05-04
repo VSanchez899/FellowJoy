@@ -59,6 +59,7 @@ function dontationTotal() {
     }
     if (setDonation === "custom") {
         moneyTotal.textContent = "Total Donation: $0.00";
+        document.getElementById("customDonation").setAttribute("required", "required")
     }
 }
 document.addEventListener("load", setReadOnly());
