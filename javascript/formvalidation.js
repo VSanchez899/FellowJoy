@@ -1,28 +1,70 @@
-// var fnameDonation = document.getElementById("formFirstN").value;
-// var lnameDonation = document.getElementById("formLastN");
-// var addressDonation = document.getElementById("address");
+var visa = document.getElementById("visa");
+var discover = document.getElementById("discover");
+var amex = document.getElementById("amex");
+var mastercard = document.getElementById("mastercard");
+var cardNum = document.getElementById("formCard");
+var submit = document.getElementById("submit");
+console.log(visa.checked)
 
-// var phoneDonation = document.getElementById("formPhone");
+visa.onclick = function() {
+    visa.checked = true;
+    discover.checked = false;
+    amex.checked = false;
+    mastercard.checked = false;
+    /* Visa Card */
+    if (visa.checked === true) {
+        cardNum.setAttribute("pattern", "^4[0-9]{12}(?:[0-9]{3})?$");
+        console.log(visa.checked)
+    }
+}
 
-// function formValidate() {
-//     if (fnameDonation.valueMissing) {
-//         fnameDonation.setCustomValidity("Please enter your first name");
-//     }
-//     // fnameDonation.oninvalid(setCustomValidity("Please enter your first name"));
+discover.onclick = function() {
+    discover.checked = true;
+    amex.checked = false;
+    mastercard.checked = false;
+    visa.checked = false;
+    if (discover.checked === true) {
+        cardNum.setAttribute("pattern", "^6(?:011|5[0-9]{2})[0-9]{12}$");
+    }
+}
 
-//     if (lnameDonation.valueMissing) {
-//         lnameDonation.setCustomValidity("Please enter your last name");
-//     }
+amex.onclick = function() {
+    amex.checked = true;
+    discover.checked = false;
+    mastercard.checked = false;
+    visa.checked = false;
+    if (amex.checked === true) {
+        cardNum.setAttribute("pattern", "^3[47][0-9]{13}$");
+    }
+}
 
-//     if (addressDonation.valueMissing) {
-//         addressDonation.setCustomValidity("Please enter your address")
-//     }
+mastercard.onclick = function() {
+    mastercard.checked = true;
+    discover.checked = false;
+    amex.checked = false;
+    visa.checked = false;
+    if (mastercard.checked === true) {
+        cardNum.setAttribute("pattern", "^(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}$");
+    }
+}
 
-//     if (phoneDonation.valueMissing) {
-//         phoneDonation.setCustomValidity("Please enter your phone number");
-//     }
+// submit.addEventListener("onsumbit", cardTypeCVC);
 
-// }
+// mastercard regex
+// ^(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}$
 
-// // var donationSumbitButton = document.getElementById("submitDonation");
-// // donationSumbitButton.addEventListener("click", formValidate);
+//Discover
+// ^6(?:011|5[0-9]{2})[0-9]{12}$
+
+// Visa
+// ^4[0-9]{12}(?:[0-9]{3})?$
+
+// American Express
+// ^3[47][0-9]{13}$
+
+
+// cvc 3
+// ^[0-9]{3}$
+
+// cvc 4
+// ^[0-9]{4}$
