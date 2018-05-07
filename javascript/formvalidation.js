@@ -7,6 +7,24 @@ var CVC = document.getElementById("formCVC");
 var donationForm = document.getElementById("donationForm");
 var submit = document.getElementById("submit");
 
+var fName = document.getElementById("formFirstN");
+
+function changeFirstLetter() {
+    fnameRest = []
+    fNameValue = fName.value;
+    var firstLetter = fNameValue[0];
+    fnameRest.push(fNameValue);
+    // fName.splice(1, firstLetter);
+    console.log(firstLetter)
+    console.log(fnameRest)
+    console.log(fName)
+    firstLetter = firstLetter.toUpperCase();
+    // console.log(firstLetter)
+    // console.log(firstLetter + fnameRest)
+
+}
+
+fName.addEventListener("change", changeFirstLetter)
 
 visa.onclick = function() {
     visa.checked = true;
@@ -53,23 +71,25 @@ mastercard.onclick = function() {
     }
 }
 
-var twilio = require('twilio');
+// var twilio = require('twilio');
 
-// Find your account sid and auth token in your Twilio account Console.
-var client = new twilio('AC77354bed67d3e6410cf0faa9e36454bd', 'a8531e84ec83cbd1fd7fe7017ff7e9a2');
+// // Find your account sid and auth token in your Twilio account Console.
+// var client = new twilio('AC77354bed67d3e6410cf0faa9e36454bd', 'a8531e84ec83cbd1fd7fe7017ff7e9a2');
 
-// Send the text message.
+// // Send the text message.
 
 
 
-donationForm.onsubmit = function() {
-    alert("Thank you so much for your donation");
-    client.messages.create({
-        to: '6024320525',
-        from: '6233001752',
-        body: 'Hello from Twilio!'
-    });
-}
+// donationForm.onsubmit = function() {
+//     alert("Thank you so much for your donation");
+//     client.messages.create({
+//         to: '6024320525',
+//         from: '6233001752',
+//         body: 'Hello from Twilio!'
+//     });
+// }
+
+
 
 // submit.addEventListener("onsumbit", cardTypeCVC);
 

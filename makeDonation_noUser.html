@@ -129,9 +129,9 @@
                     <label for="formFirstN">First Name*</label>
                     <input type="text" class="form-control" id="formFirstN" placeholder="Johnny" autofocus required>
                 </div>
-                <div class="form-group col-sm-2 col-md-2 col-lg-2 float-left">
+                <div class="form-group col-sm-2 col-md-2 col-lg-2 float-left was-validated">
                     <label for="formMiddleI">M. Initial</label>
-                    <input type="text" class="form-control" id="formMiddleI" placeholder="T">
+                    <input type="text" class="form-control" id="formMiddleI" placeholder="T" maxlength="1" style="text-transform:uppercase">
                 </div>
                 <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left was-validated">
                     <label for="formLastN">Last Name*</label>
@@ -345,31 +345,31 @@
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left">
+                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left was-validated">
                     <label for="formFirstNGear">First Name*</label>
-                    <input type="text" class="form-control" id="formFirstNGear" placeholder="Johnny">
+                    <input type="text" class="form-control" id="formFirstNGear" placeholder="Johnny" required>
                 </div>
-                <div class="form-group col-sm-2 col-md-2 col-lg-2 float-left">
+                <div class="form-group col-sm-2 col-md-2 col-lg-2 float-left was-validated">
                     <label for="formMiddleIGear">M. Initial</label>
-                    <input type="text" class="form-control" id="formMiddleIGear" placeholder="T">
+                    <input type="text" class="form-control" id="formMiddleIGear" placeholder="T" maxlength="1" style="text-transform:uppercase">
                 </div>
-                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left">
+                <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left was-validated">
                     <label for="formLastNGear">Last Name*</label>
-                    <input type="text" class="form-control" id="formLastNGear" placeholder="Appleseed">
+                    <input type="text" class="form-control" id="formLastNGear" placeholder="Appleseed" required>
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left was-validated">
                     <label for="addressGear">Address*</label>
-                    <input type="text" id="addressGear" class="form-control">
+                    <input type="text" id="addressGear" class="form-control" required>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left was-validated">
                     <label for="cityGear">City*</label>
-                    <input type="text" name="cityGear" id="cityGear" class="form-control" placeholder="Peoria">
+                    <input type="text" name="cityGear" id="cityGear" class="form-control" placeholder="Peoria" required>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left was-validated">
                     <label for="stateGear">State*</label>
-                    <select class="form-control" name="stateGear" id="stateGear">
+                    <select class="form-control" name="stateGear" id="stateGear" required>
                             <option value="" selected disabled>State</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -424,19 +424,19 @@
                                 <option value="WY">Wyoming</option>
                             </select>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left was-validated">
                     <label for="zipGear">Zip Code*</label>
-                    <input type="text" name="zipGear" id="zipGear" class="form-control" placeholder="nnnnn">
+                    <input type="text" name="zipGear" id="zipGear" class="form-control" placeholder="nnnnn" required>
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
+                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left was-validated">
                     <label for="formEmailGear">Email*</label>
-                    <input type="text" class="form-control" id="formEmailGear" placeholder="johnny.appleseed@gmail.com">
+                    <input type="text" class="form-control" id="formEmailGear" placeholder="johnny.appleseed@gmail.com" required>
                 </div>
-                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left">
+                <div class="form-group col-sm-6 col-md-6 col-lg-4 float-left was-validated">
                     <label for="formPhoneGear">Phone Number*</label>
-                    <input type="tel" class="form-control" id="formPhoneGear" placeholder="nnn-nnn-nnnn">
+                    <input type="tel" class="form-control" id="formPhoneGear" placeholder="nnn-nnn-nnnn" required>
                 </div>
                 <div class="form-group col-sm-1 col-md-1 col-lg-2 float-left  align-self-end">
                     <input class="form-check-input" name="emailReciptGear" id="emailReciptGear" type="checkbox" value="">
@@ -449,17 +449,17 @@
 
             <div class="row">
 
-                <div class="form-group col-sm-6  col-md-6 col-lg-3 float-left">
+                <div class="form-group col-sm-6  col-md-6 col-lg-3 float-left was-validated">
                     <label for="formCardGear">Card Number*</label>
-                    <input type="text" class="form-control" id="formCardGear" placeholder="nnnn-nnnn-nnnn-nnnn">
+                    <input type="text" class="form-control" id="formCardGear" placeholder="nnnn-nnnn-nnnn-nnnn" required>
                 </div>
-                <div class="form-group col-sm-3 col-md-2 col-lg-1 float-left">
+                <div class="form-group col-sm-3 col-md-2 col-lg-1 float-left was-validated">
                     <label for="formCVCGear">CVC*</label>
-                    <input type="text" class="form-control" id="formCVCGear" placeholder="nnn">
+                    <input type="text" class="form-control" id="formCVCGear" placeholder="nnn" required>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left was-validated">
                     <label for="formExpGear">Month*</label>
-                    <select class="form-control" name="formExpGear" id="formExpGear">
+                    <select class="form-control" name="formExpGear" id="formExpGear" required>
                             <option value="" selected disabled>mm</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -475,9 +475,9 @@
                             <option value="12">12</option>
                         </select>
                 </div>
-                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left">
+                <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left was-validated">
                     <label for="formExpDGear">Year*</label>
-                    <select class="form-control" name="formExpDGear" id="formExpDGear">
+                    <select class="form-control" name="formExpDGear" id="formExpDGear" required>
                             <option value="" selected disabled>yy</option>
                             <option value="18">18</option>
                             <option value="19">19</option>
@@ -488,9 +488,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col-sm-3 col-md-4 col-lg-3 float-left">
+                <div class="form-group col-sm-3 col-md-4 col-lg-3 float-left was-validated">
                     <label for="donationTypeGear">Donation Type*</label>
-                    <select class="form-control" name="donationTypeGear" id="donationTypeGear">
+                    <select class="form-control" name="donationTypeGear" id="donationTypeGear" required>
                         <option value="" selected disabled>Select Type of Donation</option>
                         <option value="General">General</option>
                         <option value="Help the Homeless">Help the Homeless</option>
