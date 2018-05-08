@@ -1,5 +1,5 @@
 $('.color').on('click', function(e) {
-    $('#waterBottle').attr('src', 'images/water' + ($('.color').index($(e.target))) + '.jpg');
+    $('#water').attr('src', 'images/water' + ($('.color').index($(e.target)) + 1) + '.jpg');
 });
 
 $('#waterOptions').change(function() {
