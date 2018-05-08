@@ -201,7 +201,10 @@
 ====================================================================================================================== -->
 
     <div class="container mobile">
-        <img class="float-left bigPic mobile col-12" src="images/shirt1.jpg" alt=""></img>
+        <div class="img-container">
+            <img src="images/shirt1.jpg" alt="" name="image-swap"></img>
+        </div>
+
         <!-- 
                 use for colors if possible.
                 <div class="row"></div> -->
@@ -226,21 +229,21 @@
             <div class="row">
                 <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
                     <label for="shirtColor">Color</label>
-                    <select name="shirtColor" class="form-control" id="shirtColor">
+                    <select name="shirtOptions" class="form-control" id="shirtOptions">
                                 <option value="" disabled selected>13 Colors</option>
-                                <option id="colorOption1" value="grey">grey</option>
-                                <option id="colorOption2" value="black">black</option>
-                                <option id="colorOption3" value="cardinal red">cardinal red</option>
-                                <option id="colorOption4" value="chocolate">chocolate</option>
-                                <option id="colorOption5" value="green">green</option>
-                                <option id="colorOption6" value="maroon">maroon</option>
-                                <option id="colorOption7" value="sand">sand</option>
-                                <option id="colorOption8" value="red">red</option>
-                                <option id="colorOption9" value="navy">navy</option>
-                                <option id="colorOption10" value="white">white</option>
-                                <option id="colorOption11" value="purple">purple</option>
-                                <option id="colorOption12" value="gun metal">gun metal</option>
-                                <option id="colorOption13" value="light grey">light grey</option>
+                                <option class="shirtOptions" id="colorOption1" value="images/shirt1.jpg">grey</option>
+                                <option class="shirtOptions" id="colorOption2" value="images/shirt2.jpg">black</option>
+                                <option class="shirtOptions" id="colorOption3" value="images/shirt3.jpg">cardinal red</option>
+                                <option class="shirtOptions" id="colorOption4" value="images/shirt4.jpg">chocolate</option>
+                                <option class="shirtOptions" id="colorOption5" value="images/shirt5.jpg">green</option>
+                                <option class="shirtOptions" id="colorOption6" value="images/shirt6.jpg">maroon</option>
+                                <option class="shirtOptions" id="colorOption7" value="images/shirt7.jpg">sand</option>
+                                <option class="shirtOptions" id="colorOption8" value="images/shirt8.jpg">red</option>
+                                <option class="shirtOptions" id="colorOption9" value="images/shirt9.jpg">navy</option>
+                                <option class="shirtOptions" id="colorOption10" value="images/shirt10.jpg">white</option>
+                                <option class="shirtOptions" id="colorOption11" value="images/shirt11.jpg">purple</option>
+                                <option class="shirtOptions" id="colorOption12" value="images/shirt12.jpg">gun metal</option>
+                                <option class="shirtOptions" id="colorOption13" value="images/shirt13.jpg">light grey</option>
                             </select>
                 </div>
                 <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
@@ -274,7 +277,7 @@
         </form>
     </div>
 
-    <script src="javascript/shirts.js"></script>
+    <script src="javascript/shortsleeve.js"></script>
     <script src="bootstrap/jquery.slim.min.js"></script>
     <script src="bootstrap/popper.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
