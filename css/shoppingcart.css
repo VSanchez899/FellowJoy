@@ -1,0 +1,9 @@
+h1#mainHeader {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+td {
+    border: 1px solid black;
+}
