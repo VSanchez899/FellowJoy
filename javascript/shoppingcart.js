@@ -18,55 +18,76 @@ var itemNum = 0;
 // }
 
 
+
+
+
+
+// function checkItemValue() {
+
+// }
+
 /* For adding shirt to the shopping cart */
 function addShirt() {
-    itemNum++;
-    var shirt = [];
-    var shirtColor = document.getElementById("buyShirtGear").value
-    var shirtSizePrice = document.getElementById("shirtSizeGear").value
-    var numShirts = document.getElementById("numShirtGear").value
-    var shirtSize = shirtSizePrice.split(" ")[0];
-    var pricePerShirt = shirtSizePrice.split(" ")[1];
-    var shirtItemTotal = 0;
-    console.log(shirtSize);
-    console.log(pricePerShirt);
+    var shirtOption = document.getElementById("buyShirtGear").value;
+    var shirtQty = document.getElementById("numShirtGear").value;
+    // if (shirtOption === "" || shirtQty === "") {
 
-    shirtItemTotal = parseInt(pricePerShirt) * parseInt(numShirts);
+    // }
+    if (shirtOption != "" && shirtQty != "") {
+        itemNum++;
+        var shirt = [];
+        var shirtColor = document.getElementById("buyShirtGear").value
+        var shirtSizePrice = document.getElementById("shirtSizeGear").value
+        var numShirts = document.getElementById("numShirtGear").value
+        var shirtSize = shirtSizePrice.split(" ")[0];
+        var pricePerShirt = shirtSizePrice.split(" ")[1];
+        var shirtItemTotal = 0;
+        console.log(shirtSize);
+        console.log(pricePerShirt);
 
-    shirt.push("shirt", shirtColor, shirtSize, "$" + pricePerShirt, numShirts, shirtItemTotal);
-    console.log(shirt)
-        // shirt.push("size: " + shirtSize);
-        // shirt.push("qty: " + numShirts);
-    localStorage.setItem("item" + itemNum, shirt);
-    shoppingCartArray["item" + itemNum] = shirt;
+        shirtItemTotal = parseInt(pricePerShirt) * parseInt(numShirts);
+
+        shirt.push("shirt", shirtColor, shirtSize, "$" + pricePerShirt, numShirts, shirtItemTotal);
+        console.log(shirt)
+            // shirt.push("size: " + shirtSize);
+            // shirt.push("qty: " + numShirts);
+        localStorage.setItem("item" + itemNum, shirt);
+        shoppingCartArray["item" + itemNum] = shirt;
 
 
-    // shoppingCart.innerHTML += "<ul>" + "<li>" + shirt[0] + "</li>" + "<li>" + shirt[1] + "</li>" + "<li>" + shirt[2] + "</li>" + "</ul>";
+        // shoppingCart.innerHTML += "<ul>" + "<li>" + shirt[0] + "</li>" + "<li>" + shirt[1] + "</li>" + "<li>" + shirt[2] + "</li>" + "</ul>";
 
-    shoppingCart.innerHTML += shoppingCartArray["item" + itemNum];
+        shoppingCart.innerHTML += shoppingCartArray["item" + itemNum];
 
-    // console.log(shirt[0]);
-    console.log(shoppingCartArray)
+        // console.log(shirt[0]);
+        console.log(shoppingCartArray)
+    }
+
 }
 
 /* For adding long sleeve to shopping cart */
 function addLongSleeve() {
-    itemNum++;
-    var longSleeve = [];
-    var longSleeveColor = document.getElementById("buyLongSleeveGear").value
-    var longSleeveSizePrice = document.getElementById("longSleeveSizeGear").value
-    var numLongSleeves = document.getElementById("numLongSleeveGear").value
-    var longSleeveSize = longSleeveSizePrice.split(" ")[0];
-    var pricePerLongSleeve = longSleeveSizePrice.split(" ")[1];
-    var longSleeveItemTotal = 0;
+    var longSleeveOption = document.getElementById("buyLongSleeveGear").value;
+    var longSleeveQty = document.getElementById("numLongSleeveGear").value;
 
-    longSleeveItemTotal = parseInt(pricePerLongSleeve) * parseInt(numLongSleeves);
+    if (longSleeveOption != "" && longSleeveQty != "") {
+        itemNum++;
+        var longSleeve = [];
+        var longSleeveColor = document.getElementById("buyLongSleeveGear").value
+        var longSleeveSizePrice = document.getElementById("longSleeveSizeGear").value
+        var numLongSleeves = document.getElementById("numLongSleeveGear").value
+        var longSleeveSize = longSleeveSizePrice.split(" ")[0];
+        var pricePerLongSleeve = longSleeveSizePrice.split(" ")[1];
+        var longSleeveItemTotal = 0;
 
-    console.log(pricePerLongSleeve, longSleeveItemTotal);
-    longSleeve.push("long sleeve", longSleeveColor, longSleeveSize, "$" + pricePerLongSleeve, numLongSleeves, longSleeveItemTotal);
-    localStorage.setItem("item" + itemNum, longSleeve);
-    shoppingCartArray["item" + itemNum] = longSleeve;
-    shoppingCart.innerHTML += shoppingCartArray["item" + itemNum];
+        longSleeveItemTotal = parseInt(pricePerLongSleeve) * parseInt(numLongSleeves);
+
+        console.log(pricePerLongSleeve, longSleeveItemTotal);
+        longSleeve.push("long sleeve", longSleeveColor, longSleeveSize, "$" + pricePerLongSleeve, numLongSleeves, longSleeveItemTotal);
+        localStorage.setItem("item" + itemNum, longSleeve);
+        shoppingCartArray["item" + itemNum] = longSleeve;
+        shoppingCart.innerHTML += shoppingCartArray["item" + itemNum];
+    }
 }
 
 /* For adding jackets/hoodies to shopping cart */
@@ -93,24 +114,29 @@ function addJacket() {
 
 /* For adding jackets/hoodies to shopping cart */
 function addWaterBottle() {
-    itemNum++;
-    var waterBottle = [];
-    var waterBottleColor = document.getElementById("buyWaterBGear").value
-    var waterBottleSizePrice = document.getElementById("WaterBSizeGear").value
-    var numWaterBottles = document.getElementById("numWaterBGear").value
-    var waterBottleSize = waterBottleSizePrice.split(" ")[0];
-    var pricePerWaterBottle = waterBottleSizePrice.split(" ")[1];
-    var waterBottleItemTotal = 0;
+    var waterBottleOption = document.getElementById("buyWaterBGear").value;
+    var waterBottleQty = document.getElementById("numWaterBGear").value;
 
-    waterBottleItemTotal = parseInt(pricePerWaterBottle) * parseInt(numWaterBottles);
+    if (waterBottleOption != "" && waterBottleQty != "") {
+        itemNum++;
+        var waterBottle = [];
+        var waterBottleColor = document.getElementById("buyWaterBGear").value
+        var waterBottleSizePrice = document.getElementById("WaterBSizeGear").value
+        var numWaterBottles = document.getElementById("numWaterBGear").value
+        var waterBottleSize = waterBottleSizePrice.split(" ")[0];
+        var pricePerWaterBottle = waterBottleSizePrice.split(" ")[1];
+        var waterBottleItemTotal = 0;
+
+        waterBottleItemTotal = parseInt(pricePerWaterBottle) * parseInt(numWaterBottles);
 
 
-    waterBottle.push("water bottle", waterBottleColor, waterBottleSize + "oz", "$" + pricePerWaterBottle, numWaterBottles, waterBottleItemTotal);
-    localStorage.setItem("item" + itemNum, waterBottle);
-    shoppingCartArray["item" + itemNum] = waterBottle;
-    shoppingCart.innerHTML += shoppingCartArray["item" + itemNum];
+        waterBottle.push("water bottle", waterBottleColor, waterBottleSize + "oz", "$" + pricePerWaterBottle, numWaterBottles, waterBottleItemTotal);
+        localStorage.setItem("item" + itemNum, waterBottle);
+        shoppingCartArray["item" + itemNum] = waterBottle;
+        shoppingCart.innerHTML += shoppingCartArray["item" + itemNum];
 
-    console.log(shoppingCartArray)
+        console.log(shoppingCartArray)
+    }
 }
 
 var num = 1;
