@@ -113,9 +113,12 @@ function validateStep2() {
     }
 }
 
+
 function validateSignIn() {
+
     validateStep1();
     validateStep2();
+
 }
 
 
