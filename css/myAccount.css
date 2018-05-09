@@ -53,13 +53,13 @@ form {
     margin-top: 0rem!important;
 }
 
-
-/* footer h6.fellowjoy {
-    color: #005F9B;
-} */
-
 footer h6 {
     color: #F26B00;
+    border-bottom: 1px solid #F26B00;
+}
+
+hr {
+    background-color: #F26B00;
 }
 
 footer p {
@@ -74,4 +74,12 @@ footer p {
 .pt-3,
 .py-3 {
     padding-top: 0rem!important;
+}
+
+@media only screen and (max-width: 767px) {
+    .icons {
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }
