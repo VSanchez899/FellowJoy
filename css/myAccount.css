@@ -43,6 +43,10 @@ form {
     border-radius: 10px;
 }
 
+.signInForm {
+    margin-bottom: 3em;
+}
+
 .pt-4,
 .py-4 {
     padding-top: 0rem!important;
@@ -56,6 +60,11 @@ form {
 footer h6 {
     color: #F26B00;
     border-bottom: 1px solid #F26B00;
+}
+
+#followText {
+    color: white;
+    border-bottom: none;
 }
 
 hr {
@@ -77,9 +86,9 @@ footer p {
 }
 
 @media only screen and (max-width: 767px) {
-    .icons {
-        float: none !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+    .icon {
+        float: none!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
     }
 }
