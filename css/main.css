@@ -22,16 +22,20 @@
     h1#mainHeader,
     h1#navHeader {
         font-family: 'Gugi', cursive;
-        /* color: #0e3756ff; */
         color: #005F9B;
         font-size: 5em;
     }
     
+    .header {
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+        margin-right: 0!important;
+        margin-left: 0!important;
+    }
+    
     h2 {
-        font-size: 3em;
-        /* color: #ff5300; */
+        font-size: 3.25rem;
         color: #F26B00;
-        /* font-family: 'Berkshire Swash', cursive; */
         font-family: 'Bangers', cursive;
     }
     
@@ -247,7 +251,7 @@
         }
         h1#mainHeader {
             font-size: 1.5em;
-            text-decoration: underline;
+            /* text-decoration: underline; */
         }
         /* div.col35 {
             width: 50%;
@@ -287,6 +291,10 @@
             width: 100%;
             display: table;
             margin-bottom: 3%;
+        }
+        .headerRow {
+            margin-left: auto;
+            margin-right: auto;
         }
         h1#navHeader {
             font-size: 1.25em;
@@ -365,10 +373,10 @@
             width: 35%;
             margin-left: 35%;
         }
-        h1#mainHeader {
+        /* h1#mainHeader {
             font-size: 2em;
             text-align: center;
-        }
+        } */
         /* h2#slogan {
         display: block;
         font-size: 1em;
@@ -383,19 +391,19 @@
             width: 30%;
             margin-left: 0%;
         }
+        h1#navHeader {
+            display: none;
+        }
         h1#mainHeader {
-            font-size: 2.75em;
+            font-size: 2.75rem;
             text-align: center;
             margin-top: 4%;
             padding-top: 6%;
         }
-        h1#navHeader {
-            display: none;
-        }
         h2#slogan {
             display: block;
-            font-size: 1.75em;
-            padding-top: 4%;
+            font-size: 1.75rem;
+            /* padding-top: 4%; */
         }
         nav {
             font-size: 2em;
@@ -425,7 +433,7 @@
     /* TABLET LANDSCAPE / DESKTOP */
     
     @media only screen and (min-width: 1046px) {
-        h1#mainHeader {
+        /* h1#mainHeader {
             font-size: 4em;
             text-align: center;
             margin-top: 4%;
@@ -436,7 +444,7 @@
             font-size: 2.75em;
             padding-top: 2.75%;
             padding-left: 2%;
-        }
+        } */
         div.col60 {
             width: 62%;
         }
@@ -450,14 +458,14 @@
     
     @media only screen and (min-width: 1220px) {
         h1#mainHeader {
-            font-size: 4.5em;
+            font-size: 4.5rem;
             text-align: center;
             margin-top: 4%;
             padding-top: 6%;
         }
         h2#slogan {
             display: block;
-            font-size: 3.2em;
+            font-size: 3.2rem;
             padding-top: 2.75%;
             padding-left: 2%;
         }
@@ -465,14 +473,14 @@
     
     @media only screen and (min-width: 1400px) {
         h1#mainHeader {
-            font-size: 5em;
+            font-size: 5rem;
             text-align: center;
             margin-top: 4%;
             padding-top: 6%;
         }
         h2#slogan {
             display: block;
-            font-size: 3.5em;
+            font-size: 3.25rem;
             padding-top: 2.75%;
             padding-left: 2%;
         }

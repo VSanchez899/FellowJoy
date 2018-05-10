@@ -5,21 +5,27 @@
 
     filename: aboutUs.html  
 */
+
+
 /* title tag styles */
-h1#tag1{
+
+h1#tag1 {
     text-align: center;
     font-weight: bold;
     font-size: 3em;
     padding-bottom: .5em;
 }
+
+
 /* img styles */
-@media only screen and (min-width: 768px){
-    img#tilpic{
-    height: 40em;
-    width: 100%;
-    border: 1.5px solid black;
+
+@media only screen and (min-width: 768px) {
+    img#tilpic {
+        height: 40em;
+        width: 100%;
+        border: 1.5px solid black;
     }
-    img#tilpic2{
+    img#tilpic2 {
         height: 20em;
         width: 50%;
         border: 1px solid black;
@@ -27,7 +33,7 @@ h1#tag1{
         margin-left: auto;
         display: flex;
     }
-    img.team-photos{
+    img.team-photos {
         width: 85%;
         margin-left: auto;
         margin-right: auto;
@@ -38,14 +44,17 @@ h1#tag1{
         padding-top: 1em;
     }
 }
+
+
 /* this is the styles for the the image width for mobile style */
+
 @media only screen and (max-width: 767px) {
     img#tilpic {
         height: 20em;
         width: 100%;
         border: 1.5px solid black;
     }
-    img#tilpic2{
+    img#tilpic2 {
         height: 10em;
         width: 50%;
         border: 1px solid black;
@@ -62,35 +71,44 @@ h1#tag1{
         height: 15em;
         padding-bottom: 3.2em;
         padding-top: 1em;
-        
     }
 }
 
+
 /* paragraph styles */
-p{
+
+p {
     padding-top: 3em;
     padding-bottom: 3em;
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
 }
-h2{
+
+h2 {
     text-align: center;
     padding-top: .5em;
 }
+
+
 /* Div styles */
+
+
 /* desktop */
+
 @media only screen and (min-width: 768px) {
-    div.container-thin{
+    div.container-thin {
         border: 1.5px solid black;
         width: 50%;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 10em;
-    
     }
 }
+
+
 /* mobile stlye */
+
 @media only screen and (max-width: 767px) {
     div.container-thin {
         border: 1.5px solid black;
@@ -100,12 +118,14 @@ h2{
         padding-bottom: 3em;
     }
 }
-footer{
+
+footer {
     border: 1px solid black;
     width: 100%;
     text-align: center;
     background-color: grey;
 }
-footer span#footer{
+
+footer span#footer {
     text-align: center;
 }
