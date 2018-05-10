@@ -111,7 +111,7 @@
     a {
         text-decoration: none;
         color: rgb(255, 255, 255);
-        line-height: 50%;
+        /* line-height: 50%; */
         width: 100%;
     }
     
@@ -129,6 +129,56 @@
     
     label {
         /* font-family: 'Berkshire Swash', cursive; */
+    }
+    /* ============================================= */
+    
+    .pt-4,
+    .py-4 {
+        padding-top: 0rem!important;
+    }
+    
+    .mt-4,
+    .my-4 {
+        margin-top: 0rem!important;
+    }
+    
+    footer h6 {
+        color: #F26B00;
+        border-bottom: 1px solid #F26B00;
+    }
+    
+    .mb-4,
+    .my-4 {
+        margin-bottom: .75rem!important;
+    }
+    
+    #followText {
+        color: white;
+        border-bottom: none;
+    }
+    
+    hr {
+        background-color: #F26B00;
+    }
+    
+    footer p {
+        margin-bottom: .25rem;
+    }
+    
+    .pb-3,
+    .py-3 {
+        padding-bottom: 0rem!important;
+    }
+    
+    .pt-3,
+    .py-3 {
+        padding-top: 0rem!important;
+    }
+    
+    .icon {
+        float: none!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
     }
     /* Div style */
     
@@ -365,8 +415,8 @@
             float: left;
             margin-left: 1%;
             margin-right: 1%;
-            margin-top: 1%;
-            margin-bottom: 1%;
+            /* margin-top: 1%;
+            margin-bottom: 1%; */
         }
         img#iconImg {
             display: none;

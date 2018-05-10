@@ -59,6 +59,7 @@ function dontationTotal() {
     }
     if (setDonation === "custom") {
         moneyTotal.textContent = "Total Donation: $0.00";
+        document.getElementById("customDonation").setAttribute("required", "required")
     }
 }
 document.addEventListener("load", setReadOnly());
@@ -96,6 +97,7 @@ donationForm.onchange = function getFormInfo() {
     var CVCDonation = document.getElementById("formCVC").value;
     var monthDonation = document.getElementById("formExp").value;
     var yearDonation = document.getElementById("formExpD").value;
+    var typeOfDonation = document.getElementById("donationType").value;
 
     // Gear Form Info
     var fNameGear = document.getElementById("formFirstNGear");
@@ -111,6 +113,7 @@ donationForm.onchange = function getFormInfo() {
     var CVCGear = document.getElementById("formCVCGear");
     var monthGear = document.getElementById("formExpGear");
     var yearGear = document.getElementById("formExpDGear");
+    var typeGear = document.getElementById("donationTypeGear");
 
     /* Sets Both Form's Info to the same incase customer wants to use it for gear */
     useInfo.onclick = function() {
@@ -127,59 +130,6 @@ donationForm.onchange = function getFormInfo() {
         CVCGear.value = CVCDonation;
         monthGear.value = monthDonation;
         yearGear.value = yearDonation;
+        typeGear.value = typeOfDonation;
     }
 }
-
-/* For Adding Gear to the shopping cart
- ================================================================================================================== 
-  ================================================================================================================== 
-   ================================================================================================================== 
-    ================================================================================================================== 
-   ================================================================================================================== 
-  ================================================================================================================== 
- ================================================================================================================== 
-*/
-
-var shoppingCart = document.getElementById("shoppingCart");
-var shirtToCart = document.getElementById("shirtToCart");
-
-
-
-
-function addShirt() {
-    var shirt = [];
-    var shirtColor = document.getElementById("buyShirtGear").value
-    var shirtSize = document.getElementById("shirtSizeGear").value
-    var numShirts = document.getElementById("numShirtGear").value
-    shirt.push("color: " + shirtColor);
-    shirt.push("size: " + shirtSize);
-    shirt.push("qty: " + numShirts);
-    console.log(shirt);
-    shoppingCart.innerHTML += "<ul>" + "<li>" + shirt[0] + "</li>" + "<li>" + shirt[1] + "</li>" + "<li>" + shirt[2] + "</li>" + "</ul>";
-    console.log(shirt[0])
-}
-
-shirtToCart.addEventListener("click", addShirt);
-
-
-// shirtToCart.addEventListener("click", testJS);
-
-
-// function testJS() {
-//     // var b = document.getElementById("shoppingCart").value;
-//     url = 'shoppingcart.html' + encodeURIComponent(shoppingCart.innerHTML);
-
-//     document.location.href = url;
-// }
-
-// window.onload = function() {
-//     var url = document.location.href;
-//     params = url.split('?')[0].split('&');
-//     data = {};
-//     var tmp;
-//     for (var i = 0, l = params.length; i < l; i++) {
-//         tmp = params[i].split('=');
-//         data[tmp[0]] = tmp[1];
-//     }
-//     document.getElementById('shoppingCart').innerHTML = data.name;
-// }

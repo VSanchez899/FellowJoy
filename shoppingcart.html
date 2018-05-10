@@ -17,10 +17,13 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="stylesheet" href="css/makeDonation.css"> -->
+    <link rel="stylesheet" href="css/shoppingcart.css">
+    <link rel="stylesheet" href="css/shoppingcart.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="setUpCart()">
     <header>
         <div class="mainDiv">
             <nav class="menu">
@@ -109,7 +112,8 @@
                     </li>
                     <li>
                         <a href="shoppingcart.html">
-                            <div class="mainDiv" class="navList"><img src="images/big-cart.png" alt="" id="shoppingCartIcon"></div>
+                            <!-- <div class="mainDiv" class="navList"><img src="images/big-cart.png" alt="" id="shoppingCartIcon"></div> -->
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -118,13 +122,56 @@
     </header>
 
     <body>
-        <form action="makeDonation_noUser.html" method="post">
-            <section id="shoppingCart">
-                <h4>Shopping Cart</h4>
-            </section>
-        </form>
+        <div class="container">
+            <form action="makeDonation_noUser.html" method="post">
+                <section>
+                    <h3>Shopping Cart</h3>
+                    <!-- <button type="button" id="clearCart">clear cart</button> -->
+                    <section>
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Color</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Price Per Item</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Item Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="shoppingCart">
+                                <!-- <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </section>
+                </section>
+            </form>
+        </div>
 
-        <script src="javascript/donation.js"></script>
+        <script src="javascript/shoppingcart.js"></script>
         <script src="bootstrap/jquery.slim.min.js"></script>
         <script src="bootstrap/popper.min.js"></script>
         <script src="bootstrap/bootstrap.min.js"></script>
