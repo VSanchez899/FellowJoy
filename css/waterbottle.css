@@ -139,4 +139,7 @@ button:hover {
     nav.menu ul:hover {
         margin-top: -11%;
     }
+    #waterbottle {
+        border: 2px solid black;
+    }
 }

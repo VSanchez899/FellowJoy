@@ -13,9 +13,12 @@
     div.mainDiv {
         margin-top: -13%;
     }
+    a div.mainDiv {
+        margin-top: 0;
+    }
     .headerDiv {
         margin-top: -1.5em;
-        margin-bottom: 0em;
+        margin-bottom: -.1em;
     }
     a#navIcon:hover+ul.nav,
     nav.menu ul:hover {

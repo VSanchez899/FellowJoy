@@ -115,6 +115,9 @@
             img {
                 width: 100%;
             }
+            #shirtPic {
+                border: 2px solid black;
+            }
             .headerDiv {
                 margin-top: -1.5em;
                 margin-bottom: .25em;
