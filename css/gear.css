@@ -13,6 +13,20 @@
     div.mainDiv {
         margin-top: -13%;
     }
+    a div.mainDiv {
+        margin-top: 0;
+    }
+    .headerDiv {
+        margin-top: -1.5em;
+        margin-bottom: -.1em;
+    }
+    a#navIcon:hover+ul.nav,
+    nav.menu ul:hover {
+        margin-top: -11%;
+    }
+    #services {
+        margin-top: 3.5em;
+    }
 }
 
 @media only screen and (min-width: 768px) {

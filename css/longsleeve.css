@@ -103,6 +103,7 @@
             }
             .mobile {
                 display: block;
+                margin-top: 3em;
             }
             img.bigPic {
                 border: 2px solid black;
@@ -110,6 +111,20 @@
                 padding: 0;
                 min-width: 290px;
                 margin-left: 0;
+            }
+            img {
+                width: 100%;
+            }
+            #shirtPic {
+                border: 2px solid black;
+            }
+            .headerDiv {
+                margin-top: -1.5em;
+                margin-bottom: .25em;
+            }
+            a#navIcon:hover+ul.nav,
+            nav.menu ul:hover {
+                margin-top: -11%;
             }
         }
         

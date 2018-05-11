@@ -58,6 +58,7 @@ section {
         width: 100%;
         height: 20em;
         border: 1.5px solid black;
+        margin-top: 1em;
     }
     ol.carousel-indicators {
         display: none;
@@ -244,4 +245,15 @@ figure {
 footer {
     text-align: center;
     border-top: 1px solid black;
+}
+
+@media only screen and (max-width: 767px) {
+    .headerDiv {
+        /* margin-top: -1.5em; */
+        margin-bottom: 1.5em;
+    }
+    a#navIcon:hover+ul.nav,
+    nav.menu ul:hover {
+        margin-top: -11%;
+    }
 }
