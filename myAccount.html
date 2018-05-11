@@ -18,10 +18,26 @@
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/myAccount.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <header>
+        <!-- <div class="container header"> -->
+        <!-- <div class="class= container" page-header ""> -->
+        <div class="row headerRow">
+            <div class="col-sm-5 col-md-4 col-lg-4 col-xl-4 headerDiv">
+                <h1 class="float-right" id="mainHeader">Fellow Joy</h1>
+            </div>
+            <div class="col-sm-7 col-md-8 col-lg-7 align-self-end">
+                <h2 id="slogan" class="">Bringing Joy to those who need it</h2>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+
         <div class="mainDiv">
             <nav class="menu">
                 <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
@@ -61,16 +77,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="col35">
-                <a href="index.html">
-                    <h1 id="mainHeader">Fellow Joy</h1>
-                </a>
-            </div>
-
-
-            <div class="col60">
-                <h2 id="slogan">bringing <mark>JOY</mark> to those who need it.</h2>
-            </div>
             <nav class="menu2">
                 <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
                 <ul class="nav">
@@ -109,7 +115,8 @@
                     </li>
                     <li>
                         <a href="shoppingcart.html">
-                            <div class="mainDiv" class="navList"><img src="images/big-cart.png" alt="" id="shoppingCartIcon"></div>
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -118,23 +125,384 @@
     </header>
 
     <div class="container">
-        <form>
-            <div class="row">
-                <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" autofocus>
+        <div class="col-sm-12 col-md-12 col-lg-6 float-left signInForm">
+            <form>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 float-left">
+                        <h1 class="formHeaders">Sign In</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
-                    <label for="password">Password</label>
-                    <input type="text" class="form-control" id="password">
+                <div class="row">
+                    <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" autofocus required>
+                    </div>
                 </div>
-            </div>
-        </form>
+                <div class="row">
+                    <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered">
+                        <label for="password">Password</label>
+                        <input type="text" class="form-control" id="password" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
+                        <button type="button" id="signIn" class="form-control btn btn-primary">Sign In</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 float-left">
+            <form id="signUpForm">
+                <section id="signUp-1">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 float-left">
+                            <h1 class="formHeaders">Sign Up</h1>
+                            <h4 class="stepNum">Step 1</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="fName">First Name*</label>
+                            <input type="text" name="fName" class="form-control" id="fName" required placeholder="Johnny">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="lName">Last Name*</label>
+                            <input type="text" name="lName" class="form-control" id="lName" required placeholder="Appleseed">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="Email">Email*</label>
+                            <input type="text" name="Email" class="form-control" id="Email" required placeholder="johnny.appleseed@gmail.com" pattern='^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$'>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="password">Password*</label>
+                            <input type="password" name="password" class="form-control" id="password" required minlength="8" maxlength="20" placeholder="8-20 Characters">
+                            <small class="text-muted">
+                            Must be 8-20 characters
+                        </small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="retypePassword">Retype Password*</label>
+                            <input type="password" name="retypePassword" class="form-control" id="retypePassword" required minlength="8" maxlength="20" placeholder="Retype Password">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
+                            <button type="button" id="next1" class="form-control btn btn-primary">Next Step &rarr;</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- </form> -->
+
+
+                <!-- <form id="signUp-2"> -->
+                <section id="signUp-2">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 float-left">
+                            <h1 class="formHeaders">Sign Up</h1>
+                            <h4 class="stepNum">Step 2</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="address">Address 1*</label>
+                            <input type="text" name="address" class="form-control" id="address" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="addressTwo">Address 2</label>
+                            <input type="text" name="addressTwo" class="form-control" id="addressTwo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="city">City*</label>
+                            <input type="text" name="city" class="form-control" id="city" required placeholder="Peoria">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="state">State*</label>
+                            <select class="form-control" name="state" id="state" required>
+                            <option value="" selected disabled>State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="zipCode">Zip Code*</label>
+                            <input type="text" name="zipCode" class="form-control" id="zipCode" required placeholder="nnnnn" pattern="^\d{5}(?:[-\s]\d{4})?$">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
+                            <button type="button" id="prev1" class="form-control btn btn-primary oi oi-caret-left">&larr; Prev Step</button>
+                        </div>
+                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
+                            <button type="button" id="next2" class="form-control btn btn-primary">Next Step 	&rarr;</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- </form> -->
+                <!-- <form > -->
+                <section id="signUp-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 float-left">
+                            <h1 class="formHeaders">Sign Up</h1>
+                            <h4 class="stepNum">Step 3</h4>
+                        </div>
+                    </div>
+                    <!-- <div class="container"> -->
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="state">Card Type</label>
+                            <select class="form-control" name="card" id="card">
+                                <option value="" disabled selected>Card Type</option>
+                                <option value="">None</option>
+                                <option value="visa">Visa</i></option>
+                                <option value="discover">Discover</option>
+                                <option value="amex">American Express</option>
+                                <option value="mastercard">MasterCard</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="cardNum">Card Number</label>
+                            <input type="text" name="cardNum" class="form-control" id="cardNum" placeholder="nnnn nnnn nnnn nnnn" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="cvcNum">CVC</label>
+                            <input type="text" name="cvcNum" class="form-control" id="cvcNum" placeholder="nnn" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="month">Month</label>
+                            <select class="form-control" name="month" id="month" disabled>
+                                <option value="" selected disabled>mm</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-8 col-md-8 col-lg-8 float-left col-centered was-validated">
+                            <label for="year">Year</label>
+                            <select class="form-control" name="year" id="year" disabled>
+                                <option value="" selected disabled>yy</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
+                            <button type="button" id="prev2" class="form-control btn btn-primary oi oi-caret-left">&larr; Prev Step</button>
+                        </div>
+                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
+                            <button type="submit" id="submit" class="form-control btn btn-primary">Submit 	&rarr;</button>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+
     </div>
-    <script src="javascript/main.js"></script>
-    <script src="javascript/Jamin_account.js"></script>
+    <div class="col-sm-12 col-md-12 col-lg-12 float-left" style="margin-top: 3em">
+        <div class="row bg-dark text-light">
+
+            <!--Footer-->
+            <footer class="page-footer font-small col-lg-12 pt-4 mt-4">
+
+                <!--Footer Links-->
+                <div class="container text-center text-md-left">
+
+                    <!-- Footer links -->
+                    <div class="row text-center text-md-left mt-3 pb-3">
+
+                        <!--First column-->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold fellowjoy">Fellow Joy</h6>
+                            <p>Bringing Joy to the ones who need it most</p>
+                        </div>
+                        <!--/.First column-->
+
+                        <!-- <hr class="w-100 clearfix d-md-none"> -->
+
+                        <!--Second column-->
+
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Navigation</h6>
+                            <p><a href="index.html">Home</a></p>
+                            <p><a href="aboutUs.html">About Us</a></p>
+                            <p><a href="contactUs.html">Contact Us</a></p>
+                            <p><a href="makeDonation_noUser.html">Donate</a></p>
+                            <!-- <p><a href="#!">Gear</a></p> -->
+                        </div>
+                        <!--/.Second column-->
+
+                        <!-- <hr class="w-100 clearfix d-md-none"> -->
+
+                        <!--Third column-->
+                        <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Gear</h6>
+                            <p><a href="shortsleeve.html">Short Sleeve</a></p>
+                            <p><a href="longsleeve.html">Long Sleeve</a></p>
+                            <p><a href="hoodie.html">Jacket</a></p>
+                            <p><a href="fjhat.html">Water Bottle</a></p>
+                        </div>
+                        <!--/.Third column-->
+
+                        <!-- <hr class="w-100 clearfix d-md-none"> -->
+
+                        <!--Fourth column-->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fa fa-home mr-3"></i>2050 S 16th St</p>
+                            <p><i class="fa fa-home mr-3"></i>Phoenix, AZ US</p>
+                            <!-- 2050 S 16th St Phoenix, AZ 85034 -->
+                            <p><i class="fa fa-envelope mr-3"></i><a href="mailto:FellowJoy@gmail.com">FellowJoy@gmail.com</a></p>
+                            <p><i class="fa fa-phone mr-3"></i><a href="tel:6025283434">(602)-528-3434</a></p>
+                            <!-- <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p> -->
+                        </div>
+                        <!--/.Fourth column-->
+
+                    </div>
+                    <!-- Footer links -->
+
+                    <hr>
+
+                    <div class="row py-3 d-flex align-items-center">
+
+                        <!--Grid column-->
+                        <div class="col-md-8 col-lg-8">
+
+                            <!--Copyright-->
+                            <p class="text-center text-md-left grey-text">© 2018 Copyright</p>
+                            <!-- <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MDBootstrap.com</strong></a> -->
+                            <!--/.Copyright-->
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-4 col-lg-4 ml-lg-0">
+
+                            <!--Social buttons-->
+                            <div class="text-center text-md-right">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item icon">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href=""><i class="fa fa-facebook-square" style="font-size:35px"></i></a>
+                                    </li>
+                                    <li class="list-inline-item icon">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href=""><i class="fa fa-instagram" style="font-size:35px"></i></a>
+                                    </li>
+                                    <li class="list-inline-item icon">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href=""><i class="fa fa-twitter-square" style="font-size:35px"></i></a>
+                                    </li>
+
+                                    <!-- <li class="list-inline-item float-right">
+                                        <h6 id="followText">Follow Us:</h6>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <!--/.Social buttons-->
+
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+
+                </div>
+            </footer>
+            <!--/.Footer-->
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="javascript/signIn.js"></script>
     <script src="bootstrap/jquery.slim.min.js"></script>
     <script src="bootstrap/popper.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>

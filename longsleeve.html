@@ -12,10 +12,25 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/longsleeve.css">
     <script src="javascript/jquery-3.0.0.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
+        <!-- <div class="container header"> -->
+        <!-- <div class="class= container" page-header ""> -->
+        <div class="row headerRow">
+            <div class="col-sm-5 col-md-4 col-lg-4 col-xl-4 headerDiv">
+                <h1 class="float-right" id="mainHeader">Fellow Joy</h1>
+            </div>
+            <div class="col-sm-7 col-md-8 col-lg-7 align-self-end">
+                <h2 id="slogan" class="">Bringing Joy to those who need it</h2>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+
         <div class="mainDiv">
             <nav class="menu">
                 <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
@@ -55,16 +70,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="col35">
-                <a href="index.html">
-                    <h1 id="mainHeader">Fellow Joy</h1>
-                </a>
-            </div>
-
-
-            <div class="col60">
-                <h2 id="slogan">bringing <mark>JOY</mark> to those who need it.</h2>
-            </div>
             <nav class="menu2">
                 <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
                 <ul class="nav">
@@ -87,7 +92,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="makeDonation_noUser.html" id="donationLink">
+                        <a href="makeDonation_noUser.html">
                             <div class="mainDiv" class="navList">Make Donations</div>
                         </a>
                     </li>
@@ -103,7 +108,8 @@
                     </li>
                     <li>
                         <a href="shoppingcart.html">
-                            <div class="mainDiv" class="navList"><img src="images/big-cart.png" alt="" id="shoppingCartIcon"></div>
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -121,15 +127,12 @@
         <img id="shirt" class="float-left bigPic notMobile col-md-4 col-lg-3" src="images/shirtLong0.jpg" alt=""></img>
     </div>
     <img class="newImage" id="hidden2" src="images/shirtLong1.jpg" alt=""></img>
-    <img class="newImage" id="hidden3" src="images/shirtLong2.jpg" alt=""></img>
     <img class="newImage" id="hidden4" src="images/shirtLong3.jpg" alt=""></img>
     <img class="newImage" id="hidden5" src="images/shirtLong4.jpg" alt=""></img>
     <img class="newImage" id="hidden6" src="images/shirtLong5.jpg" alt=""></img>
     <img class="newImage" id="hidden7" src="images/shirtLong6.jpg" alt=""></img>
     <img class="newImage" id="hidden8" src="images/shirtLong7.jpg" alt=""></img>
     <img class="newImage" id="hidden9" src="images/shirtLong8.jpg" alt=""></img>
-    <img class="newImage" id="hidden10" src="images/shirtLong9.jpg" alt=""></img>
-    <img class="newImage" id="hidden11" src="images/shirtLong10.jpg" alt=""></img>
 
 
 
@@ -140,8 +143,8 @@
         <form>
             <div class="row">
                 <div class="form-group col-sm-12 col-md-10 col-lg-12 shirtName">
-                    <h3 class="notMobile">Fellow Joy T-Shirt</h3>
-                    <p>Buy a Fellow Joy T-Shirt to help support people in need around the world. If you would like to send the money to a specific area of need you can buy a shirt through the make a <a href="makeDonation_noUser.html" id="donate">donation</a>                        and select where you would like the proceeds to go.
+                    <h3 class="notMobile">Fellow Joy Long Sleeve</h3>
+                    <p>Buy a Fellow Joy Long Sleeve tee to help support people in need around the world. If you would like to send the money to a specific area of need you can buy a shirt through the make a <a href="makeDonation_noUser.html" id="donate">donation</a>                        and select where you would like the proceeds to go.
                     </p>
                     <h5 class="text-success">In Stock</h5>
                     <div class="row prices">
@@ -183,13 +186,11 @@
 
                 <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(0, 0, 0);"></div>
                 <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(255, 255, 255);"></div>
-                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(177, 179, 182);"></div>
                 <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(255, 0, 22);"></div>
                 <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(65, 71, 40);"></div>
                 <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(70, 88, 102);"></div>
                 <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(71, 76, 83);"></div>
                 <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(51, 89, 148);"></div>
-                <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(32, 65, 154);"></div>
                 <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(9, 34, 99);"></div>
                 <div class="shirtColor" style="width: 31px; height: 31px; background-color: rgb(145, 17, 21);"></div>
             </div>
@@ -203,13 +204,15 @@
 ====================================================================================================================== -->
 
     <div class="container mobile">
-        <img class="float-left bigPic mobile col-12" src="images/shirt1.jpg" alt=""></img>
+        <div class="img-container">
+            <img src="images/shirtLong0.jpg" name="image-swap">
+        </div>
         <!-- 
                 use for colors if possible.
                 <div class="row"></div> -->
         <form>
 
-            <h3 class="mobile">Fellow Joy T-Shirt</h3>
+            <h3 class="mobile">Fellow Joy Longsleeve Shirt</h3>
             <div class="row">
                 <div class="form-group col-sm-12 col-md-10 col-lg-8 shirtName">
                     <h5 class="text-success">In Stock</h5>
@@ -218,9 +221,7 @@
                         <h6 class="align-self-center">(+$5.00 shipping)</h6>
                     </div>
 
-
-                    <p>Buy a Fellow Joy T-Shirt to help support people in need around the world. If you would like to send the money to a specific area of need you can buy a shirt through the make a donation and select where you would like the proceeds to
-                        go.
+                    <p>Buy a Fellow Joy Long Sleeve tee to help support people in need around the world. If you would like to send the money to a specific area of need you can buy a shirt through the make a <a href="makeDonation_noUser.html" id="donate">donation</a>                        and select where you would like the proceeds to go.
                     </p>
 
                 </div>
@@ -228,21 +229,17 @@
             <div class="row">
                 <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
                     <label for="shirtColor">Color</label>
-                    <select name="shirtColor" class="form-control" id="shirtColor">
-                                <option value="" disabled selected>13 Colors</option>
-                                <option id="colorOption1" value="grey">grey</option>
-                                <option id="colorOption2" value="black">black</option>
-                                <option id="colorOption3" value="cardinal red">cardinal red</option>
-                                <option id="colorOption4" value="chocolate">chocolate</option>
-                                <option id="colorOption5" value="green">green</option>
-                                <option id="colorOption6" value="maroon">maroon</option>
-                                <option id="colorOption7" value="sand">sand</option>
-                                <option id="colorOption8" value="red">red</option>
-                                <option id="colorOption9" value="navy">navy</option>
-                                <option id="colorOption10" value="white">white</option>
-                                <option id="colorOption11" value="purple">purple</option>
-                                <option id="colorOption12" value="gun metal">gun metal</option>
-                                <option id="colorOption13" value="light grey">light grey</option>
+                    <select name="shirtOptions" class="form-control" id="shirtOptions">
+                                <option value="" disabled selected>9 Colors</option>
+                                <option class="shirtOptions" id="colorOption2" value="images/shirtLong0.jpg">black</option>
+                                <option class="shirtOptions" id="colorOption10" value="images/shirtLong1.jpg">white</option>
+                                <option class="shirtOptions" id="colorOption8" value="images/shirtLong2.jpg">red</option>
+                                <option class="shirtOptions" id="colorOption5" value="images/shirtLong3.jpg">green</option>
+                                <option class="shirtOptions" id="colorOption7" value="images/shirtLong4.jpg">indigo</option>
+                                <option class="shirtOptions" id="colorOption12" value="images/shirtLong5.jpg">heavy metal</option>
+                                <option class="shirtOptions" id="colorOption9" value="images/shirtLong6.jpg">cool blue</option>
+                                <option class="shirtOptions" id="colorOption11" value="images/shirtLong7.jpg">midnight navy</option>
+                                <option class="shirtOptions" id="colorOption3" value="images/shirtLong8.jpg">cardinal red</option>
                             </select>
                 </div>
                 <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
@@ -274,6 +271,118 @@
                 <button type="submit" class="form-control btn btn-primary">Add to cart</button>
             </div>
         </form>
+    </div>
+
+    <div class="col-sm-12 col-md-12 col-lg-12 float-left" style="margin-top: 3em">
+        <div class="row bg-dark text-light">
+
+            <!--Footer-->
+            <footer class="page-footer font-small col-lg-12 pt-4 mt-4">
+
+                <!--Footer Links-->
+                <div class="container text-center text-md-left">
+
+                    <!-- Footer links -->
+                    <div class="row text-center text-md-left mt-3 pb-3">
+
+                        <!--First column-->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold fellowjoy">Fellow Joy</h6>
+                            <p>Bringing Joy to the ones who need it most</p>
+                        </div>
+                        <!--/.First column-->
+
+                        <!-- <hr class="w-100 clearfix d-md-none"> -->
+
+                        <!--Second column-->
+
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Navigation</h6>
+                            <p><a href="index.html">Home</a></p>
+                            <p><a href="aboutUs.html">About Us</a></p>
+                            <p><a href="contactUs.html">Contact Us</a></p>
+                            <p><a href="makeDonation_noUser.html">Donate</a></p>
+                            <!-- <p><a href="#!">Gear</a></p> -->
+                        </div>
+                        <!--/.Second column-->
+
+                        <!-- <hr class="w-100 clearfix d-md-none"> -->
+
+                        <!--Third column-->
+                        <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Gear</h6>
+                            <p><a href="shortsleeve.html">Short Sleeve</a></p>
+                            <p><a href="longsleeve.html">Long Sleeve</a></p>
+                            <p><a href="hoodie.html">Jacket</a></p>
+                            <p><a href="fjhat.html">Water Bottle</a></p>
+                        </div>
+                        <!--/.Third column-->
+
+                        <!-- <hr class="w-100 clearfix d-md-none"> -->
+
+                        <!--Fourth column-->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fa fa-home mr-3"></i>2050 S 16th St</p>
+                            <p><i class="fa fa-home mr-3"></i>Phoenix, AZ US</p>
+                            <!-- 2050 S 16th St Phoenix, AZ 85034 -->
+                            <p><i class="fa fa-envelope mr-3"></i><a href="mailto:FellowJoy@gmail.com">FellowJoy@gmail.com</a></p>
+                            <p><i class="fa fa-phone mr-3"></i><a href="tel:6025283434">(602)-528-3434</a></p>
+                            <!-- <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p> -->
+                        </div>
+                        <!--/.Fourth column-->
+
+                    </div>
+                    <!-- Footer links -->
+
+                    <hr>
+
+                    <div class="row py-3 d-flex align-items-center">
+
+                        <!--Grid column-->
+                        <div class="col-md-8 col-lg-8">
+
+                            <!--Copyright-->
+                            <p class="text-center text-md-left grey-text">© 2018 Copyright</p>
+                            <!-- <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MDBootstrap.com</strong></a> -->
+                            <!--/.Copyright-->
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-4 col-lg-4 ml-lg-0">
+
+                            <!--Social buttons-->
+                            <div class="text-center text-md-right">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item icon">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href=""><i class="fa fa-facebook-square" style="font-size:35px"></i></a>
+                                    </li>
+                                    <li class="list-inline-item icon">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href=""><i class="fa fa-instagram" style="font-size:35px"></i></a>
+                                    </li>
+                                    <li class="list-inline-item icon">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href=""><i class="fa fa-twitter-square" style="font-size:35px"></i></a>
+                                    </li>
+
+                                    <!-- <li class="list-inline-item float-right">
+                                        <h6 id="followText">Follow Us:</h6>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <!--/.Social buttons-->
+
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+
+                </div>
+            </footer>
+            <!--/.Footer-->
+
+        </div>
     </div>
 
     <script src="javascript/longsleeve.js"></script>

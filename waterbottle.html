@@ -10,11 +10,24 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/shortsleeve.css">
+    <link rel="stylesheet" href="css/waterbottle.css">
 </head>
 
 <body>
     <header>
+        <!-- <div class="container header"> -->
+        <!-- <div class="class= container" page-header ""> -->
+        <div class="row headerRow">
+            <div class="col-sm-5 col-md-4 col-lg-4 col-xl-4 headerDiv">
+                <h1 class="float-right" id="mainHeader">Fellow Joy</h1>
+            </div>
+            <div class="col-sm-7 col-md-8 col-lg-7 align-self-end">
+                <h2 id="slogan" class="">Bringing Joy to those who need it</h2>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+
         <div class="mainDiv">
             <nav class="menu">
                 <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
@@ -54,16 +67,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="col35">
-                <a href="index.html">
-                    <h1 id="mainHeader">Fellow Joy</h1>
-                </a>
-            </div>
-
-
-            <div class="col60">
-                <h2 id="slogan">bringing <mark>JOY</mark> to those who need it.</h2>
-            </div>
             <nav class="menu2">
                 <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
                 <ul class="nav">
@@ -86,7 +89,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="makeDonation_noUser.html" id="donationLink">
+                        <a href="makeDonation_noUser.html">
                             <div class="mainDiv" class="navList">Make Donations</div>
                         </a>
                     </li>
@@ -102,7 +105,8 @@
                     </li>
                     <li>
                         <a href="shoppingcart.html">
-                            <div class="mainDiv" class="navList"><img src="images/big-cart.png" alt="" id="shoppingCartIcon"></div>
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -117,7 +121,11 @@
 ====================================================================================================================== -->
 
 
-    <img class="float-left bigPic notMobile col-md-4 col-lg-3" src="images/shirt1.jpg" alt=""></img>
+    <div class="img-container">
+        <img id="water" class="float-left bigPic notMobile col-md-4 col-lg-3" src="images/water1.jpg" alt=""></img>
+    </div>
+    <img class="newImage" id="hidden1" src="images/water2.jpg" alt=""></img>
+
 
     <div class="container notMobile">
         <!-- 
@@ -138,16 +146,10 @@
             </div>
             <div class="row">
                 <div class="form-group col-sm-5 col-md-4 col-lg-3 float-left">
-                    <label for="shirtSize">Size</label>
+                    <label for="size">Size</label>
                     <select name="shirtSize" class="form-control" id="shirtSize">
-            <!-- <option value="size" selected disabled>Size</option> -->
-                    <option value="xxxl">XXXL ($20)</option>
-                    <option value="xxl">XXL ($18)</option>
-                    <option value="xl">XL ($18)</option>
-                    <option value="l" selected>L ($18)</option>
-                    <option value="m">M ($18)</option>
-                    <option value="s">S ($18)</option>
-                    <option value="xs">XS ($20)</option>
+            <option value="size" selected disabled>Please Choose a Size</option>   
+            <option value="xxxl">20 Oz. ($10)</option>
                 </select>
                 </div>
                 <div class="form-group col-sm-5 col-md-4 col-lg-3 float-left">
@@ -167,63 +169,13 @@
             <!-- quantity selector. -->
             <div class="row">
 
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(146, 155, 150);"></div>
                 <div class="color" style="width: 31px; height: 31px; background-color: rgb(0, 0, 0);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(145, 17, 21);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(60, 37, 22);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(39, 59, 50);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(145, 17, 21);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(207, 198, 189);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(207, 228, 189);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(9, 34, 99);"></div>
                 <div class="color" style="width: 31px; height: 31px; background-color: rgb(255, 255, 255);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(67, 54, 118);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(71, 76, 83);"></div>
-                <div class="color" style="width: 31px; height: 31px; background-color: rgb(178, 179, 173);"></div>
+
             </div>
         </form>
     </div>
 
-    <!-- <div class="row no-gutters notMobile">
-        <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt1.jpg" alt="sample">
-            <p>grey</p>
-        </div>
-        <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt2.jpg" alt="sample">
-            <p>black</p>
-        </div>
-        <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt3.jpg" alt="sample">
-            <p>cardinal red</p>
-        </div>
-        <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt4.jpg" alt="sample">
-            <p>chocolate</p>
-        </div>
-        <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt5.jpg" alt="sample">
-            <p>green</p>
-        </div>
-        <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt6.jpg" alt="sample">
-            <p>maroon</p>
-        </div>
-        <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt7.jpg" alt="sample">
-            <p>sand</p>
-        </div>
-        <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt8.jpg" alt="sample">
-            <p>red</p>
-        </div>
-        <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt9.jpg" alt="sample">
-            <p>navy</p>
-        </div>
-        <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt10.jpg" alt="sample">
-            <p>white</p>
-        <!-- </div> -->
-    <!-- <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt11.jpg" alt="sample"> -->
-    <!-- <p>purple</p> -->
-    <!-- </div> -->
-    <!-- <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt12.jpg" alt="sample"> -->
-    <!-- <p>gun metal</p> -->
-    <!-- </div> -->
-    <!-- <div class="col-1 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt13.jpg" alt="sample"> -->
-    <!-- <p>light grey</p> -->
-    <div></div>
     <!-- ==================================================================================================================
 ======================================================================================================================
 ======================================================================================================================
@@ -231,12 +183,14 @@
 ====================================================================================================================== -->
 
     <div class="container mobile">
+        <div class="img-container">
+            <img src="images/water1.jpg" alt="" name="image-swap" id="waterbottle"></img>
+        </div>
         <!-- 
                 use for colors if possible.
                 <div class="row"></div> -->
         <form>
-            <img class="float-left bigPic mobile col-12" src="images/shirt1.jpg" alt=""></img>
-            <h3 class="mobile">Fellow Joy T-Shirt</h3>
+            <h3 class="mobile">Fellow Joy Water Bottle</h3>
             <div class="row">
                 <div class="form-group col-sm-12 col-md-10 col-lg-8 shirtName">
                     <h5 class="text-success">In Stock</h5>
@@ -246,44 +200,27 @@
                     </div>
 
 
-                    <p>Buy a Fellow Joy T-Shirt to help support people in need around the world. If you would like to send the money to a specific area of need you can buy a shirt through the make a donation and select where you would like the proceeds to
-                        go.
+                    <p>Buy a Fellow Joy Water Bottle to help support people in need around the world. If you would like to send the money to a specific area of need you can buy a Water Bottle through the make a donation and select where you would like the
+                        proceeds to go.
                     </p>
 
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
-                    <label for="shirtColor">Size</label>
-                    <select name="shirtColor" class="form-control" id="shirtColor">
-                                <option value="" disabled selected>13 Colors</option>
-                                <option value="grey">grey</option>
-                                <option value="black">black</option>
-                                <option value="cardinalRed">cardinal red</option>
-                                <option value="chocolate">chocolate</option>
-                                <option value="green">green</option>
-                                <option value="maroon">maroon</option>
-                                <option value="sand">sand</option>
-                                <option value="red">red</option>
-                                <option value="navy">navy</option>
-                                <option value="white">white</option>
-                                <option value="purple">purple</option>
-                                <option value="gunMetal">gun metal</option>
-                                <option value="light grey">light grey</option>
-                            </select>
+                    <label for="shirtSize">Size</label>
+                    <select name="waterOptions" class="form-control" id="waterOptions">
+                            <option value="" disabled selected>2 Colors</option>
+                            <option class="waterOptions" id="colorOption1" value="images/blackbottle.png">black</option>
+                            <option class="waterOptions" id="colorOption2" value="images/whitebottle.png">white</option>
+                        </select>
                 </div>
                 <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
-                    <label for="shirtSize">Size</label>
+                    <label for="size">Size</label>
                     <select name="shirtSize" class="form-control" id="shirtSize">
-                <!-- <option value="size" selected disabled>Size</option> -->
-                        <option value="xxxl">XXXL ($20)</option>
-                        <option value="xxl">XXL ($18)</option>
-                        <option value="xl">XL ($18)</option>
-                        <option value="l" selected>L ($18)</option>
-                        <option value="m">M ($18)</option>
-                        <option value="s">S ($18)</option>
-                        <option value="xs">XS ($20)</option>
-                    </select>
+            <option value="size" selected disabled>Please Choose a Size</option>   
+            <option value="xxxl">20 Oz. ($10)</option>
+                </select>
                 </div>
                 <!-- quantity selector. -->
                 <div class="form-group col-sm-5 col-md-5 col-lg-5 float-left">
@@ -312,48 +249,125 @@
             <!-- </div>  -->
         </form>
     </div>
+    </div>
 
-    <!-- <div class="row no-gutters mobile">
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt1.jpg" alt="sample">
-            <p>grey</p>
+    <div class="col-sm-12 col-md-12 col-lg-12 float-left" style="margin-top: 3em">
+        <div class="row bg-dark text-light">
+
+            <!--Footer-->
+            <footer class="page-footer font-small col-lg-12 pt-4 mt-4">
+
+                <!--Footer Links-->
+                <div class="container text-center text-md-left">
+
+                    <!-- Footer links -->
+                    <div class="row text-center text-md-left mt-3 pb-3">
+
+                        <!--First column-->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold fellowjoy">Fellow Joy</h6>
+                            <p>Bringing Joy to the ones who need it most</p>
+                        </div>
+                        <!--/.First column-->
+
+                        <!-- <hr class="w-100 clearfix d-md-none"> -->
+
+                        <!--Second column-->
+
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Navigation</h6>
+                            <p><a href="index.html">Home</a></p>
+                            <p><a href="aboutUs.html">About Us</a></p>
+                            <p><a href="contactUs.html">Contact Us</a></p>
+                            <p><a href="makeDonation_noUser.html">Donate</a></p>
+                            <!-- <p><a href="#!">Gear</a></p> -->
+                        </div>
+                        <!--/.Second column-->
+
+                        <!-- <hr class="w-100 clearfix d-md-none"> -->
+
+                        <!--Third column-->
+                        <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Gear</h6>
+                            <p><a href="shortsleeve.html">Short Sleeve</a></p>
+                            <p><a href="longsleeve.html">Long Sleeve</a></p>
+                            <p><a href="hoodie.html">Jacket</a></p>
+                            <p><a href="fjhat.html">Water Bottle</a></p>
+                        </div>
+                        <!--/.Third column-->
+
+                        <!-- <hr class="w-100 clearfix d-md-none"> -->
+
+                        <!--Fourth column-->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fa fa-home mr-3"></i>2050 S 16th St</p>
+                            <p><i class="fa fa-home mr-3"></i>Phoenix, AZ US</p>
+                            <!-- 2050 S 16th St Phoenix, AZ 85034 -->
+                            <p><i class="fa fa-envelope mr-3"></i><a href="mailto:FellowJoy@gmail.com">FellowJoy@gmail.com</a></p>
+                            <p><i class="fa fa-phone mr-3"></i><a href="tel:6025283434">(602)-528-3434</a></p>
+                            <!-- <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p> -->
+                        </div>
+                        <!--/.Fourth column-->
+
+                    </div>
+                    <!-- Footer links -->
+
+                    <hr>
+
+                    <div class="row py-3 d-flex align-items-center">
+
+                        <!--Grid column-->
+                        <div class="col-md-8 col-lg-8">
+
+                            <!--Copyright-->
+                            <p class="text-center text-md-left grey-text">© 2018 Copyright</p>
+                            <!-- <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MDBootstrap.com</strong></a> -->
+                            <!--/.Copyright-->
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-4 col-lg-4 ml-lg-0">
+
+                            <!--Social buttons-->
+                            <div class="text-center text-md-right">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item icon">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href=""><i class="fa fa-facebook-square" style="font-size:35px"></i></a>
+                                    </li>
+                                    <li class="list-inline-item icon">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href=""><i class="fa fa-instagram" style="font-size:35px"></i></a>
+                                    </li>
+                                    <li class="list-inline-item icon">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href=""><i class="fa fa-twitter-square" style="font-size:35px"></i></a>
+                                    </li>
+
+                                    <!-- <li class="list-inline-item float-right">
+                                        <h6 id="followText">Follow Us:</h6>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <!--/.Social buttons-->
+
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+
+                </div>
+            </footer>
+            <!--/.Footer-->
+
         </div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt2.jpg" alt="sample">
-            <p>black</p>
-        </div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt3.jpg" alt="sample">
-            <p>cardinal red</p>
-        </div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt4.jpg" alt="sample">
-            <p>chocolate</p>
-        </div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt5.jpg" alt="sample">
-            <p>green</p>
-        </div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt6.jpg" alt="sample">
-            <p>maroon</p>
-        </div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt7.jpg" alt="sample">
-            <p>sand</p>
-        </div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt8.jpg" alt="sample">
-            <p>red</p>
-        </div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt9.jpg" alt="sample">
-            <p>navy</p>
-        </div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt10.jpg" alt="sample">
-            <p>white</p>
-        </div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt11.jpg" alt="sample">
-            <p>purple</p>
-        </div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt12.jpg" alt="sample">gun metal</div>
-        <div class="col-2 col-sm-1 col-md-1"><img class="img-thumbnail" id="shirtThumb" src="images/shirt13.jpg" alt="sample">light grey</div>
- --></div>
+    </div>
 
     <script src="bootstrap/jquery.slim.min.js"></script>
     <script src="bootstrap/popper.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="javascript/waterbottle.js"></script>
+
 </body>
 
 </html>

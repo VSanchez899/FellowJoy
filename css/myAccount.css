@@ -15,103 +15,34 @@ h1#mainHeader {
     margin-bottom: 0;
 }
 
+h1.formHeaders {
+    text-align: center;
+}
+
+h4.stepNum {
+    margin-left: 10%;
+}
+
 ul.nav {
     margin-top: 0;
 }
 
-
-/* 
-label {
-    display: block;
-    text-align: center;
-    font-size: 3em;
-}
-
-p {
-    text-align: center;
-    font-size: 1.3em;
-}
-
-label#showpassLabel {
-    font-size: 1em;
-    text-align: left;
-    float: right;
-}
-
-input#showpass {
-    width: 5%;
-    margin-left: 0;
-}
-
-input {
-    text-align: center;
-    width: 50%;
-    font-size: 1.5em;
-    margin-left: 25%;
+.col-centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button {
-    font-family: 'Cute Font', cursive;
-    width: 30%;
-    font-size: 2em;
-    margin-left: 35%;
-    margin-bottom: 2%;
-    border-radius: 50px;
-    border: 2px solid black;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
 }
 
-button:hover {
-    background: #0D2100;
-    color: #EC5C5C;
-    font-weight: bolder;
+form {
+    background-color: darkgray;
+    border-radius: 10px;
 }
 
-div.col18 {
-    margin-left: 25%;
-    min-width: 122px;
-    max-width: 122px;
+.signInForm {
+    margin-bottom: 3em;
 }
-
-
-
-@media only screen and (max-width: 767px) {
-    h1#mainHeader {
-        padding-bottom: 3%;
-    }
-    div#divForm {
-        width: 80%;
-    }
-    div#divForm {
-        margin-left: 10%;
-    }
-    h1#account {
-        font-size: 1.5em;
-        margin-top: 2%;
-    }
-    label {
-        font-size: 2em;
-    }
-    label#showpassLabel {
-        font-size: .75em;
-        margin-left: -10%;
-    }
-    input#showpass {
-        width: 12%;
-        margin-left: 0;
-        margin: 0;
-    }
-    input {
-        font-size: 1em;
-    }
-    div.col18 {
-        width: 10%;
-        margin-top: 1%;
-        min-width: 95px;
-        max-width: 95px;
-    }
-    button {
-        width: 50%;
-        font-size: 1.25em;
-        margin-left: 25%;
-    }
-} */
