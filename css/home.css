@@ -27,12 +27,13 @@ image {
     width: 100%;
 }
 
-.statements {
+
+/* .statements {
     font-family: 'Berkshire Swash', cursive;
     text-align: center;
     font-size: 2em;
     color: #FF5300;
-}
+} */
 
 
 /* picture styles */
@@ -80,6 +81,9 @@ section {
 
 .carousel {
     position: relative;
+    /* max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
 .carousel-inner {

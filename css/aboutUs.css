@@ -16,6 +16,12 @@ h1#tag1 {
     padding-bottom: .5em;
 }
 
+h1#mainHeader {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
 
 /* img styles */
 
@@ -86,7 +92,7 @@ p {
 }
 
 h2 {
-    text-align: center;
+    /* text-align: center; */
     padding-top: .5em;
 }
 
