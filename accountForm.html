@@ -26,7 +26,9 @@
 
 <body>
     <header>
-        <div class="mainDiv">
+
+        <!-- <div class="class= container bg-dark" page-header ""> -->
+        <div class="row headerRow">
             <nav class="menu">
                 <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
                 <ul class="nav">
@@ -65,19 +67,23 @@
                     </li>
                 </ul>
             </nav>
-            <div class="col35">
-                <a href="index.html">
-                    <h1 id="mainHeader">Fellow Joy</h1>
-                </a>
+            <div class="col-sm-5 col-md-4 col-lg-4 col-xl-4 headerDiv">
+                <h1 class="float-right" id="mainHeader">Fellow Joy</h1>
             </div>
+            <div class="col-sm-7 col-md-8 col-lg-7 align-self-end">
+                <h2 id="slogan" class="">Bringing Joy to those who need it</h2>
+            </div>
+        </div>
+        <!-- </div> -->
 
 
-            <div class="col60">
-                <h2 id="slogan">bringing <mark>JOY</mark> to those who need it.</h2>
-            </div>
+        <div class="mainDiv">
+
             <nav class="menu2">
                 <a href="" id="navIcon"><img src="images/Menu.png" alt="" id="iconImg"></a>
+
                 <ul class="nav">
+
                     <li>
                         <h1 id="navHeader">Fellow Joy</h1>
                     </li>
@@ -113,9 +119,11 @@
                     </li>
                     <li>
                         <a href="shoppingcart.html">
-                            <div class="mainDiv" class="navList"><img src="images/big-cart.png" alt="" id="shoppingCartIcon"></div>
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </a>
                     </li>
+
                 </ul>
             </nav>
         </div>

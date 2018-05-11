@@ -9,7 +9,8 @@
 
 /* title tag styles */
 
-h1#tag1 {
+
+/* h1#tag1 {
     text-align: center;
     font-weight: bold;
     font-size: 3em;
@@ -20,12 +21,13 @@ h1#mainHeader {
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 0;
-}
+} */
 
 
 /* img styles */
 
-@media only screen and (min-width: 768px) {
+
+/* @media only screen and (min-width: 768px) {
     img#tilpic {
         height: 40em;
         width: 100%;
@@ -49,12 +51,13 @@ h1#mainHeader {
         padding-bottom: 3.2em;
         padding-top: 1em;
     }
-}
+} */
 
 
 /* this is the styles for the the image width for mobile style */
 
-@media only screen and (max-width: 767px) {
+
+/* @media only screen and (max-width: 767px) {
     img#tilpic {
         height: 20em;
         width: 100%;
@@ -78,23 +81,26 @@ h1#mainHeader {
         padding-bottom: 3.2em;
         padding-top: 1em;
     }
-}
+} */
 
 
 /* paragraph styles */
 
+
+/* 
 p {
     padding-top: 3em;
     padding-bottom: 3em;
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-}
+} */
 
-h2 {
-    /* text-align: center; */
+
+/* h2 {
+    text-align: center;
     padding-top: .5em;
-}
+} */
 
 
 /* Div styles */
@@ -102,7 +108,8 @@ h2 {
 
 /* desktop */
 
-@media only screen and (min-width: 768px) {
+
+/* @media only screen and (min-width: 768px) {
     div.container-thin {
         border: 1.5px solid black;
         width: 50%;
@@ -110,12 +117,13 @@ h2 {
         margin-left: auto;
         margin-bottom: 10em;
     }
-}
+} */
 
 
 /* mobile stlye */
 
-@media only screen and (max-width: 767px) {
+
+/* @media only screen and (max-width: 767px) {
     div.container-thin {
         border: 1.5px solid black;
         width: 95%;
@@ -134,4 +142,11 @@ footer {
 
 footer span#footer {
     text-align: center;
+} */
+
+@media only screen and (max-width: 767px) {
+    .headerDiv {
+        margin-top: -1.5em;
+        margin-bottom: -.5em;
+    }
 }
