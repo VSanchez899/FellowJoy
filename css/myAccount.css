@@ -46,3 +46,17 @@ form {
 .signInForm {
     margin-bottom: 3em;
 }
+
+@media only screen and (max-width: 767px) {
+    .signInForm {
+        margin-top: 2em;
+    }
+    .headerDiv {
+        margin-top: -1.5em;
+        margin-bottom: .25em;
+    }
+    a#navIcon:hover+ul.nav,
+    nav.menu ul:hover {
+        margin-top: -11%;
+    }
+}

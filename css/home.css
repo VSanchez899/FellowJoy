@@ -58,6 +58,7 @@ section {
         width: 100%;
         height: 20em;
         border: 1.5px solid black;
+        margin-top: 1em;
     }
     ol.carousel-indicators {
         display: none;
