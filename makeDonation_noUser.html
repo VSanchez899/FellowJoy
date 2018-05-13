@@ -165,11 +165,11 @@
                 </div>
 
                 <div class="row">
-                    <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left was-validated address">
+                    <div class="form-group col-sm-3 col-md-3 col-lg-3 float-left was-validated address">
                         <label for="address">Address*</label>
                         <input type="text" id="address" class="form-control" required>
                     </div>
-                    <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left was-validated address2">
+                    <div class="form-group col-sm-3 col-md-3 col-lg-3 float-left was-validated address2">
                         <label for="address2">Address 2</label>
                         <input type="text" id="address2" class="form-control">
                     </div>
@@ -378,13 +378,16 @@
                 <div class="row">
                     <h1 id="buyGearHeader">Buy Gear</h1>
                     <h6 class="align-self-center col-5 gearPhrase">You can pick a place you would like the money to go to</h6>
+
                     <div class="form-group col-sm-4 col-md-3 col-lg-2 float-left align-self-end useInfoButton">
-                        <button type="button" class="form-control btn btn-primary button" id="useInfoAbove">Use Info Above</button>
+                        <button type="button" class="form-control btn btn-primary button" id="useInfoAboveMobile">Use Info Above</button>
                     </div>
                     <div class="form-group col-sm-12 col-md-12 col-lg-12">
                         <small class="text-muted required">*required inputs</small>
                     </div>
+
                 </div>
+
 
 
                 <div class="row">
@@ -400,13 +403,16 @@
                         <label for="formLastNGear">Last Name*</label>
                         <input type="text" class="form-control" id="formLastNGear" placeholder="Appleseed" required>
                     </div>
+                    <div class="form-group col-sm-4 col-md-3 col-lg-2 float-left align-self-end useInfoButton">
+                        <button type="button" class="form-control btn btn-primary button" id="useInfoAboveNonMobile">Use Info Above</button>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left was-validated address">
+                    <div class="form-group col-sm-3 col-md-3 col-lg-3 float-left was-validated address">
                         <label for="addressGear">Address*</label>
                         <input type="text" id="addressGear" class="form-control" required>
                     </div>
-                    <div class="form-group col-sm-3 col-md-3 col-lg-4 float-left was-validated address2">
+                    <div class="form-group col-sm-3 col-md-3 col-lg-3 float-left was-validated address2">
                         <label for="addressGear2">Address 2</label>
                         <input type="text" id="addressGear2" class="form-control">
                     </div>
@@ -574,9 +580,9 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left itemName">
+                    <div class="form-group col-sm-3 col-md-6 col-lg-3 float-left itemName">
                         <a href="shortsleeve.html">
-                            <h4>Shirt <small class="text-muted">Click for link</small></h4>
+                            <h4>Shirt <small class="text-muted">-Click for link</small></h4>
                         </a>
 
                     </div>
@@ -641,11 +647,13 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left itemName">
+                    <div class="form-group col-sm-3 col-md-6 col-lg-6 float-left itemName">
                         <a href="longsleeve.html">
-                            <h4>Long Sleeve <small class="text-muted">Click for link</small></h4>
+                            <h4>Long Sleeve <small class="text-muted">-Click for link</small></h4>
                         </a>
                     </div>
+                </div>
+                <div class="row">
                     <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left color">
                         <label for="buyLongSleeveGear">Color</label>
                         <select name="buyLongSleeveGear" class="form-control" id="buyLongSleeveGear">
@@ -698,9 +706,11 @@
                 <div class="row">
                     <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left itemName">
                         <a href="hoodie.html">
-                            <h4>Jacket <small class="text-muted">Click for link</small></h4>
+                            <h4>Jacket <small class="text-muted">-Click for link</small></h4>
                         </a>
                     </div>
+                </div>
+                <div class="row">
                     <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left color">
                         <label for="buyHoodieGear">Color</label>
                         <select name="buyHoodieGear" class="form-control" id="buyHoodieGear">
@@ -750,11 +760,13 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left itemName">
+                    <div class="form-group col-sm-3 col-md-6 col-lg-6 float-left itemName">
                         <a href="waterbottle.html">
-                            <h4>Water Bottle <small class="text-muted">Click for link</small></h4>
+                            <h4>Water Bottle <small class="text-muted">-Click for link</small></h4>
                         </a>
                     </div>
+                </div>
+                <div class="row">
                     <div class="form-group col-sm-3 col-md-3 col-lg-2 float-left color">
                         <label for="buyWaterBGear">Color</label>
                         <select name="buyWaterBGear" class="form-control" id="buyWaterBGear">
@@ -796,7 +808,7 @@
                 <!-- Submit Button -->
                 <div class="row">
                     <div class="col-sm-4 col-md-3 col-lg-2 col-centered cartFormButton">
-                        <button type="submit" class="form-control btn btn-primary">Place Order</button>
+                        <button type="submit" class="form-control btn btn-primary placeOrder">Place Order</button>
                     </div>
                 </div>
             </div>

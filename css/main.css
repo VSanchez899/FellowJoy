@@ -14,8 +14,9 @@
     @import url('https://fonts.googleapis.com/css?family=Bangers|Do+Hyeon');
     /* Background Styles */
     
-    body {
-        background: #E2E2E2;
+    header {
+        /* background: #E2E2E2; */
+        background: #3a3737b0
     }
     /* Header Styles */
     
@@ -433,7 +434,7 @@
             text-align: center;
             float: left;
             width: 100%;
-            margin-bottom: 2%;
+            /* margin-bottom: 2%; */
             /* margin-top: 20%; */
         }
         nav.menu {
@@ -451,6 +452,9 @@
         }
         img#iconImg {
             display: none;
+        }
+        .forms {
+            margin-top: 2em;
         }
     }
     /* TABLET LANDSCAPE / DESKTOP */

@@ -34,7 +34,7 @@
     }
     
     body {
-        background: url(../images/apartment2.jpg) no-repeat center center fixed;
+        background: url(../images/kid_big.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -46,19 +46,55 @@
         color: white;
     }
     
+    small.required {
+        color: rgb(255, 89, 89)!important;
+    }
+    
+    h4 small {
+        font-size: .5em;
+    }
+    
+    .text-muted {
+        color: white!important;
+    }
+    
+    #useInfoAboveNonMobile {
+        display: block
+    }
+    
+    #useInfoAboveMobile {
+        display: none;
+    }
+    
+    .makeDonationHeader {
+        margin-bottom: 0;
+    }
+    
+    .placeOrder {
+        margin-bottom: 1em;
+    }
+    
     @media only screen and (max-width: 767px) {
+        body {
+            background: url(../images/kid_small.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
         .headerDiv {
             margin-top: -1.5em;
             margin-bottom: 0em;
         }
-        small.required {
-            color: white!important;
-        }
         #buyGearHeader {
             margin-left: 15px;
         }
-        #useInfoAbove {
+        #useInfoAboveNonMobile {
+            display: none;
+        }
+        #useInfoAboveMobile {
             width: 100%;
+            display: block
         }
         .gearPhrase {
             display: none;
