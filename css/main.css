@@ -61,8 +61,8 @@
     nav {
         font-family: 'Cute Font', cursive;
         z-index: 200;
-        box-shadow: 2px -2px 10px #000000a8;
-        box-shadow: 2px 2px 10px #000000a8;
+        /* box-shadow: 2px -2px 10px #000000a8;
+        box-shadow: 2px 2px 10px #000000a8; */
     }
     
     img#iconImg {
@@ -292,6 +292,9 @@
     }
     
     @media only screen and (max-width: 767px) {
+        header {
+            /* position: fixed */
+        }
         h1#mainHeader {
             font-size: 2.2em;
             text-align: center;
@@ -307,9 +310,10 @@
             background: #343a40!important;
         }
         h1#navHeader {
-            font-size: 1.25em;
+            font-size: 2em;
             text-align: left;
             margin-top: 10%;
+            letter-spacing: 6px;
             /* margin-top: 2%; */
         }
         h2#slogan {
@@ -332,7 +336,7 @@
             padding-left: 7%;
             margin-top: 1%;
             margin-bottom: 1%;
-            font-size: 1.5em;
+            font-size: 1.75em;
         }
         ul.nav {
             display: none;
@@ -355,8 +359,8 @@
         a#navIcon:hover+ul.nav,
         nav.menu ul:hover {
             display: table;
-            width: 55%;
-            height: 800px;
+            width: 65%;
+            height: 840px;
             position: absolute;
             margin-top: -2.5%;
             margin-left: -.5%;

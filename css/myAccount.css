@@ -39,12 +39,25 @@ button {
 }
 
 form {
-    background-color: darkgray;
+    background-color: rgba(36, 35, 35, 0.651);
     border-radius: 10px;
+    color: white
+}
+
+.text-muted {
+    color: white!important;
 }
 
 .signInForm {
     margin-bottom: 3em;
+}
+
+html {
+    background: url(../images/apartment.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 767px) {
@@ -58,5 +71,29 @@ form {
     a#navIcon:hover+ul.nav,
     nav.menu ul:hover {
         margin-top: -11%;
+    }
+    .col-sm-8 {
+        width: 90%;
+    }
+    .signupButtons {
+        width: 45%;
+        margin-top: 0;
+    }
+    .prev {
+        padding-right: 7.5px;
+        margin-right: 0;
+    }
+    .next {
+        padding-left: 7.5px;
+        margin-left: 0;
+    }
+    .signInButton {
+        width: 45%;
+        /* margin-top: 0; */
+        /* float: right; */
+        /* padding-right: 15px; */
+    }
+    button {
+        margin-top: 0;
     }
 }

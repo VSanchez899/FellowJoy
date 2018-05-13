@@ -169,7 +169,7 @@ h2.names {
         margin-bottom: -.5em;
     }
     #mission {
-        margin-top: 4em;
+        margin-top: 2rem;
     }
     a#navIcon:hover+ul.nav,
     nav.menu ul:hover {
@@ -178,8 +178,10 @@ h2.names {
     #aboutUsHeader {
         margin-top: 1em;
     }
-    p {
-        font-size: 1em!important;
+    p.discriptions,
+    .statements,
+    #fjDis {
+        font-size: 1.5em!important;
     }
     .team-photos {
         width: 100%;

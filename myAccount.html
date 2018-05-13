@@ -19,7 +19,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/myAccount.css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -36,34 +38,41 @@
                     </li>
                     <li>
                         <a href="index.html">
-                            <div class="mainDiv" class="navList">Home</div>
+                            <div class="mainDiv" class="navList"><i class="fa fa-home"></i> Home</div>
                         </a>
                     </li>
                     <li>
                         <a href="aboutUs.html">
-                            <div class="mainDiv" class="navList">About Us</div>
+                            <div class="mainDiv" class="navList"><i class="fas fa-book"></i> About Us</div>
                         </a>
                     </li>
                     <li>
                         <a href="contactus.html">
-                            <div class="mainDiv" class="navList">Contact Us</div>
+                            <div class="mainDiv" class="navList"><i class="fas fa-phone"></i> Contact Us</div>
                         </a>
                     </li>
                     <li>
                         <a href="makeDonation_noUser.html">
-                            <div class="mainDiv" class="navList">Make Donations</div>
+                            <div class="mainDiv" class="navList"><i class="far fa-money-bill-alt"></i> Make Donations </div>
                         </a>
                     </li>
                     <li>
                         <a href="gear.html">
-                            <div class="mainDiv" class="navList">Gear</div>
+                            <div class="mainDiv" class="navList"><i class="fas fa-tag"></i> Gear</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shoppingcart.html">
+                            <div class="mainDiv" class="navList"><i class="fa fa-shopping-cart"></i> Cart</div>
                         </a>
                     </li>
                     <li>
                         <a href="myAccount.html">
-                            <div class="mainDiv" class="navList">My Account</div>
+                            <div class="mainDiv" class="navList"><i class="fa fa-street-view"></i> My Account</div>
                         </a>
                     </li>
+
+
                 </ul>
             </nav>
             <div class="col-sm-5 col-md-4 col-lg-4 col-xl-4 headerDiv">
@@ -74,7 +83,6 @@
             </div>
         </div>
         <!-- </div> -->
-
 
         <div class="mainDiv">
 
@@ -149,8 +157,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
-                        <button type="button" id="signIn" class="form-control btn btn-primary">Sign In</button>
+                    <div class="form-group col-sm-8 col-md-5 col-lg-4 float-left col-centered signupButtons">
+                        <button type="submit" id="signIn" class="form-control btn btn-primary ">Sign In</button>
                     </div>
                 </div>
             </form>
@@ -160,7 +168,7 @@
                 <section id="signUp-1">
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12 float-left">
-                            <h1 class="formHeaders">Sign Up</h1>
+                            <h1 class="formHeaders">Make Account</h1>
                             <h4 class="stepNum">Step 1</h4>
                         </div>
                     </div>
@@ -198,8 +206,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
-                            <button type="button" id="next1" class="form-control btn btn-primary">Next Step &rarr;</button>
+                        <div class="form-group col-sm-5  col-md-5 col-lg-4 float-left col-centered signupButtons">
+                            <button type="button" id="next1" class="form-control btn btn-primary ">Next Step &rarr;</button>
                         </div>
                     </div>
                 </section>
@@ -210,7 +218,7 @@
                 <section id="signUp-2">
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12 float-left">
-                            <h1 class="formHeaders">Sign Up</h1>
+                            <h1 class="formHeaders">Make Account</h1>
                             <h4 class="stepNum">Step 2</h4>
                         </div>
                     </div>
@@ -299,10 +307,10 @@
                     </div>
 
                     <div class="row">
-                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
-                            <button type="button" id="prev1" class="form-control btn btn-primary oi oi-caret-left">&larr; Prev Step</button>
+                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered signupButtons prev">
+                            <button type="button" id="prev1" class="form-control btn btn-primary">&larr; Prev Step</button>
                         </div>
-                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
+                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered signupButtons next">
                             <button type="button" id="next2" class="form-control btn btn-primary">Next Step 	&rarr;</button>
                         </div>
                     </div>
@@ -312,7 +320,7 @@
                 <section id="signUp-3">
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12 float-left">
-                            <h1 class="formHeaders">Sign Up</h1>
+                            <h1 class="formHeaders">Make Account</h1>
                             <h4 class="stepNum">Step 3</h4>
                         </div>
                     </div>
@@ -378,11 +386,11 @@
 
 
                     <div class="row">
-                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
-                            <button type="button" id="prev2" class="form-control btn btn-primary oi oi-caret-left">&larr; Prev Step</button>
+                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered signupButtons prev">
+                            <button type="button" id="prev2" class="form-control btn btn-primary">&larr; Prev Step</button>
                         </div>
-                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered">
-                            <button type="submit" id="submit" class="form-control btn btn-primary">Submit 	&rarr;</button>
+                        <div class="form-group col-sm-5 col-md-5 col-lg-4 float-left col-centered signupButtons next">
+                            <button type="submit" id="submit" class="form-control btn btn-primary">Submit &rarr;</button>
                         </div>
                     </div>
                 </section>
@@ -440,8 +448,7 @@
                         <!--Fourth column-->
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                            <p><i class="fa fa-home mr-3"></i>2050 S 16th St</p>
-                            <p><i class="fa fa-home mr-3"></i>Phoenix, AZ US</p>
+                            <p><i class="fa fa-home mr-3"></i>16 W Camelback Rd <br> Phoenix, AZ 85013, USA</p>
                             <!-- 2050 S 16th St Phoenix, AZ 85034 -->
                             <p><i class="fa fa-envelope mr-3"></i><a href="mailto:FellowJoy@gmail.com">FellowJoy@gmail.com</a></p>
                             <p><i class="fa fa-phone mr-3"></i><a href="tel:6025283434">(602)-528-3434</a></p>
@@ -501,7 +508,6 @@
 
         </div>
     </div>
-
 
 
 

@@ -1,48 +1,195 @@
-/* 
+    /* 
     Capstone Project
     Authors: Jamin, Vinny, Jacson
     Date: 3.2.18
 
     filename: makeDonation.css
 */
-
-h1#mainHeader {
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 0;
-}
-
-ul.nav {
-    margin-top: 0;
-}
-
-.col-centered {
-    float: none;
-    margin: 0 auto;
-}
-
-button {
-    background: #005F9B !important;
-}
-
-button:hover {
-    background: #F26B00 !important;
-}
-
-section {
-    position: absolute;
-}
-
-@media only screen and (max-width: 767px) {
-    .headerDiv {
-        margin-top: -1.5em;
-        margin-bottom: 0em;
+    
+    h1#mainHeader {
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 0;
     }
-    a#navIcon:hover+ul.nav,
-    nav.menu ul:hover {
-        margin-top: -11%;
+    
+    ul.nav {
+        margin-top: 0;
     }
-    #donationForm {
-        margin-top: 2.5em;
+    
+    .col-centered {
+        float: none;
+        margin: 0 auto;
     }
-}
+    
+    button {
+        background: #005F9B !important;
+    }
+    
+    button:hover {
+        background: #F26B00 !important;
+    }
+    
+    section {
+        position: absolute;
+    }
+    
+    body {
+        background: url(../images/apartment2.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    form {
+        background: rgba(36, 35, 35, 0.651);
+        color: white;
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .headerDiv {
+            margin-top: -1.5em;
+            margin-bottom: 0em;
+        }
+        small.required {
+            color: white!important;
+        }
+        #buyGearHeader {
+            margin-left: 15px;
+        }
+        #useInfoAbove {
+            width: 100%;
+        }
+        .gearPhrase {
+            display: none;
+        }
+        .useInfoButton {
+            width: 50%;
+            margin-top: .7em;
+            margin-bottom: 0;
+        }
+        a#navIcon:hover+ul.nav,
+        nav.menu ul:hover {
+            margin-top: -11%;
+        }
+        #donationForm {
+            margin-top: 4em;
+            margin-bottom: 2em;
+        }
+        form {
+            border-radius: 10px;
+        }
+        .makeDonationHeader,
+        #donationHeader {
+            margin-bottom: 0;
+        }
+        /* Input Styles */
+        .formFirstN {
+            width: 70%;
+        }
+        .formMiddleI {
+            width: 25%;
+            padding: 0;
+        }
+        .formLastN {
+            width: 70%;
+        }
+        .address,
+        .address2 {
+            width: 50%;
+        }
+        .address {
+            padding-right: 7.5px;
+        }
+        .address2 {
+            padding-left: 7.5px;
+        }
+        .city,
+        .state {
+            width: 50%;
+        }
+        .state {
+            padding-left: 7.5px;
+        }
+        .city {
+            padding-right: 7.5px;
+        }
+        .zip {
+            width: 40%;
+        }
+        .email {
+            width: 80%;
+        }
+        .phone {
+            width: 50%;
+        }
+        .recipts {
+            width: 50%;
+        }
+        .donationType {
+            width: 63%;
+            padding-right: 7.5px;
+        }
+        .donationAmount {
+            width: 37%;
+            padding-left: 7.5px;
+        }
+        .customDonation {
+            width: 50%;
+        }
+        .cardNum {
+            width: 60%;
+            padding-right: 7.5px;
+        }
+        .cvcNum {
+            width: 40%;
+            padding-left: 7.5px;
+        }
+        .month {
+            width: 50%;
+            padding-right: 7.5px;
+        }
+        .year {
+            width: 50%;
+            padding-left: 7.5px;
+        }
+        .button {
+            width: 50%;
+            float: right;
+        }
+        .cartButton {
+            width: 50%;
+            padding-left: 7.5px;
+        }
+        .color {
+            width: 50%;
+            padding-right: 7.5px;
+        }
+        .size {
+            width: 50%;
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+        }
+        .qty {
+            width: 50%;
+            padding-right: 7.5px;
+        }
+        .itemName {
+            margin-bottom: 0;
+        }
+        .itemName a h4 {
+            /* color: black; */
+        }
+        .cartFormButton {
+            width: 50%;
+        }
+        h4 small {
+            font-size: .5em;
+        }
+        .cartFormButton {
+            margin-bottom: 1em;
+        }
+        .donateButton {
+            margin-bottom: 1em;
+        }
+    }

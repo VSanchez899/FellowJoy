@@ -18,20 +18,19 @@
 
 /* This is the style for the contact information */
 
-p#call-number,
+
+/* p#call-number,
 p#email-info,
 p#address-info {
     text-align: center;
     font-size: 2em;
-}
+} */
 
 
 /* h2 styles */
 
 h1 {
     font-size: 3em;
-    font-weight: bold;
-    text-align: center;
 }
 
 
@@ -45,8 +44,8 @@ div.container {
 }
 
 @media only screen and (max-width: 767px) {
-    h1#mainHeader {
-        /* margin-top: 2%; */
+    h1#contactHeader {
+        margin-top: 1em;
     }
     div.mainDiv {
         /* margin-top: -13%; */
@@ -58,5 +57,32 @@ div.container {
     a#navIcon:hover+ul.nav,
     nav.menu ul:hover {
         margin-top: -11%;
+    }
+    p#call-number,
+    p#email-info,
+    p#address-info {
+        text-align: center;
+        /* font-size: 1.5em; */
+        background: #F26B00;
+        color: white;
+        width: 60%;
+        border-radius: 6px;
+    }
+    #submitComment {
+        width: 50%;
+        float: right;
+    }
+    .commentForm {
+        margin-top: 1em;
+    }
+    .formHeader {
+        margin-bottom: 0;
+        padding-right: 0;
+        /* width: 80%; */
+    }
+    .requiredTag {
+        /* width: 30%; */
+        /* padding-left: 5px; */
+        /* padding-right: 0; */
     }
 }
