@@ -6,6 +6,11 @@
     filename: makeDonation.css
 */
     
+    header {
+        /* background: #E2E2E2; */
+        background: #3a3737b0
+    }
+    
     h1#mainHeader {
         margin-top: 0;
         padding-top: 0;
@@ -44,6 +49,8 @@
     form {
         background: rgba(36, 35, 35, 0.651);
         color: white;
+        margin-top: 2em;
+        border-radius: 10px;
     }
     
     small.required {
