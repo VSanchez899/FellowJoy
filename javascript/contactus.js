@@ -9,6 +9,9 @@ window.onload = function() {
         document.body.scrollTop = 196;
         document.documentElement.scrollTop = 196;
     }
+    var screenHeight = screen.height;
+    var screenWidth = screen.width;
+    $("#backgroundImage").height(screenHeight);
 }
 
 window.onload = function() {

@@ -11,12 +11,15 @@ window.onload = function() {
     }
 
     var screenHeight = screen.height;
+    var screenWidth = screen.width;
     console.log(screenHeight)
+    console.log(screenWidth)
     $("#backgroundImage").height(screenHeight);
     // $(".aboutUsContent").css("marginTop") = screenHeight;
 
     $(".screenDiv").height(screenHeight);
     $(".aboutusHeaderMobile").height(screenHeight);
+    $(".aboutusHeaderMobile").width(screenWidth);
 }
 
 
@@ -42,5 +45,22 @@ arrow2.onclick = function() {
     } else if (screen.width <= 767) {
         document.body.scrollTop = 3100;
         document.documentElement.scrollTop = 3100;
+    }
+}
+
+var arrow1Mobile = document.getElementById("arrow1Mobile");
+var arrow2Mobile = document.getElementById("arrow2Mobile");
+
+arrow1Mobile.onclick = function() {
+    if (screen.width <= 767) {
+        document.body.scrollTop = 800;
+        document.documentElement.scrollTop = 800;
+    }
+}
+
+arrow2Mobile.onclick = function() {
+    if (screen.width <= 767) {
+        document.body.scrollTop = 2555;
+        document.documentElement.scrollTop = 2555;
     }
 }

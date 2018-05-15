@@ -104,15 +104,25 @@ div.container {
 }
 
 @media only screen and (max-width: 767px) {
+    .contactDiv {
+        background: none;
+    }
+    #backgroundImage {
+        /* height: 100%; */
+        overflow-x: hidden;
+    }
     /* h1#contactHeader {
         margin-top: 1em;
     } */
+    h1#mainHeader {
+        margin: 0;
+    }
     div.mainDiv {
         /* margin-top: -13%; */
     }
     .headerDiv {
         margin-top: -1.5em;
-        /* margin-bottom: 0em; */
+        margin-bottom: 0em;
     }
     /* #map {
         height: 300px;

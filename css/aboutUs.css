@@ -80,7 +80,9 @@ h2.names {
 }
 
 #arrow1,
-#arrow2 {
+#arrow2,
+#arrow1Mobile,
+#arrow2Mobile {
     height: 100%;
     font-size: 10em;
     line-height: .5em;
@@ -124,7 +126,14 @@ h2.names {
     display: none;
 }
 
+.screenDiv {
+    display: none;
+}
+
 @media only screen and (max-width: 767px) {
+    .screenDiv {
+        display: block;
+    }
     .parallax,
     .parallax2 {
         background-image: none;
@@ -139,6 +148,9 @@ h2.names {
     } */
     .parallax-Mobile {
         overflow-x: hidden;
+    }
+    .aboutusHeaderMobile {
+        margin-left: 0;
     }
     .headerDiv {
         margin-top: -1.5em;
