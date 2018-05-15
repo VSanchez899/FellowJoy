@@ -13,6 +13,9 @@ window.onload = function() {
     var screenHeight = screen.height;
     console.log(screenHeight)
     $("#backgroundImage").height(screenHeight);
+    // $(".aboutUsContent").css("marginTop") = screenHeight;
+
+    $(".screenDiv").height(screenHeight);
 }
 
 
