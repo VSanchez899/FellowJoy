@@ -103,6 +103,11 @@ button:hover {
     display: none;
 }
 
+form,
+.img-container {
+    margin-top: 2em;
+}
+
 @media only screen and (max-width: 735px) {
     .notMobile {
         display: none;
@@ -134,6 +139,10 @@ button:hover {
     }
     .mobile {
         margin-top: 3em;
+        display: block;
+    }
+    .notMobile {
+        display: none;
     }
     a#navIcon:hover+ul.nav,
     nav.menu ul:hover {

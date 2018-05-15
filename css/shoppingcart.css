@@ -39,7 +39,7 @@ footer {
 @media only screen and (max-width: 767px) {
     .headerDiv {
         margin-top: -1.5em;
-        margin-bottom: 0em;
+        margin-bottom: 1.75em;
     }
     a#navIcon:hover+ul.nav,
     nav.menu ul:hover {
