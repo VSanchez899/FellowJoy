@@ -53,10 +53,6 @@ section {
     border-radius: 10px;
 }
 
-h3 {
-    /* margin-top: 2em; */
-}
-
 a h5,
 h3 {
     color: #E2E2E2;
@@ -86,6 +82,21 @@ html {
 /* this is the media tag for mobile styles */
 
 @media only screen and (max-width: 767px) {
+    html {
+        background: url(../images/ruins.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .mobileHR {
+        display: block;
+    }
     .headerDiv {
         margin-top: -1.5em;
         margin-bottom: 0em;
@@ -118,6 +129,9 @@ html {
         width: 100%;
         height: 40em;
         border: 2.5px solid black;
+    }
+    .mobileHR {
+        display: none;
     }
 }
 
