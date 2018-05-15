@@ -24,7 +24,8 @@ h5 {
 
 @media only screen and (max-width: 767px) {
     h1#mainHeader {
-        margin-top: 2%;
+        /* margin-top: 2%; */
+        margin-bottom: 0;
     }
     h3#help {
         font-size: 2.25em;
@@ -54,6 +55,9 @@ h5 {
     }
     .mobileHR {
         display: block;
+    }
+    div.mainDiv {
+        margin-bottom: 0em;
     }
 }
 

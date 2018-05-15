@@ -83,16 +83,7 @@ html {
 
 @media only screen and (max-width: 767px) {
     html {
-        background: url(../images/ruins.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 100%;
-        overflow-x: hidden;
+        background-image: none;
     }
     .mobileHR {
         display: block;
@@ -117,6 +108,13 @@ html {
     a#navIcon:hover+ul.nav,
     nav.menu ul:hover {
         margin-top: -11%;
+    }
+    .smallPics {
+        background: #E2E2E2;
+    }
+    a h5,
+    h3 {
+        color: black;
     }
 }
 
