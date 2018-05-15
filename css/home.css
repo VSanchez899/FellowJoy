@@ -84,7 +84,9 @@ html {
 @media only screen and (max-width: 767px) {
     html {
         background-image: none;
+        background: #E2E2E2;
     }
+    body {}
     .mobileHR {
         display: block;
     }
@@ -110,7 +112,7 @@ html {
         margin-top: -11%;
     }
     .smallPics {
-        background: #E2E2E2;
+        background: none;
     }
     a h5,
     h3 {

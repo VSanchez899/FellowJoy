@@ -126,7 +126,7 @@ h2.names {
 
 @media only screen and (max-width: 767px) {
     .parallax {
-        background: url(../images/sidewalk_big.jpg);
+        background: url(../images/sidewalk_small.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -134,8 +134,8 @@ h2.names {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 100%;
-        overflow-x: hidden;
+        height: 25px;
+        width: 50px;
     }
     .headerDiv {
         margin-top: -1.5em;
