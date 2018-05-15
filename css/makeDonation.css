@@ -236,3 +236,15 @@
             margin-bottom: 1em;
         }
     }
+    
+    @media screen and (orientation:landscape) and (max-width: 767px) {
+        /* Landscape styles */
+        .headerDiv {
+            margin-top: .25em;
+            /* margin-bottom: -.5em; */
+        }
+        li {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }

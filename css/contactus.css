@@ -10,9 +10,50 @@
 /* this is the map styles */
 
 #map {
-    height: 25em;
+    /* height: 1030px; */
     width: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+}
+
+.mainMapDiv {
+    /* float: right; */
+    padding: 0;
+}
+
+.row div,
+#contactHeader,
+.contactInfo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactInfo {
+    font-size: 1.5em;
+}
+
+h4 {
+    max-width: 100%;
+}
+
+.formHeader {
+    /* margin-right: 0!important; */
+}
+
+.contactDiv {
+    /* height: 1050px; */
+    height: 100%;
+    background: url(../images/apartment.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+form {
+    background-color: rgba(36, 35, 35, 0.651);
+    border-radius: 10px;
+    color: white;
+    margin-top: 2em;
 }
 
 
@@ -33,6 +74,12 @@ h1 {
     font-size: 3em;
 }
 
+.headerDiv,
+.sloganHeader {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
 
 /* div information styles */
 
@@ -43,17 +90,33 @@ div.container {
     margin-left: auto;
 }
 
+.row {
+    margin: 0;
+}
+
+.mainFooterDiv {
+    margin-top: 0;
+}
+
+.footerDiv {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
 @media only screen and (max-width: 767px) {
-    h1#contactHeader {
+    /* h1#contactHeader {
         margin-top: 1em;
-    }
+    } */
     div.mainDiv {
         /* margin-top: -13%; */
     }
     .headerDiv {
         margin-top: -1.5em;
-        margin-bottom: -.5em;
+        /* margin-bottom: 0em; */
     }
+    /* #map {
+        height: 300px;
+    } */
     a#navIcon:hover+ul.nav,
     nav.menu ul:hover {
         margin-top: -11%;
@@ -61,9 +124,9 @@ div.container {
     p#call-number,
     p#email-info,
     p#address-info {
-        text-align: center;
+        /* text-align: center; */
         /* font-size: 1.5em; */
-        background: #F26B00;
+        /* background: #F26B00; */
         color: white;
         width: 60%;
         border-radius: 6px;
@@ -84,5 +147,17 @@ div.container {
         /* width: 30%; */
         /* padding-left: 5px; */
         /* padding-right: 0; */
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width: 767px) {
+    /* Landscape styles */
+    .headerDiv {
+        margin-top: .5em;
+        margin-bottom: -.5em;
+    }
+    li {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }

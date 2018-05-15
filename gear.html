@@ -12,9 +12,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <title>Fellow Joy - Gear</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/gear.css">
 
@@ -81,7 +81,7 @@
             </div>
         </div>
         <!-- </div> -->
-
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#x21EA;</button>
 
         <div class="mainDiv">
 
@@ -144,92 +144,38 @@
     <div class="container" id="services">
         <h3 id="help">Find The Gear For You</h3>
         <div class="row">
-            <section class="col-sm-4 col-md-3 col-lg-2">
+            <section class="col-sm-3 col-md-3 col-lg-3">
                 <a href="shortsleeve.html">
-                    <img class="img-fluid" src="images/shirt1.jpg" alt="">
+                    <img class="img-fluid shortsleeve" src="images/shirt1.jpg" alt="">
                     <h5>FJ Short Sleeve</h5>
                 </a>
-                <hr>
+                <hr class="mobileHR">
             </section>
-            <section class="col-sm-4 col-md-3 col-lg-2">
+            <section class="col-sm-3 col-md-3 col-lg-3">
                 <a href="longsleeve.html">
                     <img class="img-fluid" src="images/shirtLong0.jpg" alt="">
                     <h5>Long Sleeve Shirt</h5>
                 </a>
-                <hr>
+                <hr class="mobileHR">
             </section>
-            <section class="col-sm-4 col-md-3 col-lg-2">
+            <section class="col-sm-3 col-md-3 col-lg-3">
                 <a href="hoodie.html">
-                    <img class="img-fluid" src="images/jacket0.jpg" alt="">
+                    <img class="img-fluid jacket" src="images/jacket0.jpg" alt="">
                     <h5>FJ Hoodie</h5>
                 </a>
-                <hr>
+                <hr class="mobileHR">
             </section>
-            <section class="col-sm-4 col-md-3 col-lg-2">
+            <section class="col-sm-3 col-md-3 col-lg-3">
                 <a href="waterbottle.html">
-                    <img class="img-fluid" src="images/water1.png" alt="">
+                    <img class="img-fluid waterBottle" src="images/water1.png" alt="">
                     <h5>FJ Water Bottle</h5>
                 </a>
-                <hr>
             </section>
         </div>
     </div>
 
 
-
-    <!-- THIS ONE IS FOR THE HOME PAGE -->
-
-    <!-- <div class="container" id="services">
-        <h3 id="help">Find A Way You Can Help</h3>
-        <div class="row">
-            <section class="col-sm-6 col-md-6 col-lg-4">
-                <a href="">
-                    <img class="img-fluid" src="../images/street.jpg" alt="">
-                    <h5>Help Near You</h5>
-                </a>
-                <hr>
-            </section>
-            <section class="col-sm-6 col-md-6 col-lg-4">
-                <a href="">
-                    <img class="img-fluid" src="../images/hungry.jpg" alt="">
-                    <h5>Help Feed The Hungry</h5>
-                </a>
-                <hr>
-            </section>
-            <section class="col-sm-6 col-md-6 col-lg-4">
-                <a href="">
-                    <img class="img-fluid" src="../images/help.jpg" alt="">
-                    <h5>Help Clean Up Near You</h5>
-                </a>
-                <hr>
-            </section>
-            <section class="col-sm-6 col-md-6 col-lg-4">
-                <a href="">
-                    <img class="img-fluid" src="../images/shoes.jpg" alt="">
-                    <h5>Donate Clothing</h5>
-                </a>
-                <hr>
-            </section>
-            <section class="col-sm-6 col-md-6 col-lg-4">
-                <a href="">
-                    <img class="img-fluid" src="../images/rebuild.png" alt="">
-                    <h5>Help Rebuild</h5>
-                </a>
-                <hr>
-            </section>
-            <section class="col-sm-6 col-md-6 col-lg-4">
-                <a href="">
-                    <img class="img-fluid" src="../images/worldwide.jpg" alt="">
-                    <h5>Help Around The World</h5>
-                </a>
-                <hr>
-            </section>
-        </div>
-    </div> -->
-    <!-- container -->
-
-
-    <div class="col-sm-12 col-md-12 col-lg-12 float-left" style="margin-top: 3em">
+    <div class="col-sm-12 col-md-12 col-lg-12 float-left">
         <div class="row bg-dark text-light">
 
             <!--Footer-->
@@ -322,8 +268,8 @@
                                     </li>
 
                                     <!-- <li class="list-inline-item float-right">
-                                        <h6 id="followText">Follow Us:</h6>
-                                    </li> -->
+                                            <h6 id="followText">Follow Us:</h6>
+                                        </li> -->
                                 </ul>
                             </div>
                             <!--/.Social buttons-->
@@ -339,7 +285,8 @@
 
         </div>
     </div>
-
+    <script src="javascript/gear.js"></script>
+    <script src="javascript/main.js"></script>
     <script src="bootstrap/jquery.slim.min.js"></script>
     <script src="bootstrap/popper.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>

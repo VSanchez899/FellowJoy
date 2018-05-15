@@ -1,11 +1,29 @@
+.parallax {
+    background: url(../images/sidewalk_big.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+}
+
 h1#mainHeader {
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 0;
 }
 
-td {
-    border: 1px solid black;
+td,
+#th {
+    border: 1px solid white;
+}
+
+form {
+    color: white;
 }
 
 footer {
@@ -13,7 +31,9 @@ footer {
 }
 
 .shoppingCart {
-    margin-top: 1em;
+    /* margin-top: 1em; */
+    padding-top: 1em;
+    background: rgba(36, 35, 35, 0.651);
 }
 
 @media only screen and (max-width: 767px) {
@@ -26,6 +46,19 @@ footer {
         margin-top: -11%;
     }
     .shoppingCart {
-        margin-top: 3em;
+        /* margin-top: 3em; */
+        /* padding-top: 2em; */
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width: 767px) {
+    /* Landscape styles */
+    .headerDiv {
+        margin-top: 0em;
+        /* margin-bottom: -.5em; */
+    }
+    li {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }

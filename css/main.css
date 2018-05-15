@@ -101,7 +101,7 @@
         /* Remove borders */
         outline: none;
         /* Remove outline */
-        background-color: red;
+        background-color: #005F9B;
         /* Set a background color */
         color: white;
         /* Text color */
@@ -116,8 +116,16 @@
     }
     
     #myBtn:hover {
-        background-color: #555;
+        background-color: #F26B00;
         /* Add a dark-grey background on hover */
+    }
+    
+    button {
+        background-color: #005F9B;
+    }
+    
+    button:hover {
+        background-color: #F26B00;
     }
     
     section.col-md-6>a>img {
@@ -327,9 +335,6 @@
     }
     
     @media only screen and (max-width: 767px) {
-        header {
-            /* position: fixed */
-        }
         h1#mainHeader {
             font-size: 2.2em;
             text-align: center;

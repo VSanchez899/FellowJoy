@@ -147,7 +147,7 @@ function setUpCart() {
     console.log(localStorage.length);
     while (num <= localStorage.length) {
         console.log("num" + num)
-        document.getElementById("shoppingCart").innerHTML += "<tr>" + "<th scope='row'>" + localStorage.getItem("item" + num).split(",")[0] + "</th>" + "<td>" + localStorage.getItem("item" + num).split(",")[1] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[2] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[3] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[4] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[5] + "</td>" + "</tr>";
+        document.getElementById("shoppingCart").innerHTML += "<tr>" + "<th scope='row' id='th'>" + localStorage.getItem("item" + num).split(",")[0] + "</th>" + "<td>" + localStorage.getItem("item" + num).split(",")[1] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[2] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[3] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[4] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[5] + "</td>" + "</tr>";
 
         if (num >= localStorage.length) {
             var numItemsArray = [];
@@ -159,7 +159,7 @@ function setUpCart() {
             }
             numItems = numItemsArray.reduce(getSum);
 
-            document.getElementById("shoppingCart").innerHTML += "<tr>" + "<th>" + "</th>" + "<th>" + "</th>" + "<th>" + "</th>" + "<th>" + "</th>" + "<th>" + "(" + numItems + " items)" + " Total:" + "</th>" + "<td id='total'>" + "</td>" + "</tr>"
+            document.getElementById("shoppingCart").innerHTML += "<tr>" + "<th>" + "</th>" + "<th>" + "</th>" + "<th>" + "</th>" + "<th>" + "</th>" + "<th id='th'>" + "(" + numItems + " items)" + " Total:" + "</th>" + "<td id='total'>" + "</td>" + "</tr>"
             var total = document.getElementById("total");
             var endTotal = [];
             while (priceTotal <= num) {

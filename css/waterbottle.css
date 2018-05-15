@@ -142,4 +142,19 @@ button:hover {
     #waterbottle {
         border: 2px solid black;
     }
+    form {
+        margin-top: -5em;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width: 767px) {
+    /* Landscape styles */
+    .headerDiv {
+        margin-top: 0em;
+        /* margin-bottom: -.5em; */
+    }
+    li {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }

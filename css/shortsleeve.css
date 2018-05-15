@@ -97,7 +97,7 @@
             display: none;
         }
         
-        @media only screen and (max-width: 735px) {
+        @media only screen and (max-width: 767px) {
             .headerDiv {
                 margin-top: -1.5em;
                 margin-bottom: 0em;
@@ -125,6 +125,19 @@
             #shirtPic {
                 border: 2px solid black;
             }
+            form {
+                margin-top: -5em;
+            }
         }
         
-        @media only screen and (min-width: 767px) {}
+        @media screen and (orientation:landscape) and (max-width: 767px) {
+            /* Landscape styles */
+            .headerDiv {
+                margin-top: 0em;
+                /* margin-bottom: -.5em; */
+            }
+            li {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }

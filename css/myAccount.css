@@ -73,7 +73,7 @@ html {
 }
 
 @media only screen and (max-width: 767px) {
-    .container {
+    #services {
         background: url(../images/sidewalk_small.jpg);
         background-position: center center;
         background-repeat: no-repeat;
@@ -90,7 +90,7 @@ html {
     }
     .headerDiv {
         margin-top: -1.5em;
-        margin-bottom: .25em;
+        margin-bottom: 0em;
     }
     a#navIcon:hover+ul.nav,
     nav.menu ul:hover {
@@ -119,5 +119,17 @@ html {
     }
     button {
         margin-top: 0;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width: 767px) {
+    /* Landscape styles */
+    .headerDiv {
+        margin-top: 0em;
+        /* margin-bottom: -.5em; */
+    }
+    li {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }

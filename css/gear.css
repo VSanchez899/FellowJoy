@@ -6,9 +6,31 @@
     filename: gear.css
 */
 
+.img-fluid {
+    border: 2px solid;
+}
+
+.shortsleeve {
+    /* height: 100%; */
+}
+
+h5 {
+    font-size: 2em;
+}
+
+.mobileHR {
+    display: none;
+}
+
 @media only screen and (max-width: 767px) {
     h1#mainHeader {
         margin-top: 2%;
+    }
+    h3#help {
+        font-size: 2.25em;
+    }
+    h5 {
+        font-size: 1.6em;
     }
     div.mainDiv {
         margin-top: -13%;
@@ -27,6 +49,22 @@
     #services {
         margin-top: 3.5em;
     }
+    .waterBottle {
+        width: 100%;
+    }
+    .mobileHR {
+        display: block;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width: 767px) {
+    /* Landscape styles */
+    h5 {
+        font-size: .75em!important;
+    }
+    .mobileHR {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -34,5 +72,26 @@
     a#navIcon {
         padding-top: 1%;
         padding-bottom: 1%;
+    }
+    h5 {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    h5 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width: 767px) {
+    /* Landscape styles */
+    .headerDiv {
+        margin-top: 0em;
+        margin-bottom: -.5em;
+    }
+    li {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }

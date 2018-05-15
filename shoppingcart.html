@@ -136,27 +136,29 @@
             </nav>
         </div>
     </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#x21EA;</button>
 
     <body>
-        <div class="container shoppingCart">
-            <form action="makeDonation_noUser.html" method="post">
-                <section>
-                    <h3>Shopping Cart</h3>
-                    <!-- <button type="button" id="clearCart">clear cart</button> -->
+        <div class="parallax">
+            <div class="container shoppingCart">
+                <form action="makeDonation_noUser.html" method="post">
                     <section>
-                        <table class="table table-striped">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">Item</th>
-                                    <th scope="col">Color</th>
-                                    <th scope="col">Size</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Qty</th>
-                                    <th scope="col">Total</th>
-                                </tr>
-                            </thead>
-                            <tbody id="shoppingCart">
-                                <!-- <tr>
+                        <h3>Shopping Cart <i class="fa fa-shopping-cart"></i></h3>
+                        <!-- <button type="button" id="clearCart">clear cart</button> -->
+                        <section>
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Item</th>
+                                        <th scope="col">Color</th>
+                                        <th scope="col">Size</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Qty</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="shoppingCart">
+                                    <!-- <tr>
                                     <th scope="row"></th>
                                     <td></td>
                                     <td></td>
@@ -180,14 +182,15 @@
                                     <td></td>
                                     <td></td>
                                 </tr> -->
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </section>
                     </section>
-                </section>
-            </form>
+                </form>
+            </div>
         </div>
 
-        <div class="col-sm-12 col-md-12 col-lg-12 float-left" style="margin-top: 3em">
+        <div class="col-sm-12 col-md-12 col-lg-12 float-left">
             <div class="row bg-dark text-light">
 
                 <!--Footer-->
@@ -297,7 +300,7 @@
 
             </div>
         </div>
-
+        <script src="javascript/main.js"></script>
         <script src="javascript/shoppingcart.js"></script>
         <script src="bootstrap/jquery.slim.min.js"></script>
         <script src="bootstrap/popper.min.js"></script>
