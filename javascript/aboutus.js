@@ -10,6 +10,9 @@ window.onload = function() {
         document.documentElement.scrollTop = 56;
     }
 
+    var screenHeight = screen.height;
+    console.log(screenHeight)
+    $("#backgroundImage").height(screenHeight);
 }
 
 
