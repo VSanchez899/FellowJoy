@@ -65,7 +65,7 @@ h2.names {
     height: 1000px;
 }
 
-#parallaxAboutUs,
+.parallaxAboutUs,
 #parallaxTeam {
     margin-left: auto;
     margin-right: auto;
@@ -133,6 +133,9 @@ h2.names {
         /* height: 100%; */
         overflow-x: hidden;
     }
+    /* .aboutusHeaderMobile {
+        width: 100%;
+    } */
     .parallax-Mobile {
         overflow-x: hidden;
     }
@@ -158,7 +161,7 @@ h2.names {
     #fjDis {
         font-size: 1.5em!important;
     }
-    .parallaxText {
+    .parallaxTextMobile {
         font-size: 4em;
     }
     .aboutusHeader,

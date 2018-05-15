@@ -3,8 +3,8 @@ window.onload = function() {
         document.body.scrollTop = 196;
         document.documentElement.scrollTop = 196;
     } else if (screen.width <= 767) {
-        document.body.scrollTop = 160;
-        document.documentElement.scrollTop = 160;
+        document.body.scrollTop = 50;
+        document.documentElement.scrollTop = 50;
     } else if (screen.width >= 768) {
         document.body.scrollTop = 56;
         document.documentElement.scrollTop = 56;
@@ -16,6 +16,7 @@ window.onload = function() {
     // $(".aboutUsContent").css("marginTop") = screenHeight;
 
     $(".screenDiv").height(screenHeight);
+    $(".aboutusHeaderMobile").height(screenHeight);
 }
 
 
