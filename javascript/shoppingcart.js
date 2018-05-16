@@ -5,7 +5,7 @@ window.onload = function() {
     $("#backgroundImage").height(screenHeight);
 }
 
-var shoppingCart = document.getElementById("shoppingCart");
+var shoppingCart = document.getElementsByClassName("shoppingCart");
 var shirtToCart = document.getElementById("shirtToCart");
 var longSleeveToCart = document.getElementById("longSleeveToCart");
 var jacketsToCart = document.getElementById("jacketsToCart");
@@ -150,7 +150,7 @@ var num = 1;
 var itemTotal = 1;
 var priceTotal = 1;
 
-function setUpCart() {
+window.onload = function setUpCart() {
     console.log(localStorage.length);
     while (num <= localStorage.length) {
         console.log("num" + num)
