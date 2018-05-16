@@ -62,7 +62,7 @@ form {
 }
 
 html {
-    background: url(../images/sidewalk_big.jpg);
+    background: url(../images/ruins.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -73,17 +73,13 @@ html {
 }
 
 @media only screen and (max-width: 767px) {
-    #services {
-        background: url(../images/sidewalk_small.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 100%;
-        overflow: hidden;
+    html {
+        background: none;
+    }
+    #backgroundImage {
+        /* height: 100%; */
+        display: table;
+        overflow-x: hidden;
     }
     .signInForm {
         margin-top: 3em;

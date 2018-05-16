@@ -47,7 +47,7 @@ footer {
     }
     .headerDiv {
         margin-top: -1.5em;
-        margin-bottom: 1.75em;
+        margin-bottom: 0em;
     }
     a#navIcon:hover+ul.nav,
     nav.menu ul:hover {
@@ -56,6 +56,8 @@ footer {
     .shoppingCart {
         /* margin-top: 3em; */
         /* padding-top: 2em; */
+        margin-top: 3em;
+        border-radius: 10px;
     }
 }
 
