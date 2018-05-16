@@ -115,7 +115,7 @@ div.container {
         margin-top: 1em;
     } */
     h1#mainHeader {
-        margin: 0;
+        margin-bottom: 0;
     }
     div.mainDiv {
         /* margin-top: -13%; */
