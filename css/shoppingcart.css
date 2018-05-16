@@ -1,5 +1,5 @@
 .parallax {
-    background: url(../images/sidewalk_big.jpg);
+    background: url(../images/africanPoverty.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -37,6 +37,14 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+    .parallax {
+        background: none;
+    }
+    #backgroundImage {
+        /* height: 100%; */
+        overflow-x: hidden;
+        display: table;
+    }
     .headerDiv {
         margin-top: -1.5em;
         margin-bottom: 1.75em;

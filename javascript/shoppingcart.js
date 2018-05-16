@@ -1,3 +1,10 @@
+/* Background image */
+window.onload = function() {
+    var screenHeight = screen.height;
+    var screenWidth = screen.width;
+    $("#backgroundImage").height(screenHeight);
+}
+
 var shoppingCart = document.getElementById("shoppingCart");
 var shirtToCart = document.getElementById("shirtToCart");
 var longSleeveToCart = document.getElementById("longSleeveToCart");

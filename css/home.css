@@ -9,6 +9,11 @@
 
 /* Mission and Vision Styles */
 
+header {
+    /* background: #E2E2E2; */
+    background: #3a3737b0
+}
+
 .headStatements {
     color: #005F9B;
     font-family: 'Gugi', cursive;
@@ -67,7 +72,7 @@ body {
 }
 
 html {
-    background: url(../images/ruins.jpg);
+    background: url(../images/slum_big.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -78,10 +83,22 @@ html {
     /* overflow: hidden; */
 }
 
+#backgroundImage {
+    display: none;
+}
+
 
 /* this is the media tag for mobile styles */
 
 @media only screen and (max-width: 767px) {
+    body {
+        background: none;
+    }
+    #backgroundImage {
+        /* height: 100%; */
+        display: table;
+        overflow-x: hidden;
+    }
     html {
         background-image: none;
         background: #E2E2E2;
@@ -112,7 +129,7 @@ html {
         margin-top: -11%;
     }
     .smallPics {
-        background: none;
+        background: rgba(226, 226, 226, 0.452);
     }
     a h5,
     h3 {
@@ -232,7 +249,6 @@ html {
 
 .carousel-inner>.prev {
     left: 100%;
-    */
 }
 
 .carousel-inner>.next.left,

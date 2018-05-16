@@ -81,12 +81,17 @@
         margin-bottom: 1em;
     }
     
+    #backgroundImage {
+        display: none;
+    }
+    
     @media only screen and (max-width: 767px) {
         body {
             background: none;
         }
         #backgroundImage {
             /* height: 100%; */
+            display: table;
             overflow-x: hidden;
         }
         .headerDiv {
