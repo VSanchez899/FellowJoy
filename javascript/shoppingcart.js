@@ -116,6 +116,8 @@ function addJacket() {
     console.log(shoppingCartArray)
 }
 
+
+
 /* For adding water bottles to shopping cart */
 function addWaterBottle() {
     /* Gets color and nubmer of water bottles */
