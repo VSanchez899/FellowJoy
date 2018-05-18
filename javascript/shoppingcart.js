@@ -37,9 +37,6 @@ var itemNum = 0;
 function addShirt() {
     var shirtOption = document.getElementById("buyShirtGear").value;
     var shirtQty = document.getElementById("numShirtGear").value;
-    // if (shirtOption === "" || shirtQty === "") {
-
-    // }
     if (shirtOption != "" && shirtQty != "") {
         itemNum++;
         var shirt = [];
@@ -119,26 +116,33 @@ function addJacket() {
     console.log(shoppingCartArray)
 }
 
-/* For adding jackets/hoodies to shopping cart */
+/* For adding water bottles to shopping cart */
 function addWaterBottle() {
+    /* Gets color and nubmer of water bottles */
     var waterBottleOption = document.getElementById("buyWaterBGear").value;
     var waterBottleQty = document.getElementById("numWaterBGear").value;
 
+    /* Checks to make sure there is a value in color and a qty */
     if (waterBottleOption != "" && waterBottleQty != "") {
         itemNum++;
         var waterBottle = [];
+        /* Gets Information about water bottle choosen */
         var waterBottleColor = document.getElementById("buyWaterBGear").value
         var waterBottleSizePrice = document.getElementById("WaterBSizeGear").value
         var numWaterBottles = document.getElementById("numWaterBGear").value
         var waterBottleSize = waterBottleSizePrice.split(" ")[0];
         var pricePerWaterBottle = waterBottleSizePrice.split(" ")[1];
         var waterBottleItemTotal = 0;
-
+        /* Gets total price for that set of water bottles */
         waterBottleItemTotal = parseInt(pricePerWaterBottle) * parseInt(numWaterBottles);
 
-
+        /* Pushes all water bottles info into an array so it can be locally stored */
         waterBottle.push("water bottle", waterBottleColor, waterBottleSize + "oz", "$" + pricePerWaterBottle, numWaterBottles, waterBottleItemTotal);
+
+        /* puts the array of water bottle info in local storage with an incremented value so it different for each item */
         localStorage.setItem("item" + itemNum, waterBottle);
+
+
         shoppingCartArray["item" + itemNum] = waterBottle;
         shoppingCart.innerHTML += shoppingCartArray["item" + itemNum];
 
@@ -150,37 +154,50 @@ var num = 1;
 var itemTotal = 1;
 var priceTotal = 1;
 
+/* Sets up Cart when page loads */
 window.onload = function setUpCart() {
-    console.log(localStorage.length);
+    // console.log(localStorage.length);
+
+    /* Runs while num is less then or equal to the local storage length */
     while (num <= localStorage.length) {
-        console.log("num" + num)
+        // console.log("num" + num)
+
+        /* Builds new row for item by getting the information from local storage */
         document.getElementById("shoppingCart").innerHTML += "<tr>" + "<th scope='row' id='th'>" + localStorage.getItem("item" + num).split(",")[0] + "</th>" + "<td>" + localStorage.getItem("item" + num).split(",")[1] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[2] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[3] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[4] + "</td>" + "<td>" + localStorage.getItem("item" + num).split(",")[5] + "</td>" + "</tr>";
 
+        /* Checks if num is equal to the local storage length */
         if (num >= localStorage.length) {
             var numItemsArray = [];
             var numItems = 0;
 
+            /* Gets the number of items for each "big" item */
             while (itemTotal <= num) {
                 numItemsArray.push(parseInt(localStorage.getItem("item" + itemTotal).split(",")[4]));
                 itemTotal++;
             }
             numItems = numItemsArray.reduce(getSum);
 
+            /* Builds a row after all the item rows have been built for total number of items and total price */
             document.getElementById("shoppingCart").innerHTML += "<tr>" + "<th>" + "</th>" + "<th>" + "</th>" + "<th>" + "</th>" + "<th>" + "</th>" + "<th id='th'>" + "(" + numItems + " items)" + " Total:" + "</th>" + "<td id='total'>" + "</td>" + "</tr>"
-            var total = document.getElementById("total");
+
+            var total = document.getElementById("total"); //This id is put in right above^
             var endTotal = [];
+
+            /* Gets all the price totals of the item rows and puts them in an array */
             while (priceTotal <= num) {
                 endTotal.push(parseInt(localStorage.getItem("item" + priceTotal).split(",")[5]));
                 priceTotal++;
             }
 
+            /* Mini funciton to add all the item totals to get one big total */
             function getSum(num1, num2) {
                 return num1 + num2;
             }
 
-            console.log(numItemsArray)
-            console.log(endTotal)
+            // console.log(numItemsArray)
+            // console.log(endTotal)
 
+            /* Writes the whole total to the webpage */
             total.innerHTML = "$" + endTotal.reduce(getSum);
 
         }

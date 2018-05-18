@@ -12,9 +12,20 @@
 }
 
 h1#mainHeader {
-    /* margin-top: 0; */
     padding-top: 0;
     margin-bottom: 0;
+}
+
+
+/* Shopping cart Styles */
+
+.shoppingCart {
+    padding-top: 1em;
+    background: rgba(36, 35, 35, 0.651);
+}
+
+form {
+    color: white;
 }
 
 td,
@@ -22,18 +33,11 @@ td,
     border: 1px solid white;
 }
 
-form {
-    color: white;
-}
+
+/* End of shopping cart styles */
 
 footer {
     position: fixed
-}
-
-.shoppingCart {
-    /* margin-top: 1em; */
-    padding-top: 1em;
-    background: rgba(36, 35, 35, 0.651);
 }
 
 @media only screen and (max-width: 767px) {
