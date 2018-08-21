@@ -34,6 +34,8 @@ var CVCGear = document.getElementById("formCVCGear");
 
 // fName.addEventListener("change", changeFirstLetter)
 
+
+
 visa.onclick = function() {
     visa.checked = true;
     discover.checked = false;
